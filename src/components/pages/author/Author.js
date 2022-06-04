@@ -19,7 +19,7 @@ function Author() {
     async function fetchData(id){
         
         //author data
-        var respAuthor = await axios.get("/api/author/get-authors/"+params.id);
+        var respAuthor = await axios.get(`${process.env.BACKEND_URL}api/author/get-authors/"+params.id`);
         console.log("fetching book for page: ",respAuthor.data[0]);
         setAuthorData(respAuthor.data[0])
     }

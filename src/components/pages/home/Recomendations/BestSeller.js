@@ -13,7 +13,7 @@ function BestSeller(props) {
 
     useEffect(()=>{
         async function fetchCards(){
-            const req = await axios.get('/api/publication//get-first-five-most-downloads');
+            const req = await axios.get(`${process.env.BACKEND_URL}api/publication//get-first-five-most-downloads`);
             console.log(req);
             var cardDicArray = [];
             var max = req.data.length
@@ -55,7 +55,7 @@ function BestSeller(props) {
     async function getAuthor(id) {
         console.log("getting author: ",id);
         const filt = "hey";
-        const req = await axios.get("/api/author/get-authors/"+id);
+        const req = await axios.get(`${process.env.BACKEND_URL}api/author/get-authors/`+id);
         console.log("author response: ",req);
         return (req.data[0].firstName +" "+ req.data[0].otherNames);
     }
@@ -66,7 +66,7 @@ function BestSeller(props) {
        postToDB();
    }
    const postToDB = async() => {
-       const response = await axios.post('/api/publication/create');
+       const response = await axios.post(`${process.env.BACKEND_URL}api/publication/create`);
    }
 
     return (

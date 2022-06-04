@@ -18,7 +18,7 @@ function Publication() {
   useEffect(() => {
       async function fetchPublication(id){
         //book data
-        const resp = await axios.get('/api/publication/get/'+id);
+        const resp = await axios.get(`${process.env.BACKEND_URL}api/publication/get/`+id);
         console.log("fetching book for page: ",resp.data[0]);
         
         
@@ -26,7 +26,7 @@ function Publication() {
         console.log("author id: ", authorID)
         
         //author data
-        var respAuthor = await axios.get("/api/author/get-authors/"+authorID);
+        var respAuthor = await axios.get(`${process.env.BACKEND_URL}api/author/get-authors/`+authorID);
         
         console.log("fetching data for author: ",respAuthor.data[0]);
 
@@ -49,7 +49,7 @@ function Publication() {
   const handleDownload = async (event) => {
     //update downloads to plus one
     console.log("incrementing downloads")
-    var incrementDownloads= await axios.post("/api/publication/increment-downloads/", {id: params.id});
+    var incrementDownloads= await axios.post('${process.env.BACKEND_URL}api/publication/increment-downloads/', {id: params.id});
 
   }
 

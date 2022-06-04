@@ -34,7 +34,7 @@ function Home() {
     async function fetchData(){
         
         //author data
-        var resp = await axios.get("/api/news/get-all");
+        var resp = await axios.get(`${process.env.BACKEND_URL}/api/news/get-all`);
  
         setNewsData(resp.data)
     }

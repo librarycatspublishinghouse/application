@@ -14,7 +14,7 @@ function Books(props) {
 
     useEffect(()=>{
         async function fetchCards(){
-            const req = await axios.post('/api/publication/get-books-query',{search_query: "testbook6", page_number: 1, sort_by: sort_type});
+            const req = await axios.post(`{process.env.BACKEND_URL}api/publication/get-books-query`,{search_query: "testbook6", page_number: 1, sort_by: sort_type});
             console.log(req);
             var cardDicArray = [];
          
@@ -44,7 +44,7 @@ function Books(props) {
     async function getAuthor(id) {
         console.log("getting author: ",id);
         const filt = "hey";
-        const req = await axios.get("/api/author/get-authors/"+id);
+        const req = await axios.get(`${process.env.BACKEND_URL}api/author/get-authors/`+id);
         console.log("author response: ",req);
         return (req.data[0].firstName +" "+ req.data[0].otherNames);
     }
@@ -55,7 +55,7 @@ function Books(props) {
        postToDB();
    }
    const postToDB = async() => {
-       const response = await axios.post('/api/publication/create');
+       const response = await axios.post(`${process.env.BACKEND_URL}api/publication/create`);
    }
 
    
@@ -87,7 +87,7 @@ function Books(props) {
             search = null;
         }
         //update books
-        const req = await axios.post('/api/publication/get-books-query',{search_query: search, page_number: page_number, sort_by: sort});
+        const req = await axios.post(`${process.env.BACKEND_URL}api/publication/get-books-query`,{search_query: search, page_number: page_number, sort_by: sort});
         console.log(req);
         var cardDicArray = [];
 
