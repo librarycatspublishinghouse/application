@@ -18,7 +18,7 @@ import Contests from './components/pages/contests/Contests';
 import Mission from './components/pages/mission/Mission';
 import Contact from './components/pages/contact/Contact';
 
-
+process.env['BACKEND_URL'] = 'https://spread-the-word.herokuapp.com/';
 function App() {
 
   const [menuCollapse, setMenuCollapse] = useState(true);
