@@ -16,7 +16,7 @@ function NewsCard(props) {
                 {props.title}
             </div>
             <div className = {style.image}>
-            <img className = {style.image_item} src={`${process.env.BACKEND_URL}`+props.image} alt="image thumbnail"/> 
+            <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+props.image} alt="image thumbnail"/> 
                 
             </div>
             <div className = {style.date}>

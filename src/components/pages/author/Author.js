@@ -19,10 +19,10 @@ function Author() {
     async function fetchData(id){
         
         //author data
-        var respAuthor = await axios.get(`${process.env.BACKEND_URL}api/author/get-authors/"+params.id`);
+        var respAuthor = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/author/get-authors/"+params.id`);
         console.log("fetching book for page: ",respAuthor.data[0]);
         setAuthorData(respAuthor.data[0])
-        
+
     }
     window.scrollTo(0, 0);
     fetchData(params.id);
@@ -35,7 +35,7 @@ function Author() {
         <div className= {style.top_container}>
 
           <div className = {style.thumbnail_container} >
-            <img className = {style.image_item} src={`${process.env.BACKEND_URL}${authorData.image}`} alt="image thumbnail"/> 
+            <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}${authorData.image}`} alt="image thumbnail"/> 
 
           </div>
 

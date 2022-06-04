@@ -18,7 +18,7 @@ function Publication() {
   useEffect(() => {
       async function fetchPublication(id){
         //book data
-        const resp = await axios.get(`${process.env.BACKEND_URL}api/publication/get/`+id);
+        const resp = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/publication/get/`+id);
         console.log("fetching book for page: ",resp.data[0]);
         
         
@@ -26,7 +26,7 @@ function Publication() {
         console.log("author id: ", authorID)
         
         //author data
-        var respAuthor = await axios.get(`${process.env.BACKEND_URL}api/author/get-authors/`+authorID);
+        var respAuthor = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/author/get-authors/`+authorID);
         
         console.log("fetching data for author: ",respAuthor.data[0]);
 
@@ -49,7 +49,7 @@ function Publication() {
   const handleDownload = async (event) => {
     //update downloads to plus one
     console.log("incrementing downloads")
-    var incrementDownloads= await axios.post('${process.env.BACKEND_URL}api/publication/increment-downloads/', {id: params.id});
+    var incrementDownloads= await axios.post('${process.env.REACT_APP_BACKEND_URL}api/publication/increment-downloads/', {id: params.id});
 
   }
 
@@ -59,7 +59,7 @@ function Publication() {
         <div className= {style.top_container}>
 
           <div className = {style.thumbnail_container} >
-            <img className = {style.image_item} src={`${process.env.BACKEND_URL}`+bookData.thumbnailLink} alt="image thumbnail"/> 
+            <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+bookData.thumbnailLink} alt="image thumbnail"/> 
 
           </div>
 
@@ -76,7 +76,7 @@ function Publication() {
             </div>
 
             <div className={style.download_container}>
-              <a className={style.download_link} onClick = {handleDownload} href = {`${process.env.BACKEND_URL}`+bookData.downloadLink} download = "bookname.pdf" target="_blank"><i className="fa fa-download"></i> Download</a>
+              <a className={style.download_link} onClick = {handleDownload} href = {`${process.env.REACT_APP_BACKEND_URL}`+bookData.downloadLink} download = "bookname.pdf" target="_blank"><i className="fa fa-download"></i> Download</a>
                 
             </div>
           </div>

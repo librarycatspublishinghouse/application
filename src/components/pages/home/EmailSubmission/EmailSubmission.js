@@ -23,7 +23,7 @@ function EmailSubmission() {
     }
 
     const postSubmit = async (email) =>{
-        const request = await axios.post(`${process.env.BACKEND_URL}api/emailSubscription/create-new-email-subscription/`+email);
+        const request = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/emailSubscription/create-new-email-subscription/`+email);
         console.log(request.status);
     }
 
