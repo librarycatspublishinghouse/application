@@ -34,7 +34,7 @@ function Author() {
         <div className= {style.top_container}>
 
           <div className = {style.thumbnail_container} >
-            <img className = {style.image_item} src={`http://localhost:5000/${authorData.image}`} alt="image thumbnail"/> 
+            <img className = {style.image_item} src={`${process.env.BACKEND_URL}${authorData.image}`} alt="image thumbnail"/> 
 
           </div>
 

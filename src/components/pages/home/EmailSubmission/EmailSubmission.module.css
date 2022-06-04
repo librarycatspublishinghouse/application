@@ -2,7 +2,7 @@
     width: 100%;
     height:350px;
   
-    background-image:url("http://localhost:5000/files/public/test7.png");
+    background-image:url(`${process.env.BACKEND_URL}files/public/test7.png`);
     
     /*background-image:url("https://librosdelasteroide.com/assets/images/pattern.png");
     */

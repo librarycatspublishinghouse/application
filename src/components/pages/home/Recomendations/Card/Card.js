@@ -23,7 +23,7 @@ const Card = (props) => {
             <Link to = {"/publication/"+props.publicationID}  >
             <div className= {style.card_inner}>
                 <div className= {style.image_container}>
-                    <img className = {style.image_item} src={`http://localhost:5000/`+props.imageLink} alt="image thumbnail"/> 
+                    <img className = {style.image_item} src={`${process.env.BACKEND_URL}`+props.imageLink} alt="image thumbnail"/> 
                 </div>
                 <div className = {style.info_container}>
                     

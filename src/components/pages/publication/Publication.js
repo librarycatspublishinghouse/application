@@ -59,7 +59,7 @@ function Publication() {
         <div className= {style.top_container}>
 
           <div className = {style.thumbnail_container} >
-            <img className = {style.image_item} src={`http://localhost:5000/`+bookData.thumbnailLink} alt="image thumbnail"/> 
+            <img className = {style.image_item} src={`${process.env.BACKEND_URL}`+bookData.thumbnailLink} alt="image thumbnail"/> 
 
           </div>
 
@@ -76,7 +76,7 @@ function Publication() {
             </div>
 
             <div className={style.download_container}>
-              <a className={style.download_link} onClick = {handleDownload} href = {`http://localhost:5000/`+bookData.downloadLink} download = "bookname.pdf" target="_blank"><i className="fa fa-download"></i> Download</a>
+              <a className={style.download_link} onClick = {handleDownload} href = {`${process.env.BACKEND_URL}`+bookData.downloadLink} download = "bookname.pdf" target="_blank"><i className="fa fa-download"></i> Download</a>
                 
             </div>
           </div>
