@@ -24,6 +24,7 @@ function Publication() {
         
         const authorID = resp.data[0].authorID;
         console.log("author id: ", authorID)
+      
         
         //author data
         var respAuthor = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/author/get-authors/`+authorID);

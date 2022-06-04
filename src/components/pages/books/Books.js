@@ -14,7 +14,7 @@ function Books(props) {
 
     useEffect(()=>{
         async function fetchCards(){
-            const req = await axios.post(`{process.env.REACT_APP_BACKEND_URL}api/publication/get-books-query`,{search_query: "testbook6", page_number: 1, sort_by: sort_type});
+            const req = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/get-books-query`,{search_query: "testbook6", page_number: 1, sort_by: sort_type});
             console.log(req);
             var cardDicArray = [];
          
