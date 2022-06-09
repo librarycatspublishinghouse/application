@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { NavLink } from '../../Taskbar/TaskbarElements';
 import EmailSubmission from './EmailSubmission/EmailSubmission';
 import Recomendations from './Recomendations/Recomendations';
-import Card from './Recomendations/Card/Card';
+
 import style from './Home.module.css'
 import News from './News/News';
 
-import Carousel from '../../Carousel/Carousel';
+
 import Flickity from 'react-flickity-component'
 import BestSeller from './Recomendations/BestSeller';
 import NewsCard from '../../NewsCard/NewsCard';

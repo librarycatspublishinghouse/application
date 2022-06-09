@@ -1,29 +1,24 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+
 import style from './Card.module.css'
 import { Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom"; 
+
 
 
 
 
 
 const Card = (props) => {
-    const navigate = useNavigate();
+   
     
-    function handleClick(){
-        alert("clicked")
-        const link = "/publication/"+props.publicationID
-        navigate(link);
-        
-    }
+   
 
     return (
         <div className={style.card} >
             <Link to = {"/publication/"+props.publicationID}  >
             <div className= {style.card_inner}>
                 <div className= {style.image_container}>
-                    <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+props.imageLink} alt="image thumbnail"/> 
+                    <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+props.imageLink} alt="book cover"/> 
                 </div>
                 <div className = {style.info_container}>
                     

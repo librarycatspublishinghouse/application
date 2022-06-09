@@ -2,14 +2,12 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import style from './Recomendations.module.css'
 import Card from './Card/Card';
-import { FaBusinessTime } from 'react-icons/fa';
 
 
 
 function BestSeller(props) {
 
     const[Cards, setCards] = useState([])
-    const[Author, setAuthor] = useState([])
 
     useEffect(()=>{
         async function fetchCards(){
@@ -23,7 +21,7 @@ function BestSeller(props) {
             }
             
             for (var i = 0 ; i < max; i++){
-                if ((props.dontInclude === null) || (props.dontInclude != req.data[i]._id)) {
+                if ((props.dontInclude === null) || (props.dontInclude !== req.data[i]._id)) {
                     var cardDic = {};
                     cardDic.id = req.data[i]._id;
                     cardDic.bookName = req.data[i].title;
@@ -35,7 +33,7 @@ function BestSeller(props) {
                 }
             
                 else{
-                    if (props.dontInclude != null){
+                    if (props.dontInclude !== null){
                         if(max++ > req.data.length){
                             max++;
                         }
@@ -54,20 +52,14 @@ function BestSeller(props) {
 
     async function getAuthor(id) {
         console.log("getting author: ",id);
-        const filt = "hey";
+
         const req = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/author/get-authors/`+id);
         console.log("author response: ",req);
         return (req.data[0].firstName +" "+ req.data[0].otherNames);
     }
 
-   const handleClick = (e) => {
-
-       console.log("clicked")
-       postToDB();
-   }
-   const postToDB = async() => {
-       const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/create`);
-   }
+  
+ 
 
     return (
         <div>

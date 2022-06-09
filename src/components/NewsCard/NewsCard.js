@@ -1,11 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import style from  './NewsCard.module.css';
-import axios from 'axios';
-import { useState } from 'react';
+
 
 import 'font-awesome/css/font-awesome.min.css';
 
-import { Link } from 'react-router-dom';
 
 
 function NewsCard(props) {
@@ -16,7 +14,7 @@ function NewsCard(props) {
                 {props.title}
             </div>
             <div className = {style.image}>
-            <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+props.image} alt="image thumbnail"/> 
+            <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+props.image} alt=""/> 
                 
             </div>
             <div className = {style.date}>
