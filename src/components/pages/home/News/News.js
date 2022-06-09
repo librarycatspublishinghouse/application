@@ -18,7 +18,7 @@ return (
     <div className={style.news} >
         <div className={style.news_container}>
             <div className={style.left_container}>
-                <div className={style.news_header}>
+                <div className={style.news_header1}>
                     NEWS
                 </div>
                 <div className={style.news_title}>
@@ -35,6 +35,9 @@ return (
             </div>
 
             <div className={style.right_container}>
+                <div className={style.news_header2}>
+                    NEWS
+                </div>
                 <div className={style.news_image}>
                     <img className = {style.image} src = "https://via.placeholder.com/150"></img>
                 </div>
