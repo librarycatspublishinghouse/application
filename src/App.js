@@ -17,6 +17,7 @@ import Team from './components/pages/team/Team';
 import Contests from './components/pages/contests/Contests';
 import Mission from './components/pages/mission/Mission';
 import Contact from './components/pages/contact/Contact';
+import Authors from './components/pages/authors/Authors';
 
 process.env['BACKEND_URL'] = 'https://spread-the-word.herokuapp.com/';
 function App() {
@@ -49,6 +50,7 @@ function App() {
             <Route path = '/contests' element = {<Contests />} />
             <Route path = '/mission' element = {<Mission />} />
             <Route path = '/contact' element = {<Contact />} />
+            <Route path = '/authors' element = {<Authors />} />
 
           </Routes>
         
