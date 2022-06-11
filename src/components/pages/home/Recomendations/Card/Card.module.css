@@ -35,11 +35,7 @@
     color: black
 
 }
-.info_container:hover{
-    height:100px;
-    transition: ease-in-out 0.25s;
 
-}
 .author_container{
     text-align: left;
     padding-top: 20px;
