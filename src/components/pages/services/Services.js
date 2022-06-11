@@ -14,7 +14,7 @@ function Services() {
 
       <div className = {style.info_block}>
         <div className = {style.image_container}>
-        <img className = {style.image_item} src="pictures/hands.webp" alt="image thumbnail"/>  
+        <img className = {style.image_item} src="pictures/hands.webp" alt=""/>  
 
         </div>
         <div className = {style.info_container}>
@@ -39,7 +39,7 @@ function Services() {
 
       <div className = {style.info_block}>
         <div className = {style.image_container}>
-        <img className = {style.image_item} src="pictures/edit_design.webp" alt="image thumbnail"/>  
+        <img className = {style.image_item} src="pictures/edit_design.webp" alt=""/>  
 
         </div>
         <div className = {style.info_container}>
@@ -63,7 +63,7 @@ function Services() {
 
       <div className = {style.info_block}>
         <div className = {style.image_container}>
-        <img className = {style.image_item} src="pictures/books.webp" alt="image thumbnail"/>  
+        <img className = {style.image_item} src="pictures/books.webp" alt=""/>  
 
         </div>
         <div className = {style.info_container}>

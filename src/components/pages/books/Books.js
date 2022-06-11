@@ -10,7 +10,8 @@ const initialValues = {
 function Books(props) {
 
     const[Cards, setCards] = useState([])
-    const[Author, setAuthor] = useState([])
+    const [sort_type, setSort] = useState("relevance");
+    const [search_query, setQuery] = useState(initialValues);
 
     useEffect(()=>{
         async function fetchCards(){
@@ -38,31 +39,18 @@ function Books(props) {
        
         console.log("called");
         fetchCards();
-    },[props.dontInclude]);
+    },[props.dontInclude,sort_type]);
 
 
     async function getAuthor(id) {
         console.log("getting author: ",id);
-        const filt = "hey";
+    
         const req = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/author/get-authors/`+id);
         console.log("author response: ",req);
         return (req.data[0].firstName +" "+ req.data[0].otherNames);
-    }
-
-   const handleClick = (e) => {
-
-       console.log("clicked")
-       postToDB();
-   }
-   const postToDB = async() => {
-       const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/create`);
-   }
-
+    } 
    
    
-   const [sort_type, setSort] = useState("relevance");
-
-   const [search_query, setQuery] = useState(initialValues);
    const handleInputChange = (e) => {
        const { name, value } = e.target;
        setQuery({
@@ -157,7 +145,7 @@ function Books(props) {
             <Link className = {style.link} to = {"/publication/"+card.id}  >
             <div className= {style.card_inner}>
                 <div className= {style.image_container}>
-                    <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+card.thumbnailLink} alt="image thumbnail"/> 
+                    <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+card.thumbnailLink} alt=""/> 
                 </div>
                 <div className = {style.info_container}>
                     

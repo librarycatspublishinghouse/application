@@ -7,7 +7,7 @@ import Recomendations from './Recomendations/Recomendations';
 import style from './Home.module.css'
 import News from './News/News';
 
-
+import Carousel from '../../Carousel/Carousel'; //removing breaks flickity but is never used
 import Flickity from 'react-flickity-component'
 import BestSeller from './Recomendations/BestSeller';
 import NewsCard from '../../NewsCard/NewsCard';

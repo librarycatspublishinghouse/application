@@ -1,18 +1,14 @@
 import React from "react";
 
 import { NavLink } from "../Header/HeaderElements";
-import { FaRegMap, FaTimes } from "react-icons/fa";
-import style from './Sidebar.css';
+import {FaTimes } from "react-icons/fa";
+import './Sidebar.css';
 import {
     ProSidebar,
-    Menu,
-    MenuItem,
-    SidebarHeader,
-    SidebarFoooter,
-    SidebarContent,
+
 } from "react-pro-sidebar";
 
-import { useState } from "react";
+
 
 const Sidebar =  ({menuCollapse, toggle}) => {
 

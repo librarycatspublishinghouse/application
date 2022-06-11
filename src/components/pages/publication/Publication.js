@@ -50,7 +50,7 @@ function Publication() {
   const handleDownload = async (event) => {
     //update downloads to plus one
     console.log("incrementing downloads")
-    var incrementDownloads= await axios.post('${process.env.REACT_APP_BACKEND_URL}api/publication/increment-downloads/', {id: params.id});
+    await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/increment-downloads/`, {id: params.id});
 
   }
 
@@ -60,7 +60,7 @@ function Publication() {
         <div className= {style.top_container}>
 
           <div className = {style.thumbnail_container} >
-            <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+bookData.thumbnailLink} alt="image thumbnail"/> 
+            <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+bookData.thumbnailLink} alt=""/> 
 
           </div>
 
@@ -77,7 +77,7 @@ function Publication() {
             </div>
 
             <div className={style.download_container}>
-              <a className={style.download_link} onClick = {handleDownload} href = {`${process.env.REACT_APP_BACKEND_URL}`+bookData.downloadLink} download = "bookname.pdf" target="_blank"><i className="fa fa-download"></i> Download</a>
+              <a className={style.download_link} onClick = {handleDownload} href = {`${process.env.REACT_APP_BACKEND_URL}`+bookData.downloadLink} download = "bookname.pdf" target="_blank" rel="noreferrer" ><i className="fa fa-download"></i> Download</a>
                 
             </div>
           </div>

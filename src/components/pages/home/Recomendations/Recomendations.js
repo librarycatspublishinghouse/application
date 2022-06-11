@@ -2,21 +2,15 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import style from './Recomendations.module.css'
 import Card from './Card/Card';
-import Carousel from '../../../Carousel/Carousel';
-import Flickity from 'react-flickity-component';
-import News from '../News/News';
+
 
 
 function Recomendations(props) {
 
     const[Cards, setCards] = useState([])
-    const[Author, setAuthor] = useState([])
+
     const[number, setNumber] = useState(5)
 
-    const flickityOptions1 = {
-        initialIndex: 0,
-      
-      }
 
     const updateNumber = () => {
         if (window.innerWidth > 1500){
@@ -54,7 +48,7 @@ function Recomendations(props) {
             }
             
             for (var i = 0 ; i < max; i++){
-                if ((props.dontInclude === null) || (props.dontInclude != req.data[i]._id)) {
+                if ((props.dontInclude === null) || (props.dontInclude !== req.data[i]._id)) {
                     var cardDic = {};
                     cardDic.id = req.data[i]._id;
                     cardDic.bookName = req.data[i].title;
@@ -86,21 +80,13 @@ function Recomendations(props) {
 
 
     async function getAuthor(id) {
-        console.log("getting author: ",id);
-        const filt = "hey";
+
         const req = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/author/get-authors/`+id);
         console.log("author response: ",req);
         return (req.data[0].firstName +" "+ req.data[0].otherNames);
     }
 
-   const handleClick = (e) => {
 
-       console.log("clicked")
-       postToDB();
-   }
-   const postToDB = async() => {
-       const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/create`);
-   }
 
    const cardObject = () => {
        if (number === 5){
@@ -122,6 +108,7 @@ function Recomendations(props) {
                         
                     )
                 }
+                return(<></>)
         
             })
     

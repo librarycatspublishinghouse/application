@@ -9,7 +9,7 @@ function BestSeller(props) {
 
     const[Cards, setCards] = useState([])
     const[number, setNumber] = useState(5)
-    
+
 
     const updateNumber = () => {
         if (window.innerWidth > 1500){
@@ -104,6 +104,7 @@ function BestSeller(props) {
                          
                      )
                  }
+                 return (<></>)
          
              })
      

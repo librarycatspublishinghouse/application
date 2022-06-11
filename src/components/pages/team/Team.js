@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheetManager } from 'styled-components';
 import style from './Team.module.css';
 
 

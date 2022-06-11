@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+
 import style from './News.module.css'
 
 
@@ -39,7 +39,7 @@ return (
                     NEWS
                 </div>
                 <div className={style.news_image}>
-                    <img className = {style.image} src = "https://via.placeholder.com/150"></img>
+                    <img className = {style.image} src = "https://via.placeholder.com/150" alt=""></img>
                 </div>
             </div>
         </div>
