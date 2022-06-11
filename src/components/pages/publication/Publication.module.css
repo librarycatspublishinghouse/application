@@ -118,3 +118,42 @@
     padding-left: 50px;
     padding-top: 10px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .top_container{
+        
+        grid-template-columns: 1.2fr 1.8fr;
+        grid-template-areas: 
+                "left right"
+                "both both"; 
+    }
+
+    .author_main_container{
+        margin-top: 20px;
+        grid-area: both; 
+    }
+    
+    
+}
+
+@media only screen and (max-width: 770px) {
+    .top_container{
+        display:inline-block;
+       }
+
+    .author_main_container{
+        margin-top: 50px;
+        
+    }
+    .book_main_container{
+        margin-top:30px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .image_item{
+        object-fit:fill;
+        width: 250px ;
+        
+    }
+    
+}
