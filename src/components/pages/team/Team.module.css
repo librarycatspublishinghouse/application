@@ -20,14 +20,23 @@
 
     text-align: left;
     width: 900px;
+    max-width: 100%;
     font-family: barlow-medium, barlow, sans-serif
 }
+
+.member_item{
+    margin-left:10px;
+    margin-right: 10px;
+}
 .leadership_title{
+    margin-left: 10px;
     font-size: 26px;
     font-weight: 100;
     margin-top: 40px;
     color: rgb(111, 118, 199);
 }
+
+
 .member_name{
     margin-top: 30px;
     font-size: 24px;
@@ -45,4 +54,6 @@
     font-size: 16px;
     
     margin-top: 10px;
+
+
 }
