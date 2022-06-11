@@ -2,17 +2,49 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import style from './Recomendations.module.css'
 import Card from './Card/Card';
-
+import Carousel from '../../../Carousel/Carousel';
+import Flickity from 'react-flickity-component';
+import News from '../News/News';
 
 
 function Recomendations(props) {
 
     const[Cards, setCards] = useState([])
     const[Author, setAuthor] = useState([])
+    const[number, setNumber] = useState(5)
+
+    const flickityOptions1 = {
+        initialIndex: 0,
+      
+      }
+
+    const updateNumber = () => {
+        if (window.innerWidth > 1500){
+            console.log("5")
+            setNumber(5)
+        }
+        else if (window.innerWidth > 1210){
+            console.log("4")
+            setNumber(4)
+            
+        } else if (window.innerWidth > 920){
+            console.log("3")
+            setNumber(3)
+
+        } else if (window.innerWidth > 640){
+            console.log("2")
+            setNumber(2)
+        } else{
+            console.log("1")
+            setNumber(1)
+        }
+    }
 
     useEffect(()=>{
+
+
         async function fetchCards(){
-            const req = await axios.get(`https://spread-the-word.herokuapp.com/api/publication/get-first-five`);
+            const req = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/publication/get-first-five`);
             console.log(req);
             var cardDicArray = [];
             var max = req.data.length
@@ -45,9 +77,11 @@ function Recomendations(props) {
             await setCards(cardDicArray);
             
         }
-       
+        updateNumber();
         console.log("called");
         fetchCards();
+        window.addEventListener("resize",updateNumber);
+        return() => window.removeEventListener("resize", updateNumber)
     },[props.dontInclude]);
 
 
@@ -68,6 +102,67 @@ function Recomendations(props) {
        const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/create`);
    }
 
+   const cardObject = () => {
+       if (number === 5){
+            return(
+                Cards.map((card, i = 0) => {
+                    return(
+                        <Card className = {style.card_item} authorname = {card.authorName} bookname = {card.bookName} imageLink = {card.thumbnailLink} publicationID = {card.id}/>
+                    )
+                
+                })
+           )
+       }
+       else if (number < 5){
+           return(Cards.map((card, i=0) => {
+                if (i < number){
+                    return(
+                        
+                        <Card className = {style.card_item} authorname = {card.authorName} bookname = {card.bookName} imageLink = {card.thumbnailLink} publicationID = {card.id}/>
+                        
+                    )
+                }
+        
+            })
+    
+                
+
+
+       )
+        /*<Flickity
+                className={'carousel'} // default ''
+                elementType={'div'} // default 'div'
+                options={flickityOptions1} // takes flickity options {}
+                disableImagesLoaded={false} // default false
+                reloadOnUpdate // default false
+                static // default false
+                
+                
+                
+                >
+                
+     
+                    
+                        {
+                            Cards.map((card) => {
+                                return(
+                        
+                                    <Card className = {style.card_item} authorname = {card.authorName} bookname = {card.bookName} imageLink = {card.thumbnailLink} publicationID = {card.id}/>
+                                    
+                                    )
+                            
+                                })
+            
+                        }
+
+                    </Flickity> */
+                    
+           
+                    
+             
+       }
+   }
+
     return (
         <div>
             {/*
@@ -78,13 +173,10 @@ function Recomendations(props) {
         </div>
     */}
         <div className= {style.cards_container}>
-            
-            {Cards.map((card) => {
-               
-                return(
-                <Card className = {style.card_item} authorname = {card.authorName} bookname = {card.bookName} imageLink = {card.thumbnailLink} publicationID = {card.id}/>
-                )
-            })}
+
+
+             {  cardObject()
+                 }
         </div>
         </div>
     );
