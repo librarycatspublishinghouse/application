@@ -114,3 +114,30 @@
     padding-left: 50px;
     padding-top: 10px;
 }
+
+@media only screen and (max-width: 950px) {
+
+    .author_main_container{
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .image_item{
+        
+        width: 250px ;
+    }
+        
+}
+@media only screen and (max-width: 650px) {
+
+    .top_container{
+        display:inline-block;
+        padding-top: 35px;
+    }
+    .author_name{
+        margin-top: 15px;
+    }
+        
+}
