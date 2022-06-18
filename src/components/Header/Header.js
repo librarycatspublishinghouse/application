@@ -1,6 +1,7 @@
 
 import style from './Header.module.css';
 import { NavLink } from './HeaderElements';
+import { NavLink as Link } from 'react-router-dom';
 
 
 const Header = ({toggle}) => {
@@ -20,14 +21,14 @@ const Header = ({toggle}) => {
                 <div className = {style.header_logo_container}>
                    
                     <div className = {style.header_logo} >
-                        <NavLink to = "/">
-                            <img src = "/pictures/SpreadTheWord-Logo-png.webp" alt = "logo"/>
-                        </NavLink>
+                        <Link to = "/">
+                            <img className={style.logo_item} src = "/pictures/site-logo-white-bg.jpeg" alt = "logo"/>
+                        </Link>
                     </div>
                 </div>
 
                 <div className ={style.header_inner_container}>
-                    <a className = {style.logo_texts} href = "https://www.spreadthewordbooks.com/">
+                    <Link className = {style.logo_texts} to = "/">
                         <div className = "page-title-container">
                             <div className = {style.page_title_text}>
                                 <span> SPREAD THE WORD </span>
@@ -39,7 +40,7 @@ const Header = ({toggle}) => {
                                 The Digital Book Publisher
                             </div> 
                         </div>
-                    </ a>
+                    </ Link>
                 </div>
                 <div className  = {style.navbar_items_container}>
                     <div className = {style.nav_list_container}>
