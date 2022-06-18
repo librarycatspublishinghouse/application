@@ -71,7 +71,7 @@
     border-width:0px;
     border:none;
     font-size: 18px;
-    font-family: "Sabon",serif;
+    font-family:  barlow, sans-serif;
     color: rgb(111, 119, 199);
     opacity: 100%;
 }
@@ -89,7 +89,7 @@
     height: 60px;
     color: white;
     font-size: 14px;
-    font-family: "Sabon",serif;
+    font-family:  barlow, sans-serif;
     font-weight: 200;
 }
 .submit_butn:hover{
