@@ -12,7 +12,7 @@
     height: 490px;
     width:100%;
    
-    z-index: 2000;
+    z-index: 900;
     position: relative;
     
     
@@ -28,7 +28,7 @@
     position: absolute;
     background-color: white;
     bottom: 0;
-    z-index: 999;
+    z-index: 900;
     height:60px;
     width:100%;
     transition: ease-in-out 0.25s;
@@ -86,7 +86,7 @@
     height: 430px;
     width:100%;
    
-    z-index: 2000;
+    z-index: 901;
     position: relative;
     
     
