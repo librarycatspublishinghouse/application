@@ -2,29 +2,31 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import style from './EmailSubmission.module.css'
 
-const initialValues = {
-    input_text: "",
-};
+
 
 function EmailSubmission() {
 
-    const [emails, setEmail] = useState(initialValues);
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setEmail({
-            ...emails,
-            [name] : value,
-        });
+    const [emails, setEmail] = React.useState("");
+    const handleEmailChange = (e) => {
+  
+      const {value} = e.target
+        setEmail(value);
     };
-
+  
     const handleSubmit = (e) => {
         console.log("handling email input: ",emails.input_text);
-        postSubmit(emails.input_text)
+        postSubmit(emails)
     }
-
+  
     const postSubmit = async (email) =>{
         const request = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/emailSubscription/create-new-email-subscription/`+email);
-        console.log(request.status);
+        if (request.status == 200){
+          console.log("submitted: ",email)
+        }
+        else {
+          console.log("error submitting")
+        }
+        setEmail("")
     }
 
     return (
@@ -46,8 +48,8 @@ function EmailSubmission() {
                                 type="email"
                                 id = "input_text"
                                 name = "input_text"
-                                value = {emails.input_text}
-                                onChange = {handleInputChange}
+                                value = {emails}
+                                onChange = {handleEmailChange}
                                 placeholder = "Enter your email">
                                     
 
