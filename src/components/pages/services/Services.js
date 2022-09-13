@@ -4,23 +4,21 @@ import style from './Services.module.css';
 
 function Services() {
   return (
-    <div className="Services">
-      <div className = {style.page_title} >
-         SERVICES
-      </div>
-      <div className = {style.underline}>
-      </div>
+    <div className={style.services}>
 
 
       <div className = {style.info_block}>
-        <div className = {style.image_container}>
-        <img className = {style.image_item} src="pictures/hands.webp" alt=""/>  
 
+        <div className = {style.image_container}>
+          <img className = {style.image_item} src="pictures/services/hands.webp" alt=""/>  
         </div>
+
         <div className = {style.info_container}>
           
+          <div className={style.info_title}>
             EQUAL OPPORTUNITY TO ALL MANUSCRIPTS
-          
+          </div>
+
           <ul >
             <li>
               The opportunity to submit a manuscript for us to read.
@@ -37,11 +35,8 @@ function Services() {
       </div>
 
 
-      <div className = {style.info_block}>
-        <div className = {style.image_container}>
-        <img className = {style.image_item} src="pictures/edit_design.webp" alt=""/>  
-
-        </div>
+      <div className = {style.info_block_left_text}>
+        
         <div className = {style.info_container}>
           
         EDITING AND DESIGN
@@ -56,6 +51,10 @@ function Services() {
             
           </ul>
         </div>
+        <div className = {style.image_container} style = {{justifyContent:'flex-end'}}>
+        <img className = {style.image_item} src="pictures/services/design.webp"  alt=""/>  
+
+        </div>
         
       </div>
 
@@ -63,7 +62,7 @@ function Services() {
 
       <div className = {style.info_block}>
         <div className = {style.image_container}>
-        <img className = {style.image_item} src="pictures/books.webp" alt=""/>  
+        <img className = {style.image_item} src="pictures/services/books.webp" alt=""/>  
 
         </div>
         <div className = {style.info_container}>
