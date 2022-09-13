@@ -1,0 +1,49 @@
+.mission {
+    background-image: url('./../../../../public/pictures/mission/mission-page-background.webp');
+    min-height: 800px;
+    background-size: 2450px;  
+}
+
+.mission_container {
+    padding-top: 155px;
+    width: 66%;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+.mission_title {
+    text-align: left;
+    font-family: barlow-medium,barlow,sans-serif;
+    font-size: 44px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.mission_info_container {
+ background-color: white;
+ border-radius: 10px;
+ padding: 30px 10%;
+}
+
+.mission_info {
+    font-family: barlow-medium,barlow,sans-serif;
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 1260px) {
+    .mission_info {
+        font-family: barlow-medium,barlow,sans-serif;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .mission_info {
+        font-family: barlow-medium,barlow,sans-serif;
+        font-size: 24px;
+    }
+    .mission_container {
+        min-width: 400px;
+    }
+}
