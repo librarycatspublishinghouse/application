@@ -1,7 +1,7 @@
 .mission {
     background-image: url('./../../../../public/pictures/mission/mission-page-background.webp');
     min-height: 800px;
-    background-size: 2450px;  
+    background-size: 2650px;  
 }
 
 .mission_container {
@@ -23,6 +23,7 @@
 .white_box_image {
     height: 1250px;
     width: 100%;
+
 
 }
 

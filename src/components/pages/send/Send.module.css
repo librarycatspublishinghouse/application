@@ -1,7 +1,7 @@
 .send{
-    background-image: url('../../../../public/pictures/send/send-background.webp');
-    padding-top:100px;
-    padding-bottom: 140px;
+    background-image: url('../../../../public/pictures/send/send-background.png');
+    padding-top:80px;
+    padding-bottom: 70px;
 }
 
 
@@ -47,7 +47,7 @@
 }
 
 .share_title{
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 40px;
     text-align: center;
     font-family: barlow-medium, barlow, sans-serif;
