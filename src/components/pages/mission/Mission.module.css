@@ -21,7 +21,7 @@
 }
 
 .white_box_image {
-    height: 1250px;
+    height: 80vw;
     width: 100%;
 
 
@@ -46,23 +46,14 @@
 }
 
 @media only screen and (max-width: 1260px) {
-    .mission_info {
-        font-family: barlow-medium,barlow,sans-serif;
-        font-size: 30px;
-    }
-    .white_box_image {
-        height: 1100px;
-        width: 100%;
-    
-    }
+
+ 
 }
 
 @media only screen and (max-width: 860px) {
-    .mission_info {
-        font-family: barlow-medium,barlow,sans-serif;
-        font-size: 24px;
-    }
+ 
     .mission_container {
         min-width: 400px;
     }
+
 }
