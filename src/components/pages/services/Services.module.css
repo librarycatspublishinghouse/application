@@ -25,15 +25,18 @@
     margin-bottom: 60px;
 }
 .info_container{
-    background-color: white;
-    border-radius: 10px;
+
     margin-top:7%;
     margin-bottom: 10%;
-    padding:10px;
+  
 
     font-family: barlow-medium, barlow, sans-serif;
     font-size: 22px;
     text-align: left;
+
+    
+    position: relative;
+    text-align: center;
     
 }
 .info_title {
@@ -47,6 +50,15 @@
     justify-content: flex-start;
 
 }
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
 .image_item{
     text-align: unset;
     width: auto;

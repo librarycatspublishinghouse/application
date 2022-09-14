@@ -13,14 +13,14 @@ function Send() {
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-2.webp" alt = ""/> 
+            <img className = {style.list_item_image} src="pictures/send/elipse-2.png" alt = ""/> 
               <div className={style.list_item_text}>
                 IT IS COMPLETELY FREE!
               </div>
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-3.webp" alt = ""/> 
+            <img className = {style.list_item_image} src="pictures/send/elipse-3.png" alt = ""/> 
               <div className={style.list_item_text}>
                 WE READ ALL THE MANUSCRIPTS
               </div>
@@ -41,7 +41,7 @@ function Send() {
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-6.webp" alt = ""/> 
+            <img className = {style.list_item_image} src="pictures/send/elipse-6.png" alt = ""/> 
             <div className={style.list_item_text}>
               IT IS YOUR CHANCE TO GET PUBLISHED!
             </div>

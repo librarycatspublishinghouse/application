@@ -1,14 +1,19 @@
+.home {
+    background-image: url('../../../../public/pictures/home/homepage-background.webp');
+}
+
+
+
 .card_list_title{
-    text-align: left;
+    text-align: center;
     font-weight: 700;
-    font-size: 21px;
+    font-size: 36px;
     font-family: sans-serif;
     padding-left: 50px;
-    padding-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
-.seperator{
-    margin-bottom: 30px;
-}
+
 
 #Flickity{
     width: 100%;
