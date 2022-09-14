@@ -5,52 +5,71 @@ import style from  './Send.module.css';
 function Send() {
   return (
     <div className= {style.send}>
-      <div className = {style.title}>
-      SEND US YOUR MANUSCRIPT
-      </div>
-      <div className = {style.undedrline}>
-        {/* TODO */}
-      </div>
       <div className = {style.reasons_container}>
-        <div className = {style.reasons_title}>
-        Reasons to send your manuscript over
-        </div>
-        <div className = {style.reasons_list}>
-          <li>
-            <ul className = {style.list_item}>
-            It is completely free!
-            </ul>
-            <ul className = {style.list_item}>
-            We read all the manuscripts
-            </ul>
-            <ul className = {style.list_item}>
-            We offer one-to-one feedback sessions
-            </ul>
-            <ul className = {style.list_item}>
-            We always provide constructive feedback
-            </ul>
-            <ul className = {style.list_item}>
-            It is your chance to get published! Send us your manuscript!
-            </ul>
-          </li>
-        </div>
+          <div className = {style.list_item}>
+            <div className={style.title}>
+              REASONS TO SEND YOUR MANUSCRIPT OVER
+            </div>
+          </div>
+
+          <div className = {style.list_item}>
+            <img className = {style.list_item_image} src="pictures/send/elipse-2.webp" alt = ""/> 
+              <div className={style.list_item_text}>
+                IT IS COMPLETELY FREE!
+              </div>
+          </div>
+
+          <div className = {style.list_item}>
+            <img className = {style.list_item_image} src="pictures/send/elipse-3.webp" alt = ""/> 
+              <div className={style.list_item_text}>
+                WE READ ALL THE MANUSCRIPTS
+              </div>
+          </div>
+
+          <div className = {style.list_item}>
+            <img className = {style.list_item_image} src="pictures/send/elipse-4.webp" alt = ""/> 
+            <div className={style.list_item_text}>
+              WE OFFER ONE-TO-ONE FEEDBACK SESSIONS
+            </div>
+          </div>
+
+          <div className = {style.list_item}>
+            <img className = {style.list_item_image} src="pictures/send/elipse-5.png" alt = ""/> 
+            <div className={style.list_item_text}>
+              WE ALWAYS PROVIDE CONSTRUCTIVE FEEDBACK
+            </div>
+          </div>
+
+          <div className = {style.list_item}>
+            <img className = {style.list_item_image} src="pictures/send/elipse-6.webp" alt = ""/> 
+            <div className={style.list_item_text}>
+              IT IS YOUR CHANCE TO GET PUBLISHED!
+            </div>
+          </div>
+
       </div>
+
     <div className = {style.share_title}>
-    Share with us here:
+      SHARE WITH US HERE: 
     </div>
+
     <div className = {style.share_link}>
       <a className  = {style.share_link_item} 
       href = "https://drive.google.com/drive/folders/1ks8O0zIi7s8sqypEMzI7JD9QgJBkFTvE?usp=sharing">
-        https://drive.google.com/drive/folders/1ks8O0zIi7s8sqypEMzI7JD9QgJBkFTvE?usp=sharing
+        <img className = {style.wobly_box} src="pictures/send/google-drive-box.webp" alt = ""/> 
+        <div className={style.google_drive_text}>
+          <span className={style.google}>Google </span> <span className={style.drive}>Drive</span>
+        </div>
       </a>
 
     </div>
+
     <div className = {style.share_info}>
-    Please add your name and email to the manuscript
+      PLEASE ADD YOUR NAME AND EMAIL TO THE MANUSCRIPT
     </div>
 
     </div>
-    );
+  );
 }
 
 export default Send;
