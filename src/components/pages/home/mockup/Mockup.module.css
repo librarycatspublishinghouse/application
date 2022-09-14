@@ -1,0 +1,45 @@
+.mockup{
+    height: 350px;
+    width:300px;
+
+}
+.images_container {
+    position: absolute;
+
+
+}
+
+.ipad_outline {
+    position: absolute;
+    width:300px;
+    z-index: 2;
+}
+
+.iphone_outline {
+    position: absolute;
+    width:300px;
+    z-index: 2;
+}
+
+
+.book_thumbnail_ipad {
+    width: 225px;
+    position: absolute;
+    top:11px;
+    left: 65px;
+
+    height: 310px;
+    object-fit:fill;
+    z-index: 0;
+}
+.book_thumbnail_iphone{
+    width: 85px;
+    position: absolute;
+    top:147px;
+    left:5px;  
+    height: 185px;
+    border-radius: 10px;
+    object-fit:cover;
+    z-index: 1;
+
+}

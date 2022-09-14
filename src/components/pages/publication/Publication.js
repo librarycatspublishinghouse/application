@@ -98,7 +98,7 @@ function Publication() {
         <div className= {style.recomendations_text}>
           Recomended
         </div>
-        <Recomendations id = {params.id} />
+        <Recomendations id = {params.id} dontInclude = {params.id}/>
     </div>
 
     );

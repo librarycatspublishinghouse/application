@@ -14,6 +14,7 @@ import NewsCard from '../../NewsCard/NewsCard';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import Mockup from './mockup/Mouckup';
 
 const flickityOptions = {
     initialIndex: 0
@@ -68,9 +69,11 @@ function Home() {
        
 
       <div className = {style.card_list_title}>
-            Recomendations
+            RECOMENDATIONS
       </div>
-      <Recomendations dontInclude = {null} />
+
+      <BestSeller />
+     
 
       {/* <Flickity
       className={'carousel'} // default ''
@@ -92,8 +95,9 @@ function Home() {
       </Flickity> */}
   
       <div className = {style.card_list_title}>
-            Best Seller
+            BEST SELLERS
       </div>
+
       <BestSeller />
       {/* <EmailSubmission /> */}
       

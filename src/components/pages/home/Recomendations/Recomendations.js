@@ -38,8 +38,10 @@ function Recomendations(props) {
 
 
         async function fetchCards(){
-            const req = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/publication/get-first-five`);
-            console.log(req);
+            console.log("recomendations")
+            const req = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/publication/get-all`);
+            console.log("recomendations response: ",req);
+            console.log("recomendations dont include: ", props.dontInclude)
             var cardDicArray = [];
             var max = req.data.length
             //if max > 5 then set max to 5
@@ -48,6 +50,7 @@ function Recomendations(props) {
             }
             
             for (var i = 0 ; i < max; i++){
+                console.log(i)
                 if ((props.dontInclude === null) || (props.dontInclude !== req.data[i]._id)) {
                     var cardDic = {};
                     cardDic.id = req.data[i]._id;
@@ -60,8 +63,9 @@ function Recomendations(props) {
                 }
             
                 else{
+                    console.log("dont include: ",props.dontInclude)
                     if (props.dontInclude != null){
-                        if(max++ > req.data.length){
+                        if(max + 1  <= req.data.length){
                             max++;
                         }
                     }

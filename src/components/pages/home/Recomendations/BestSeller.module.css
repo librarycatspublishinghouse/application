@@ -1,0 +1,10 @@
+
+
+.books_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mockup_item {
+    margin: 0 auto;
+}
