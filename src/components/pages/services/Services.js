@@ -19,7 +19,7 @@ function Services() {
               EQUAL OPPORTUNITY TO ALL MANUSCRIPTS
             </div>
 
-            <ul >
+            <ul  className={style.info_list}>
               <li>
                 The opportunity to submit a manuscript for us to read.
               </li>
@@ -41,7 +41,7 @@ function Services() {
         <img className = {style.info_box_image} src="pictures/services/white-box-2.svg"  alt=""/> 
           <div className={style.info}>
             EDITING AND DESIGN         
-            <ul >
+            <ul className={style.info_list}>
               <li>
                 Professional editing of the book if we decide to publish.
               </li>
@@ -70,7 +70,7 @@ function Services() {
           <div className={style.info}>
             PUBLICATION AND EXPOSURE
             
-            <ul >
+            <ul  className={style.info_list}>
               <li>
               Publication of the finalised book on our website.
               </li>

@@ -59,6 +59,9 @@
     transform: translate(-50%, -50%);
     width: 90%;
 }
+.info_list {
+    text-align: left;
+}
 
 .image_item{
     text-align: unset;
