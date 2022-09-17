@@ -47,8 +47,8 @@ function Home() {
 
   return (
     <div className={style.home}>
-
-      <Flickity
+      <img className = {style.banner_add} src="pictures/home/banner-add.jpg"  alt=""/> 
+      {/* <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'
             options={flickityOptions} // takes flickity options {}
@@ -59,7 +59,7 @@ function Home() {
             {[
             <News title = "Test Title" description = {placeholder} html_code = {<> </>}/> ,
             <News title = "Test Title2" description = {placeholder} html_code = {<> </>}/> ]}
-          </Flickity>
+          </Flickity> */}
             
           
               
