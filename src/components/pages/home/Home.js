@@ -47,7 +47,7 @@ function Home() {
 
   return (
     <div className={style.home}>
-      <img className = {style.banner_add} src="pictures/home/banner-add.jpg"  alt=""/> 
+      <img className = {style.banner_add} src="pictures/home/banner-add.webp"  alt=""/> 
       {/* <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'

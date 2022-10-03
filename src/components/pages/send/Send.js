@@ -13,14 +13,14 @@ function Send() {
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-2.png" alt = ""/> 
+            <img className = {style.list_item_image} src="pictures/send/elipse-2.webp" alt = ""/> 
               <div className={style.list_item_text}>
                 IT IS COMPLETELY FREE!
               </div>
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-3.png" alt = ""/> 
+            <img className = {style.list_item_image} src="pictures/send/elipse-3.webp" alt = ""/> 
               <div className={style.list_item_text}>
                 WE READ ALL THE MANUSCRIPTS
               </div>
@@ -34,14 +34,14 @@ function Send() {
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-5.png" alt = ""/> 
+            <img className = {style.list_item_image} src="pictures/send/elipse-5.webp" alt = ""/> 
             <div className={style.list_item_text}>
               WE ALWAYS PROVIDE CONSTRUCTIVE FEEDBACK
             </div>
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-6.png" alt = ""/> 
+            <img className = {style.list_item_image} src="pictures/send/elipse-6.webp" alt = ""/> 
             <div className={style.list_item_text}>
               IT IS YOUR CHANCE TO GET PUBLISHED!
             </div>
