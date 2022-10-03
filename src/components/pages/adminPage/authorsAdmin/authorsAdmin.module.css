@@ -1,0 +1,35 @@
+.create_item{
+    background-color: bisque;
+    width: 100px;
+    margin: 0 auto
+}
+.create_item:hover {
+    cursor: pointer;
+}
+
+
+.image {
+
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 35px;
+
+}
+
+
+.image_item  {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 50%;
+
+}
+.delete_item{
+    background-color: rgb(247, 165, 165);
+    width: 100px;
+    margin: 0 auto
+}
+.delete_item:hover{
+    cursor: pointer;
+}
