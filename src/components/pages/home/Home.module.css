@@ -2,6 +2,7 @@
     background-image: url('../../../../public/pictures/home/homepage-background.webp');
     background-size: 2700px;
     padding-bottom: 120px;
+    min-height: 600px;
 
 
 }

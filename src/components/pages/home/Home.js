@@ -47,7 +47,9 @@ function Home() {
 
   return (
     <div className={style.home}>
+      {/* 
       <img className = {style.banner_add} src="pictures/home/banner-add.webp"  alt=""/> 
+       */}
       {/* <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'
@@ -67,12 +69,12 @@ function Home() {
 
           
        
-
+{/* 
       <div className = {style.card_list_title}>
             RECOMENDATIONS
       </div>
 
-      <BestSeller />
+      <BestSeller /> */}
      
 
       {/* <Flickity
@@ -94,11 +96,11 @@ function Home() {
         })}
       </Flickity> */}
   
-      <div className = {style.card_list_title}>
+      {/* <div className = {style.card_list_title}>
             BEST SELLERS
       </div>
 
-      <BestSeller />
+      <BestSeller /> */}
       {/* <EmailSubmission /> */}
       
     </div>

@@ -59,17 +59,17 @@ function Footer() {
             <div className =  {style.social_media_list}>
               <li className =  {style.social_media_list_item}>
                 <a href = "https://www.instagram.com/spreadthewordbookpublisher/?hl=es" target = "_blank" rel="noreferrer">
-                  <img className={style.social_media_item_image} src = '/pictures/insta.webp' alt = "instagram link" />
+                  <img className={style.social_media_item_image} src = '/pictures/instagram.png' alt = "instagram link" />
                 </a> 
               </li>
               <li className =  {style.social_media_list_item}>
                 <a href = "https://twitter.com/SpreadtheWordEd" target = "_blank" rel="noreferrer">
-                  <img className={style.social_media_item_image} src = "/pictures/twitter.webp" alt = "twitter link" />
+                  <img className={style.social_media_item_image} src = "/pictures/twitter.png" alt = "twitter link" />
                 </a> 
               </li>
               <li className =  {style.social_media_list_item}>
                 <a href = "https://www.linkedin.com/company/spread-the-word-book-publisher" target = "_blank" rel="noreferrer">
-                  <img className={style.social_media_item_image} src = "/pictures/linkedin.webp" alt = "linkedin link"/>
+                  <img className={style.social_media_item_image} src = "/pictures/linkedin.png" alt = "linkedin link"/>
                 </a> 
               </li>
               <li className =  {style.social_media_list_item}>
