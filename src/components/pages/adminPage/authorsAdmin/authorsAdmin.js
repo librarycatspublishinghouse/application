@@ -3,7 +3,7 @@ import style from './authorsAdmin.module.css';
 import {useEffect, useState} from 'react';
 import axios from 'axios';
 import CreateNewAuthor from './CreateNewAuthor';
-import { render } from 'react-dom';
+
 // get all authors infomation from db
 
 //allow user to delete edit or create authors

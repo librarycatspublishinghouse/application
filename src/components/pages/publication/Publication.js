@@ -22,20 +22,27 @@ function Publication() {
         console.log("fetching book for page: ",resp.data[0]);
         
         
-        const authorID = resp.data[0].authorID;
+        const authorID = resp.data[0]?.authorID;
+        
         console.log("author id: ", authorID)
       
         
-        //author data
-        var respAuthor = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/author/get-authors/`+authorID);
+        //set author data
+        if (authorID){
+          var respAuthor = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/author/get-authors/`+authorID);
         
-        console.log("fetching data for author: ",respAuthor.data[0]);
+          console.log("fetching data for author: ",respAuthor.data[0]);
+          
+          //substring author info string
+          respAuthor.data[0].info = respAuthor.data[0].info.substring(0,500)+"...";
 
-        //substring author info string
-        respAuthor.data[0].info = respAuthor.data[0].info.substring(0,500)+"...";
-
+        
+          setAuthorData(respAuthor.data[0] );
+        }
+      
+        
         setBookData(resp.data[0]);
-        setAuthorData(respAuthor.data[0])
+    
       }
     console.log("hello")
     fetchPublication(params.id);
@@ -54,6 +61,46 @@ function Publication() {
 
   }
 
+  const renderAuthorName = () => {
+    console.log("author data: ",authorData);
+    if (authorData?.firstName || authorData?.otherNames){
+      return (
+        <>
+          {authorData.firstName + " " + authorData.otherNames}
+        </>
+      )
+    }
+    }
+
+  const renderAuthorData = () => {
+    if (bookData?.authorID) {
+      return(
+        <>
+          <div className = {style.author_name}>
+            {renderAuthorName()}
+          </div>
+          <div className= {style.author_description}>
+            {authorData.info}
+          </div>
+          <div className={style.author_link}>
+            <Link to = {"/author/"+authorData._id}  >
+              author link
+            </Link>
+          </div>
+    
+        </>
+    
+     
+      );
+    }
+    else {
+      return (
+        <>
+        </>
+      )
+    }
+  }
+
   return (
     <div className= {style.publication} id = 'top'>
        
@@ -66,7 +113,7 @@ function Publication() {
 
           <div className= {style.book_main_container}>
             <div className={style.title_author}>
-              {authorData.firstName + " " + authorData.otherNames}
+              {renderAuthorName()}
             </div>
             <div className= {style.book_title}>
               {bookData.title}
@@ -82,23 +129,18 @@ function Publication() {
             </div>
           </div>
           <div className={style.author_main_container}>
-            <div className = {style.author_name}>
-              {authorData.firstName + " " + authorData.otherNames}
-            </div>
-            <div className= {style.author_description}>
-              {authorData.info}
-            </div>
-            <div className={style.author_link}>
-              <Link to = {"/author/"+authorData._id}  >
-                author link
-              </Link>
-            </div>
+            {renderAuthorData()}
           </div>
+            
         </div>
-        <div className= {style.recomendations_text}>
-          Recomended
-        </div>
-        <Recomendations id = {params.id} dontInclude = {params.id}/>
+
+      {/*     
+      TODO Bring back recomendations when more books are added    
+              <div className= {style.recomendations_text}>
+                Recomended
+              </div>
+              <Recomendations id = {params.id} dontInclude = {params.id}/>
+          </div> */}
     </div>
 
     );

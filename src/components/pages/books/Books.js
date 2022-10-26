@@ -16,7 +16,7 @@ function Books(props) {
     useEffect(()=>{
         async function fetchCards(){
             const req = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/get-books-query`,{search_query: search_query.input_text, page_number: 1, sort_by: sort_type});
-            console.log(req);
+            console.log("fetch books: ",req);
             var cardDicArray = [];
          
             
@@ -25,7 +25,11 @@ function Books(props) {
                     var cardDic = {};
                     cardDic.id = req.data[i]._id;
                     cardDic.bookName = req.data[i].title;
-                    const authorNames =  await getAuthor(req.data[i].authorID);
+                    const authorNames = "";
+                    if (req.data[i]?.authorID) {
+                        authorNames = await getAuthor(req.data[i].authorID);
+                    }
+
                     console.log("author name: ",authorNames);
                     cardDic.authorName = authorNames;
                     cardDic.thumbnailLink = req.data[i].thumbnailLink;
@@ -85,7 +89,7 @@ function Books(props) {
             var cardDic = {};
             cardDic.id = req.data[i]._id;
             cardDic.bookName = req.data[i].title;
-            const authorNames =  await getAuthor(req.data[i].authorID);
+            const authorNames =  await getAuthor(req.data[i].authorID) || null;
             console.log("author name: ",authorNames);
             cardDic.authorName = authorNames;
             cardDic.thumbnailLink = req.data[i].thumbnailLink;
@@ -136,12 +140,12 @@ function Books(props) {
         </div>
         <div className= {style.cards_container}>
             
-            {Cards.map((card) => {
+            {Cards.map((card, index) => {
                
                 return(
         
 
-                      <div className={style.card} >
+                      <div className={style.card} key = {index}>
             <Link className = {style.link} to = {"/publication/"+card.id}  >
             <div className= {style.card_inner}>
                 <div className= {style.image_container}>
