@@ -38,7 +38,7 @@ function Promo() {
                 </div>
 
                 <div className = {style.content_text}>
-                    contemporary subjects is a collection of gripping short stories from a group of newly published writers. <br />
+                    Contemporary subjects is a collection of gripping short stories from a group of newly published writers. <br />
                 </div>
                 
                 <div className = {style.download_text}>
@@ -70,7 +70,7 @@ function Promo() {
                 </div>
 
                 <div className = {style.content_text}>
-                    Strange journeys to deliver undisclosed packages through 'non-descript names of far-off hanlets no one wants,' war diaries, oppressive loneliness and abhorrence for other people, or the depths of intergenerational trauma, all form part of what are indeed contemporary subjects. Take part in this collection of short stories and explore these themes through the prose of our newly published writers. 
+                    Strange journeys to deliver undisclosed packages through 'non-descript names of far-off hamlets no one wants,' war diaries, oppressive loneliness and abhorrence for other people, or the depths of intergenerational trauma, all form part of what are indeed contemporary subjects. Take part in this collection of short stories and explore these themes through the prose of our newly published writers. 
                 </div>
             </div>
 
