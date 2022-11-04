@@ -15,6 +15,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 import Mockup from './mockup/Mouckup';
+import Promo from './Promo/Promo';
 
 const flickityOptions = {
     initialIndex: 0
@@ -47,9 +48,7 @@ function Home() {
 
   return (
     <div className={style.home}>
-      {/* 
-      <img className = {style.banner_add} src="pictures/home/banner-add.webp"  alt=""/> 
-       */}
+      <Promo />
       {/* <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'

@@ -1,0 +1,247 @@
+.background {
+    position: absolute;
+    top: 0;
+    height: 140vw;
+    left: 0;
+    right: 0;
+    background-color: #f8e7e0;
+    z-index: -1;
+}
+
+.link:link { text-decoration: none; color:black}
+
+
+.link:visited { text-decoration: none; color:black}
+
+
+.link:hover { text-decoration: none; color:black}
+
+
+.link:active { text-decoration: none; color:black}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner_image {
+    width: 100%;
+}
+
+.banner_button_container{
+    float: left;
+    position: absolute;
+    top: 57%;
+    left:40vw;
+    right: 23vw;
+    bottom: 19vw;  
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.banner_button {
+    height: 50px;
+    width: 200px;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0.2, 0, 0.2, 0.45);
+    background-color: white;
+    position: absolute;
+    
+}
+
+.banner_button:hover {
+    background-color: #f8e7e0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.banner_button_text {
+    position: relative;
+    line-height:50px;
+    
+  
+}
+.content_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 10% ;
+    padding-right: 10% ;
+
+}
+
+.content {
+    height: 100%;
+    padding-right: 10%;
+    padding-left: 5%;
+}
+.content_image_container {
+ 
+    height: 100%;
+    padding-left:10%;
+    padding-right:10%;
+}
+.content_image {
+    width: 100%;
+    
+}
+
+.content {
+    text-align: left;
+    padding-top: 10%;
+    padding-left:20%;
+}
+
+.content_title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    line-height: 46px;
+    margin-bottom: 15px
+
+}
+.content_title_orange{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #da5505;
+    line-height: 46px;
+    margin-bottom: 15px
+
+}
+
+.content_text {
+    margin-bottom: 10px;
+    color: black;
+    
+}
+.download_text {
+    color: black;
+    font-weight: 500;
+}
+
+.content_button_container {
+   
+    margin-top: 20px;
+}
+.content_button {
+    background-color: #da5505;
+    width: 220px;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.content_button:hover {
+    background-color: #c25410;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+    .content_title{
+        padding-top: 10%;
+        font-size: 26px;
+        line-height: 28px;
+    
+    }
+    .content_image_container {
+
+    }
+    .content_container{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .background {
+        height: 160vw;
+    }
+
+}
+@media only screen and (max-width: 950px) {
+    .content_container{
+        grid-template-columns: 1fr 1.3fr;
+    }
+    .book_cover{
+        margin-left: -30px;
+        width: 130%;
+    }
+    .background {
+        height: 175vw;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .background {
+        height: 275vw;
+    }
+    .content_text {
+        font-size: 14px;
+    }
+    .download_text {
+        font-size: 14px;
+    }
+    .banner_button {
+        height: 40px;
+        width: 150px;
+
+    }
+    .banner_button_text {
+        position: relative;
+        line-height:40px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .content {
+        padding-top: 80px;
+        padding-left:10%;
+    }
+    .content_image_container {
+        padding-top: 50px;
+        padding-left:0%;
+        padding-right:0%;
+    }
+    .content_text {
+        font-size: 14px;
+    }
+    .background {
+        height: 230vw;
+    }
+    .content_button {
+        width: 200px;
+    }
+    .banner_button {
+        height: 30px;
+        width: 110px;
+
+    }
+    .banner_button_text {
+        position: relative;
+        line-height:30px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .content_title{
+        font-size: 22px;
+        line-height: 24px;
+        
+    }
+    .content {
+        padding-top: 50px;
+        
+    }
+    .background {
+        height: 238vw;
+    }
+    .content_button {
+        width: 180px;
+    }
+}
