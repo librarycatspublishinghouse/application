@@ -19,7 +19,7 @@ function Promo() {
         <div className={style.background}>
         </div>
         <div className = {style.banner}>
-            <img  className ={style.banner_image} src = "/pictures/home/promos/contempary-subjects-banner.png" alt = "banner" />
+            <img  className ={style.banner_image} src = "/pictures/home/promos/contempary-subjects-banner.webp" alt = "banner" />
             <div className = {style.banner_button_container}>
                 <Link className = {style.link} to='/publication/63610b054837a84f9da92a32'>
                     <div className = {style.banner_button}>
@@ -56,12 +56,12 @@ function Promo() {
             </ div>
 
             <div className= {style.content_image_container}>
-            <img  className ={style.content_image} src = "/pictures/home/promos/ipad-cover.png" alt = "banner" />
+            <img  className ={style.content_image} src = "/pictures/home/promos/ipad-cover.webp" alt = "banner" />
             </div>    
         
             <div className = {style.content_image_container}>
                 <div className = {style.book_cover}>
-                    <img  className ={style.content_image} src = "/pictures/home/promos/book.png" alt = "banner" />
+                    <img  className ={style.content_image} src = "/pictures/home/promos/book.webp" alt = "banner" />
                 </div>
             </div>
             <div className = {style.content}>
