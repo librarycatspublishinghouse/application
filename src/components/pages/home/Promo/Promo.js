@@ -46,7 +46,7 @@ function Promo() {
                 </div>
                 
                 <div className = {style.content_button_container}>
-                    <a className={style.link} onClick = {handleDownload} href = {`${process.env.REACT_APP_BACKEND_URL}/files/publications/PDF/ContemporarySubject.pdf`} target="_blank">
+                    <a className={style.link} onClick = {handleDownload} href = {`${process.env.REACT_APP_BACKEND_URL}/files/publications/PDF/ContemporarySubjects.pdf`} target="_blank">
                         <div className = {style.content_button}>
                             Download
                         </div>
