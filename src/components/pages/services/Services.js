@@ -9,7 +9,7 @@ function Services() {
 
       <div className = {style.info_block}>
         <div className = {style.image_container}>
-          <img className = {style.image_item} src="pictures/services/hands.svg" alt=""/>  
+          <img className = {style.image_item} src="pictures/services/hands.webp" alt=""/>  
         </div>
 
         <div className = {style.info_container}>
@@ -54,7 +54,7 @@ function Services() {
 
         </div>
         <div className = {style.image_container} style = {{justifyContent:'flex-end'}}>
-        <img className = {style.image_item} src="pictures/services/design.svg"  alt=""/>  
+        <img className = {style.image_item} src="pictures/services/design.webp"  alt=""/>  
         </div>       
       </div>
 
@@ -62,7 +62,7 @@ function Services() {
 
       <div className = {style.info_block}>
         <div className = {style.image_container}>
-        <img className = {style.image_item} src="pictures/services/books.svg" alt=""/>  
+        <img className = {style.image_item} src="pictures/services/books.webp" alt=""/>  
 
         </div>
         <div className = {style.info_container}>
