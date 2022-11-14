@@ -107,37 +107,39 @@ function Books(props) {
         
 
         <div lassName= {style.cards_container_container}>
+            
 
-        <div className= {style.search_container}>
+        {/* <div className= {style.search_container}>
             <div className={style.inner_container}>
-            <div className={style.form}>
-                <input 
-                    className = {style.textbox}
-                    type="search"
-                    id = "search_term"
-                    name = "search_term"
-                    value = {search_query.input_text}
-                    onChange = {handleInputChange}
-                    placeholder = "">
-                    
+                <div className={style.form}>
+                    <input 
+                        className = {style.textbox}
+                        type="search"
+                        id = "search_term"
+                        name = "search_term"
+                        value = {search_query.input_text}
+                        onChange = {handleInputChange}
+                        placeholder = "">
+                        
 
-                </input>
+                    </input>
+                </div>
+                <div >
+                    <select className={style.dopdown} value = {sort_type} onChange = {handleChangeSelect} id="sort_by">
+                        <option value="relevance">relevance</option>
+                        <option value="price">price</option>
+                        <option value="upload_date">upload date</option>
+                        
+                    </select>
+                </div>
+                <div className={style.submit_button}>
+                    <button className = {style.submit_butn} onClick = {handleSubmit} >
+                        SEARCH
+                    </button>
+                </div>
             </div>
-            <div >
-                <select className={style.dopdown} value = {sort_type} onChange = {handleChangeSelect} id="sort_by">
-                    <option value="relevance">relevance</option>
-                    <option value="price">price</option>
-                    <option value="upload_date">upload date</option>
-                    
-                </select>
-            </div>
-            <div className={style.submit_button}>
-                <button className = {style.submit_butn} onClick = {handleSubmit} >
-                    SEARCH
-                </button>
-            </div>
-        </div>
-        </div>
+        </div> */}
+
         <div className= {style.cards_container}>
             
             {Cards.map((card, index) => {
