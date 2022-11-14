@@ -7,7 +7,6 @@
     text-shadow: 60px;
     height:780px;
     width:100%;
-    background-image: url(https://static.wixstatic.com/media/2b92b1e47b4a4332934c43d6a245c1a4.jpg/v1/fill/w_1340,h_990,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b92b1e47b4a4332934c43d6a245c1a4.jpg);
-
-    padding-top: 200px;
+    background-image: url('../../../public/pictures/send/send-background.webp');
+    padding-top: 100px;
 }
