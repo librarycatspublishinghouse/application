@@ -1,114 +1,442 @@
 import React from 'react';
 import style from './Team.module.css';
 
+import 'font-awesome/css/font-awesome.min.css';
 
 function Team() {
-  return (
+
+    const mockDescription = "LOREM IPSUN DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO LABORIS NISI UT ALIQUIP EX "
+
+    const mockLinks = {
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/",
+    }
+
+    const [length, setLength] = React.useState("short");
+
+    const renderTeamMemberItem = (name, position,links,  description, thumbnail_image, profile_image, direction, length) => {
+        const renderImage = () => {
+            return(
+                <div className={style.teamMemberItem_image_container}>
+                        <img className = {style.teamMember_image} src={profile_image} alt = ""/> 
+                    </div>
+            )
+        }
+
+
+               
+    
+
+        const renderContent = (name, position,links , description, length) => {
+            return(
+            <div className={style.teamMemberItem_content_container}>
+                {(length === "short") ? (
+                    <>
+                    <div className={style.teamMemberItem_content_header} onClick = {handleClick}>
+                        <div className={style.teamMember_name}>
+                            {name}
+                        </div>
+                        <div className={style.teamMember_position}>
+                            {position}
+                        </div>
+                    </div>
+
+                    <div className={style.teamMember_links}>
+                        {(links.twitter) &&  (
+                        <a className = {style.link} href={links.twitter} target="_blank" rel="noopener noreferrer">
+                            <img  className= {style.link_icon} src={"pictures/twitter.webp"} alt="Twitter"   />
+                        </a>
+                        )}
+                        {(links.instagram) &&  (
+                            <a className = {style.link}  href={links.instagram} target="_blank" rel="noopener noreferrer"><img  className= {style.link_icon} src={"pictures/insta.webp"} alt="Instagram"/></a>
+                        )}
+                        {(links.linkedin) &&  (
+                            <a className = {style.link} href={links.linkedin} target="_blank" rel="noopener noreferrer"><img  className= {style.link_icon} src={"pictures/linkedin.webp"} alt="Linkedin"/></a>
+                        )}
+     
+                    </div>
+                    </>
+                ) : (
+                <>
+                    <div className={style.teamMember_description} onClick = {handleClick}>
+                        {description}
+                    </div>
+                    <div className={style.teamMember_links} style = {{display: 'inline-block', justifyItems: 'flex-end'}}>
+
+
+                        {(links.twitter) &&  (
+                            <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyContent: "flex-end"}: {}}>
+                                {direction === "right" ? (
+                                    <>
+                                        <a className = {style.link} href={links.twitter} target="_blank" rel="noopener noreferrer" style={{display:"flex", }}>
+                                            <div className={style.teamMember_link_text}>
+                                                Twitter
+                                            </div>
+                            
+                                            <img  className= {style.link_icon} src={"pictures/twitter.webp"} alt="Twitter" style={{marginLeft: "0.5rem"}}/>
+                                        </a>
+                                    </>
+                                ) : (
+                                    <>
+                                       
+                                       <a className = {style.link} href={links.twitter} target="_blank" rel="noopener noreferrer" style={{display:"flex"}}>
+                                            <img  className= {style.link_icon} src={"pictures/twitter.webp"} alt="Twitter"/>
+                                        
+                                            <div className={style.teamMember_link_text}>
+                                                Twitter
+                                            </div>
+                                        </a>
+                                    </>
+                                )}
+                                
+                            </div>
+                        )}
+                        {(links.instagram) &&  (
+                            <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyItems: "flex-end"}: {}} >
+                                {direction === "right" ? (
+                                    < >
+                                        <a className = {style.link} href={links.instagram} target="_blank" rel="noopener noreferrer" style={{display:"flex", }}>
+
+                                            <div className={style.teamMember_link_text}>
+                                                Instagram
+                                            </div>
+                                    
+                                            <img  className= {style.link_icon} src={"pictures/insta.webp"} alt="Instagram" style={{marginLeft: "0.5rem"}}/>
+                                        </a>
+                                    </>
+                                ) : (
+                                    <>
+                                       
+                                       <a className = {style.link} href={links.instagram} target="_blank" rel="noopener noreferrer" style={{display:"flex"}}>
+                                            <img  className= {style.link_icon} src={"pictures/insta.webp"} alt="Instagram"/>
+                                      
+                                            <div className={style.teamMember_link_text}>
+                                                Instagram
+                                            </div>
+                                        </a>
+                                    </>
+                                )}
+                                
+                            </div>
+                        )}
+                        {(links.linkedin) &&  (
+                            <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyContent: "flex-end"}: {}}>
+                                 {direction === "right" ? (
+                                    < >
+                                    <a className = {style.link} href={links.linkedin} target="_blank" rel="noopener noreferrer" style={{display:"flex", }}>
+                                        <div className={style.teamMember_link_text}>
+                                            Linkedin
+                                        </div>
+                  
+                                            <img  className= {style.link_icon} src={"pictures/linkedin.webp"} alt="Linkedin" style={{marginLeft: "0.5rem"}}/>
+                                        </a>
+                                    </>
+                                ) : (
+                                    <>
+                                       
+                                        <a className = {style.link} href={links.linkedin} target="_blank" rel="noopener noreferrer" style={{display:"flex"}}>
+                                            <img  className= {style.link_icon} src={"pictures/linkedin.webp"} alt="Linkedin"/>
+                                       
+                                            <div className={style.teamMember_link_text}>
+                                                Linkedin
+                                            </div>
+                                        </a>
+                                    </>
+                                )}
+                               
+                            </div>
+                        )}
+                    </div>
+                </>
+                )}
+            </div>
+            )
+        }
+        const handleClick = () => {
+            if (length === "short") {
+                setLength("long");
+            } else {
+                setLength("short");
+            }
+        } 
+
+        const renderBookThumbnail = () => {
+            if (length === "short") {
+                return(
+                    <>
+                    </>
+                )
+            }
+            else {
+                return(
+
+                    <div className={style.book_thumbail_image_container}>
+                        <img className = {style.book_thumbail_image} src={thumbnail_image}  />
+                    </div>
+                )
+            }
+        }
+
+        return (
+            <>
+            <div className = {style.team_content} style={(length === "short") ? {gridTemplateColumns: "1fr 1fr"}: (direction === "left") ? {gridTemplateColumns: "7fr 1fr"}: {gridTemplateColumns: "1fr 7fr"}} >
+            
+            {direction === "right" ? (
+                <div className = {style.team_content_space} >
+                    {renderBookThumbnail()}
+                    
+                </div>
+            ) : (
+            <> </>
+            )}
+
+                <div className = {style.team_content_item} style = {length === "short"? {marginBottom: "0.1rem"}: {marginBottom: "6rem"} }>
+
+                    <div className={style.teamMemberItem} style = {direction === "left"? {textAlign: "left", gridTemplateColumns:"auto 3fr"} : {textAlign: "right", gridTemplateColumns:"3fr auto" } }  >
+
+                        {(direction === "left") ? (
+                            <>
+                                {renderImage()}  
+                                {renderContent(name, position, links , description, length)}
+                            </>
+                        ) : (     
+                            <>
+                            {renderContent(name, position, links , description, length)}
+                            {renderImage()}  
+                        </>
+                        )}
+                        
+                        
+                    
+                    </div>
+                </div>
+
+            {direction === "left" ? (
+                <div className = {style.team_content_space} >
+                    {renderBookThumbnail()}
+                </div>
+            ) : (
+            <> </>
+            )}
+            
+            </div>
+        </>
+        )
+    }
+
+    const MarcosEchevarria = {
+        name: "Marcos Echevarria",
+        position: "Founder & CEO",
+        links: {
+            twitter: "https://twitter.com/marcoseche00",
+            instagram: "https://www.instagram.com/marcoseche/",
+            linkedin: "https://www.linkedin.com/in/marcos-e-76826712b/",
+        },
+        description: "‘Bomarzo’ by Manuel Mujica Lainez. I am an MSc student at the LSE, studying European Politics. I'm a bit of a book geek, but I also enjoy football, golf, chess, and movies, among other things. Here at Spread the Word, we cannot wait to hear from you and read what you have to say",
+        thumbnail_image: "/pictures/team/book-thumbnails/bomarzo.jpg",
+        profile_image: `/pictures/team/member-images/marcos.jpeg`,
+    }
+
+    const AikateriniRoka  = {
+        name: "Aikaterini Roka",
+        position: "Editor",
+        links: {
+            twitter: "",
+            instagram: "https://www.instagram.com/katerinaroka_/",
+            linkedin: "",
+        },
+        description: "‘Wuthering Heights’ by Emily Brontë. A graduate of the English language and literature department at the National and Kapodistrian University of Athens. I'm currently doing a master’s in sociolinguistics at Leiden University. I've worked as a book editor in Amsterdam editing novels and fiction books.",
+        thumbnail_image: "/pictures/team/book-thumbnails/wurthering-heights.jpg",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+    }
+
+    const BeatrizdeCastroPerez  = {
+        name: "Beatriz de Castro Perez",
+        position: "Marketing Strategist",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "",
+        },
+        description: "‘Normal People’ by Sally Rooney. I am a final-year Economics and International Relations student at Lancaster University. I am passionate about the study of climate change in both economics and politics. My hobbies are reading, dancing, travelling and learning new languages.",
+        thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.jpg",
+        profile_image:  `/pictures/team/member-images/beatriz.webp`,
+    }
+
+    const ChrisMillis  = {
+        name: "Chris Millis",
+        position: "Editor",
+        links: {
+            twitter: "https://twitter.com/MillisChris",
+            instagram: "https://www.instagram.com/cjmillis/",
+            linkedin: "https://www.linkedin.com/in/chris-millis-b8583b229",
+        },
+        description: "‘Atonement’ by Ian McEwan. I’m a student from South London, currently undertaking an MA in English Literary Studies at Lancaster University in the North-West of England. Taking on this role has been a fantastic privilege helping to promote otherwise unheard voices. As a student looking for a career in publishing/editing, it has also allowed me to develop professional skills that I’m sure will prove invaluable over the coming years. I’ve loved working with the team, and look forward to reading and editing our next project!",
+        thumbnail_image: "/pictures/team/book-thumbnails/atonement.jpg",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+    }
+
+    const CristobalEchevarria  = {
+        name: "Cristobal Echevarria",
+        position: "Graphic Designer",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "",
+        },
+        description: "‘The Outsiders’ by S. E. Hinton. I am a third-year graphic communication and illustration student at Loughborough University. I am very passionate about branding, editorial design and animation. Website: cristobalechevarria.com1",
+        thumbnail_image: "/pictures/team/book-thumbnails/the-outsiders.jpg",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+    }
+
+
+    const LauraMolloy  = {
+        name: "Laura Molloy",
+        position: "Editor",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "",
+        },
+        description: "‘Northanger Abbey’ by Jane Austen. I’m a first-year English Literature student studying in Dublin. I’m one of the editors at Spread The Word. My favourite genres are classics, poetry and romance. I love reading, writing and listening to music.",
+        thumbnail_image: "/pictures/team/book-thumbnails/northanger-abbey.jpg",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+    }
+
+
+    const MayaraZucheli  = {
+        name: "Mayara Zucheli",
+        position: "Graphic Designer",
+        links: {
+            twitter: "",
+            instagram: "https://www.instagram.com/mayara.zucheli/",
+            linkedin: "",
+        },
+        description: "‘4321’ by Paul Auster. I’m a designer with a bachelor’s in fine arts. I love books, travelling and cats.",
+        thumbnail_image: "/pictures/team/book-thumbnails/4321.jpg",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+    }
+
+
+    const NishaPatel  = {
+        name: "Nisha Patel",
+        position: "",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "",
+        },
+        description: "‘A Christmas Carol’ by Charles Dickens. She has a solid BA in Creative Writing and English Language. She completed the New Writing Festival at university, where acclaimed poet Abena Essah  mentored  her.  She  was  shortlisted  at  Granta.  Her  work  appears  in  The  Wells  Street Journal. She has been longlisted at Young Poets Network. Her other interests include nature and art. She enjoys drawing as her hobby.",
+        thumbnail_image: "/pictures/team/book-thumbnails/a-christmas-carol.jpg",
+        profile_image:  `/pictures/team/member-images/nisha.jpg`,
+    }
+
+
+    const RebeccaWeigler   = {
+        name: "Rebecca Weigler",
+        position: "Marketing Strategist",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "https://www.linkedin.com/in/rebecca-weigler-30307924a",
+        },
+        description: "‘Anne of Green Gables’ by Lucy Maud Montgomery. Hello,  my  name  is  Rebecca!  I  am  currently  studying  in  London  for  my  master's  degree  in Publishing, having recently graduated with a bachelor's degree in English. I love all things to do with books, art, travel and writing. When I am not working, I often read good books or with my Golden Retriever.",
+        thumbnail_image: "/pictures/team/book-thumbnails/anne-of-green-gables.webp",
+        profile_image:  `/pictures/team/member-images/rebecca.jpg`,
+    }
+
+
+    const SukhpreetChana  = {
+        name: "Sukhpreet Chana",
+        position: "Editor",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "",
+        },
+        description: "‘Fifty-Fifty’ by Steve Cavanagh. I am a book enthusiast, with a passion for reading crime, romance and psychological fiction novels. My hobbies and interest consist of writing short fiction novels and reading. I’m currently in the pursuit of expanding my knowledge and skills in the publishing industry/book world.",
+        thumbnail_image: "/pictures/team/book-thumbnails/fifty-fifty.jpg",
+        profile_image:  `/pictures/team/member-images/sukhpreet.jpg`,
+    }
+
+
+    const ZoriNencheva  = {
+        name: "Zori Nencheva",
+        position: "Editor",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "http://linkedin.com/in/zori-nencheva",
+        },
+        description: "‘Normal People’ by Sally Rooney. I’m Zori, a student studying English Literature, Spanish and History. I love to read and write, and being an editor for this project is exactly what I need to facilitate these passions!",
+        thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.jpg",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+    }
+
+
+    return (
     <div className={style.team}>
-        <div className = {style.team_title_container} >
+        <div className = {style.team_container} >
+
             <div className = {style.team_title} >
-                TEAM
+                OUR TEAM
             </div>
+
+        
+                {renderTeamMemberItem(MarcosEchevarria.name, MarcosEchevarria.position,MarcosEchevarria.links, MarcosEchevarria.description, MarcosEchevarria.thumbnail_image, MarcosEchevarria.profile_image,"left", length)} 
+
+
+                
+                {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"right",length)} 
+                
+
+
+                {renderTeamMemberItem(BeatrizdeCastroPerez.name, BeatrizdeCastroPerez.position, BeatrizdeCastroPerez.links, BeatrizdeCastroPerez.description, BeatrizdeCastroPerez.thumbnail_image , BeatrizdeCastroPerez.profile_image,"left", length)} 
+
+
+                                
+                {renderTeamMemberItem(ChrisMillis.name, ChrisMillis.position,ChrisMillis.links, ChrisMillis.description, ChrisMillis.thumbnail_image,ChrisMillis.profile_image, "right",length)} 
+
+
+                {renderTeamMemberItem(CristobalEchevarria.name, CristobalEchevarria.position,CristobalEchevarria.links, CristobalEchevarria.description,CristobalEchevarria.thumbnail_image ,CristobalEchevarria.profile_image,"left", length)} 
+
+
+                
+                {renderTeamMemberItem(LauraMolloy.name, LauraMolloy.position,LauraMolloy.links, LauraMolloy.description,LauraMolloy.thumbnail_image,LauraMolloy.profile_image,"right",length)} 
+                
+
+
+                {renderTeamMemberItem(MayaraZucheli.name, MayaraZucheli.position, MayaraZucheli.links, MayaraZucheli.description, MayaraZucheli.thumbnail_image, MayaraZucheli.profile_image,"left", length)} 
+
+
+                                
+                {renderTeamMemberItem(NishaPatel.name, NishaPatel.position,NishaPatel.links, NishaPatel.description, NishaPatel.thumbnail_image ,NishaPatel.profile_image,"right",length)} 
+
+
+
+
+
+
+                {renderTeamMemberItem(RebeccaWeigler.name, RebeccaWeigler.position,RebeccaWeigler.links, RebeccaWeigler.description, RebeccaWeigler.thumbnail_image, RebeccaWeigler.profile_image,"left", length)} 
+
+
+                
+                {renderTeamMemberItem(SukhpreetChana.name, SukhpreetChana.position,SukhpreetChana.links, SukhpreetChana.description, SukhpreetChana.thumbnail_image,SukhpreetChana.profile_image,"right",length)} 
+                
+
+
+                {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"left", length)} 
+
+
+
+
+
+            
            
+    
         </div>
-
-
-        <div className = {style.team_member_block}>
-
-            <div className = {style.leadership_title}>
-                LEADERSHIP
-            </div>
-
-        <div className = {style.member_item} >
-            <div className = {style.member_name}>
-            Marcos Echevarria
-            </div>
-
-            <div className = {style.member_role}>
-            Founder & CEO
-            </div>
-            <div className = {style.member_info}>
-            I am a final-year bachelor student at Loughborough University. I study Politics with Economics. I'm a bit of a books geek. My favourite book is Bomarzo by Manuel Mujica Lainez.
-            </div>
-        </div>
-
-
-        <div className = {style.member_item} >
-            <div className = {style.member_name}>
-            Pablo Echevarria  
-            </div>
-
-            <div className = {style.member_role}>
-            Editor IN-CHIEF
-            </div>
-            <div className = {style.member_info}>
-            I am an industrial engineer, loving work at Spread the Word. I couldn't decide which one is my favourite book between these two: Scoop by Evelyn Waugh, and Don Quixote by Miguel de Cervantes
-            </div>
-        </div>
-
-        <div className = {style.member_item} >
-            <div className = {style.member_name}>
-            Zori Nencheva            </div>
-
-            <div className = {style.member_role}>
-            Editor 
-            </div>
-            <div className = {style.member_info}>
-            I am an A-Level student studying History, Spanish and English Literature. I love books, I always have, and if I had to choose my favourite book, it would be ‘Song of Achilles’ by Madeline Miller.
-            </div>
-        </div>
-
-        <div className = {style.member_item} >
-            <div className = {style.member_name}>
-            Neha Suryavanshi          
-            </div>
-
-            <div className = {style.member_role}>
-            Editor 
-            </div>
-            <div className = {style.member_info}>
-            I am from India. I am a multimedia journalism student from the University of Westminster. I am quite into current news, events, and politics as I am an aspiring journalist. My favourite book is 'Everybody Loves a Good Drought: Stories from India's Poorest Districts' by P. Sainath
-            </div>
-        </div>
-
-        <div className = {style.member_item} >
-            <div className = {style.member_name}>
-            Cristobal Echevarria             </div>
-
-            <div className = {style.member_role}>
-            Graphic Designer
-            </div>
-            <div className = {style.member_info}>
-            I am a second-year graphic communication and illustration student at Loughborough University. I am very passionate about branding and animation. My favourite book is Zalacain the Adventurer by Pio Baroja.
-            </div>
-        </div>
-
-        <div className = {style.member_item} >
-            <div className = {style.member_name}>
-            Beatriz De Castro             </div>
-
-            <div className = {style.member_role}>
-            Media Rep
-            </div>
-            <div className = {style.member_info}>
-            I am a second-year Economics and International Relations student at Lancaster University. My favourite book is Bad Karma by David Safier.
-            </div>
-        </div>
-
-        <div className = {style.member_item} >
-            <div className = {style.member_name}>
-            Chloe Chen             </div>
-
-            <div className = {style.member_role}>
-            Communication Rep 
-            </div>
-            <div className = {style.member_info}>
-            I am a final year student studying Accounting and Finance at the University of Sussex. One of my favourite books is Selected Poems written by Pablo Neruda. The vintage poems in this book are amazing and it is full of romantic and touching feelings.
-            </div>
-        </div>
-
-        </div>
-    </div>
+    </  div>
     );
 }
 
