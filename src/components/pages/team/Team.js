@@ -233,9 +233,9 @@ function Team() {
             instagram: "https://www.instagram.com/marcoseche/",
             linkedin: "https://www.linkedin.com/in/marcos-e-76826712b/",
         },
-        description: "‘Bomarzo’ by Manuel Mujica Lainez. I am an MSc student at the LSE, studying European Politics. I'm a bit of a book geek, but I also enjoy football, golf, chess, and movies, among other things. Here at Spread the Word, we cannot wait to hear from you and read what you have to say",
-        thumbnail_image: "/pictures/team/book-thumbnails/bomarzo.jpg",
-        profile_image: `/pictures/team/member-images/marcos.jpeg`,
+        description: "I am an MSc student at the LSE, studying European Politics. I'm a bit of a book geek, but I also enjoy football, golf, chess, and movies, among other things. Here at Spread the Word, we cannot wait to hear from you and read what you have to say",
+        thumbnail_image: "/pictures/team/book-thumbnails/bomarzo.webp",
+        profile_image: `/pictures/team/member-images/marcos.webp`,
     }
 
     const AikateriniRoka  = {
@@ -246,7 +246,7 @@ function Team() {
             instagram: "https://www.instagram.com/katerinaroka_/",
             linkedin: "",
         },
-        description: "‘Wuthering Heights’ by Emily Brontë. A graduate of the English language and literature department at the National and Kapodistrian University of Athens. I'm currently doing a master’s in sociolinguistics at Leiden University. I've worked as a book editor in Amsterdam editing novels and fiction books.",
+        description: "A graduate of the English language and literature department at the National and Kapodistrian University of Athens. I'm currently doing a master’s in sociolinguistics at Leiden University. I've worked as a book editor in Amsterdam editing novels and fiction books.",
         thumbnail_image: "/pictures/team/book-thumbnails/wurthering-heights.jpg",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
@@ -259,8 +259,8 @@ function Team() {
             instagram: "",
             linkedin: "",
         },
-        description: "‘Normal People’ by Sally Rooney. I am a final-year Economics and International Relations student at Lancaster University. I am passionate about the study of climate change in both economics and politics. My hobbies are reading, dancing, travelling and learning new languages.",
-        thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.jpg",
+        description: "I am a final-year Economics and International Relations student at Lancaster University. I am passionate about the study of climate change in both economics and politics. My hobbies are reading, dancing, travelling and learning new languages.",
+        thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.webp",
         profile_image:  `/pictures/team/member-images/beatriz.webp`,
     }
 
@@ -272,8 +272,8 @@ function Team() {
             instagram: "https://www.instagram.com/cjmillis/",
             linkedin: "https://www.linkedin.com/in/chris-millis-b8583b229",
         },
-        description: "‘Atonement’ by Ian McEwan. I’m a student from South London, currently undertaking an MA in English Literary Studies at Lancaster University in the North-West of England. Taking on this role has been a fantastic privilege helping to promote otherwise unheard voices. As a student looking for a career in publishing/editing, it has also allowed me to develop professional skills that I’m sure will prove invaluable over the coming years. I’ve loved working with the team, and look forward to reading and editing our next project!",
-        thumbnail_image: "/pictures/team/book-thumbnails/atonement.jpg",
+        description: "I’m a student from South London, currently undertaking an MA in English Literary Studies at Lancaster University in the North-West of England. Taking on this role has been a fantastic privilege helping to promote otherwise unheard voices. As a student looking for a career in publishing/editing, it has also allowed me to develop professional skills that I’m sure will prove invaluable over the coming years. I’ve loved working with the team, and look forward to reading and editing our next project!",
+        thumbnail_image: "/pictures/team/book-thumbnails/atonement.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
 
@@ -285,7 +285,7 @@ function Team() {
             instagram: "",
             linkedin: "",
         },
-        description: "‘The Outsiders’ by S. E. Hinton. I am a third-year graphic communication and illustration student at Loughborough University. I am very passionate about branding, editorial design and animation. Website: cristobalechevarria.com1",
+        description: "I am a third-year graphic communication and illustration student at Loughborough University. I am very passionate about branding, editorial design and animation. Website: cristobalechevarria.com1",
         thumbnail_image: "/pictures/team/book-thumbnails/the-outsiders.jpg",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
@@ -299,8 +299,8 @@ function Team() {
             instagram: "",
             linkedin: "",
         },
-        description: "‘Northanger Abbey’ by Jane Austen. I’m a first-year English Literature student studying in Dublin. I’m one of the editors at Spread The Word. My favourite genres are classics, poetry and romance. I love reading, writing and listening to music.",
-        thumbnail_image: "/pictures/team/book-thumbnails/northanger-abbey.jpg",
+        description: "I’m a first-year English Literature student studying in Dublin. I’m one of the editors at Spread The Word. My favourite genres are classics, poetry and romance. I love reading, writing and listening to music.",
+        thumbnail_image: "/pictures/team/book-thumbnails/northanger-abbey.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
 
@@ -313,7 +313,7 @@ function Team() {
             instagram: "https://www.instagram.com/mayara.zucheli/",
             linkedin: "",
         },
-        description: "‘4321’ by Paul Auster. I’m a designer with a bachelor’s in fine arts. I love books, travelling and cats.",
+        description: "I’m a designer with a bachelor’s in fine arts. I love books, travelling and cats.",
         thumbnail_image: "/pictures/team/book-thumbnails/4321.jpg",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
@@ -327,9 +327,9 @@ function Team() {
             instagram: "",
             linkedin: "",
         },
-        description: "‘A Christmas Carol’ by Charles Dickens. She has a solid BA in Creative Writing and English Language. She completed the New Writing Festival at university, where acclaimed poet Abena Essah  mentored  her.  She  was  shortlisted  at  Granta.  Her  work  appears  in  The  Wells  Street Journal. She has been longlisted at Young Poets Network. Her other interests include nature and art. She enjoys drawing as her hobby.",
+        description: "She has a solid BA in Creative Writing and English Language. She completed the New Writing Festival at university, where acclaimed poet Abena Essah  mentored  her.  She  was  shortlisted  at  Granta.  Her  work  appears  in  The  Wells  Street Journal. She has been longlisted at Young Poets Network. Her other interests include nature and art. She enjoys drawing as her hobby.",
         thumbnail_image: "/pictures/team/book-thumbnails/a-christmas-carol.jpg",
-        profile_image:  `/pictures/team/member-images/nisha.jpg`,
+        profile_image:  `/pictures/team/member-images/nisha.webp`,
     }
 
 
@@ -341,9 +341,9 @@ function Team() {
             instagram: "",
             linkedin: "https://www.linkedin.com/in/rebecca-weigler-30307924a",
         },
-        description: "‘Anne of Green Gables’ by Lucy Maud Montgomery. Hello,  my  name  is  Rebecca!  I  am  currently  studying  in  London  for  my  master's  degree  in Publishing, having recently graduated with a bachelor's degree in English. I love all things to do with books, art, travel and writing. When I am not working, I often read good books or with my Golden Retriever.",
+        description: "Hello,  my  name  is  Rebecca!  I  am  currently  studying  in  London  for  my  master's  degree  in Publishing, having recently graduated with a bachelor's degree in English. I love all things to do with books, art, travel and writing. When I am not working, I often read good books or with my Golden Retriever.",
         thumbnail_image: "/pictures/team/book-thumbnails/anne-of-green-gables.webp",
-        profile_image:  `/pictures/team/member-images/rebecca.jpg`,
+        profile_image:  `/pictures/team/member-images/rebecca.webp`,
     }
 
 
@@ -355,9 +355,9 @@ function Team() {
             instagram: "",
             linkedin: "",
         },
-        description: "‘Fifty-Fifty’ by Steve Cavanagh. I am a book enthusiast, with a passion for reading crime, romance and psychological fiction novels. My hobbies and interest consist of writing short fiction novels and reading. I’m currently in the pursuit of expanding my knowledge and skills in the publishing industry/book world.",
-        thumbnail_image: "/pictures/team/book-thumbnails/fifty-fifty.jpg",
-        profile_image:  `/pictures/team/member-images/sukhpreet.jpg`,
+        description: "I am a book enthusiast, with a passion for reading crime, romance and psychological fiction novels. My hobbies and interest consist of writing short fiction novels and reading. I’m currently in the pursuit of expanding my knowledge and skills in the publishing industry/book world.",
+        thumbnail_image: "/pictures/team/book-thumbnails/fifty-fifty.webp",
+        profile_image:  `/pictures/team/member-images/sukhpreet.webp`,
     }
 
 
@@ -369,8 +369,8 @@ function Team() {
             instagram: "",
             linkedin: "http://linkedin.com/in/zori-nencheva",
         },
-        description: "‘Normal People’ by Sally Rooney. I’m Zori, a student studying English Literature, Spanish and History. I love to read and write, and being an editor for this project is exactly what I need to facilitate these passions!",
-        thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.jpg",
+        description: "I’m Zori, a student studying English Literature, Spanish and History. I love to read and write, and being an editor for this project is exactly what I need to facilitate these passions!",
+        thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
 
