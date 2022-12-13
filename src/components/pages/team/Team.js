@@ -247,7 +247,7 @@ function Team() {
             linkedin: "",
         },
         description: "A graduate of the English language and literature department at the National and Kapodistrian University of Athens. I'm currently doing a master’s in sociolinguistics at Leiden University. I've worked as a book editor in Amsterdam editing novels and fiction books.",
-        thumbnail_image: "/pictures/team/book-thumbnails/wurthering-heights.jpg",
+        thumbnail_image: "/pictures/team/book-thumbnails/wurthering-heights.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
 
@@ -286,7 +286,7 @@ function Team() {
             linkedin: "",
         },
         description: "I am a third-year graphic communication and illustration student at Loughborough University. I am very passionate about branding, editorial design and animation. Website: cristobalechevarria.com1",
-        thumbnail_image: "/pictures/team/book-thumbnails/the-outsiders.jpg",
+        thumbnail_image: "/pictures/team/book-thumbnails/the-outsiders.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
 
@@ -301,7 +301,7 @@ function Team() {
         },
         description: "I’m a first-year English Literature student studying in Dublin. I’m one of the editors at Spread The Word. My favourite genres are classics, poetry and romance. I love reading, writing and listening to music.",
         thumbnail_image: "/pictures/team/book-thumbnails/northanger-abbey.webp",
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        profile_image: `/pictures/team/member-images/laura.webp`,
     }
 
 
@@ -314,7 +314,7 @@ function Team() {
             linkedin: "",
         },
         description: "I’m a designer with a bachelor’s in fine arts. I love books, travelling and cats.",
-        thumbnail_image: "/pictures/team/book-thumbnails/4321.jpg",
+        thumbnail_image: "/pictures/team/book-thumbnails/4321.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
     }
 
@@ -328,7 +328,7 @@ function Team() {
             linkedin: "",
         },
         description: "She has a solid BA in Creative Writing and English Language. She completed the New Writing Festival at university, where acclaimed poet Abena Essah  mentored  her.  She  was  shortlisted  at  Granta.  Her  work  appears  in  The  Wells  Street Journal. She has been longlisted at Young Poets Network. Her other interests include nature and art. She enjoys drawing as her hobby.",
-        thumbnail_image: "/pictures/team/book-thumbnails/a-christmas-carol.jpg",
+        thumbnail_image: "/pictures/team/book-thumbnails/a-christmas-carol.webp",
         profile_image:  `/pictures/team/member-images/nisha.webp`,
     }
 
@@ -372,6 +372,19 @@ function Team() {
         description: "I’m Zori, a student studying English Literature, Spanish and History. I love to read and write, and being an editor for this project is exactly what I need to facilitate these passions!",
         thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+    }
+
+    const BeatriceFeng  = {
+        name: "Beatrice Feng",
+        position: "",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "",
+        },
+        description: "I study Creative Writing in Lancaster University. I am an aspiring poet and editor. I attempt to explore various aspects of humanity, life and the world in my poetry. By doing so, I hope to inspire my readers to view themselves, their lives and the world they live in from a fresh angle. I am also very interested in communicating with other writers and helping them with their works.",
+        thumbnail_image: "/pictures/team/book-thumbnails/collected-poems.webp",
+        profile_image: `/pictures/team/member-images/beatrice.webp`,
     }
 
 
@@ -427,6 +440,9 @@ function Team() {
 
 
                 {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"left", length)} 
+
+                {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"right",length)} 
+
 
 
 
