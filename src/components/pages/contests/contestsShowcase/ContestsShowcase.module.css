@@ -1,0 +1,94 @@
+.contests_showcase {
+    background-image: url("../../../../../public/pictures/contests/contest-background.png");
+    min-height: 1000px;
+    width: 100%;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 50px;
+
+}
+
+.contests_container {
+    display:inline-block;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.contest_card{
+    display: inherit;
+    background-color: rgba(255, 255, 255, 0.795);
+    mix-blend-mode: darken;
+    min-width: 27rem;
+    width: 27rem;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+    margin: 1rem 1rem;
+    filter : drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.329));
+}
+
+.contest_card_logo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.star_image{
+    width: 40px;
+    height: 40px;
+}
+.contest_card_title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.contest_card_date {
+    font-size: 1.2rem;
+    font-style: italic;
+ 
+}
+
+.contest_card_description {
+    font-style: italic;
+    padding: 0.9rem 3rem 1rem 3rem
+}
+
+.card_info_container{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2rem 3.2rem 2rem 3.2rem;
+    row-gap: 1rem;
+    
+
+}
+.info_title {
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.info_value {
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.contests_note {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .contests_note {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contest_card{
+        min-width: 25rem;
+        width: 25rem;
+    }
+}

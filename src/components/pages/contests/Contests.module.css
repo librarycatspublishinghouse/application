@@ -1,0 +1,92 @@
+.contests {
+    background-image: url("../../../../public/pictures/contests/contest-background.png");
+    min-height: 1000px;
+    width: 100%;
+    background-size: cover;
+    padding-top: 100px;
+    display: flex;
+}
+
+.contests_container {
+
+    margin-left: 100px;
+    width: auto;
+    text-align: left;
+}
+
+.contests_title {
+    font-size: 6rem;
+    font-weight: 700;
+}
+.underline {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    margin-top: 6px;
+    padding-right: 5px;
+}
+.contests_list_title {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 70px;
+    line-height: 70px;
+}
+
+.contests_list_item {
+    line-height: initial;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contests_button{
+    margin-top: 70px;
+    font-size: 50px;
+    text-decoration: none;
+    color: #000;
+}
+
+.contests_button:hover {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+.link:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+@media only screen and (max-width: 1025px) {
+    .contests {
+        padding-top: 50px;
+    }
+ 
+    .contests_title {
+        font-size: 3rem;
+    }
+    .contests_list_title {
+        font-size: 1.5rem;
+        margin-top: 50px;
+        line-height: 50px;
+    }
+    .contests_list_item {
+        font-size: 1rem;
+    }
+    .contests_button{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contests_title {
+        font-size: 2rem;
+    }
+
+    .contests_container {
+        margin-left: 50px
+    }
+}
