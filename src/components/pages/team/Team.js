@@ -387,6 +387,19 @@ function Team() {
         profile_image: `/pictures/team/member-images/beatrice.webp`,
     }
 
+    const PeterBarret  = {
+        name: " Peter Barrett",
+        position: "Chief Editor",
+        links: {
+            twitter: "",
+            instagram: "https://www.instagram.com/peterbarrett__",
+            linkedin: "",
+        },
+        description: "Hi, My name is Peter! I am London-based playwright and founder of Fundamentals Theatre Company. I graduated from the University of Edinburgh in 2021 reading Philosophy and English Literature - during my time there I was co-founder and editor of the student-run Hebenon Literary Journal and produced, directed, and wrote my first play (The Apology) through my theatre company that performed at EdinburghI study Creative Writing in Lancaster University. I am an aspiring poet and editor. I attempt to explore various aspects of humanity, life and the world in my poetry. By doing so, I hope to inspire my readers to view themselves, their lives and the world they live in from a fresh angle. I am also very interested in communicating with other writers and helping them with their works.",
+        thumbnail_image: "/pictures/team/book-thumbnails/the-crying-of-lot-49.webp",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+    }
+
 
     return (
     <div className={style.team}>
@@ -442,6 +455,8 @@ function Team() {
                 {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"left", length)} 
 
                 {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"right",length)} 
+
+                {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"left",length)} 
 
 
 
