@@ -392,12 +392,12 @@ function Team() {
         position: "Chief Editor",
         links: {
             twitter: "",
-            instagram: "https://www.instagram.com/peterbarrett__",
+            instagram: "https://www.instagram.com/peterbarrett0",
             linkedin: "",
         },
         description: "Hi, My name is Peter! I am London-based playwright and founder of Fundamentals Theatre Company. I graduated from the University of Edinburgh in 2021 reading Philosophy and English Literature - during my time there I was co-founder and editor of the student-run Hebenon Literary Journal and produced, directed, and wrote my first play (The Apology) through my theatre company that performed at EdinburghI study Creative Writing in Lancaster University. I am an aspiring poet and editor. I attempt to explore various aspects of humanity, life and the world in my poetry. By doing so, I hope to inspire my readers to view themselves, their lives and the world they live in from a fresh angle. I am also very interested in communicating with other writers and helping them with their works.",
         thumbnail_image: "/pictures/team/book-thumbnails/the-crying-of-lot-49.webp",
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        profile_image: `/pictures/team/member-images/peterBarrett.webp`,
     }
 
 
@@ -412,51 +412,49 @@ function Team() {
         
                 {renderTeamMemberItem(MarcosEchevarria.name, MarcosEchevarria.position,MarcosEchevarria.links, MarcosEchevarria.description, MarcosEchevarria.thumbnail_image, MarcosEchevarria.profile_image,"left", length)} 
 
-
+                {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"right",length)} 
                 
-                {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"right",length)} 
+                {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"left",length)} 
                 
 
 
-                {renderTeamMemberItem(BeatrizdeCastroPerez.name, BeatrizdeCastroPerez.position, BeatrizdeCastroPerez.links, BeatrizdeCastroPerez.description, BeatrizdeCastroPerez.thumbnail_image , BeatrizdeCastroPerez.profile_image,"left", length)} 
+                {renderTeamMemberItem(BeatrizdeCastroPerez.name, BeatrizdeCastroPerez.position, BeatrizdeCastroPerez.links, BeatrizdeCastroPerez.description, BeatrizdeCastroPerez.thumbnail_image , BeatrizdeCastroPerez.profile_image,"right", length)} 
 
 
                                 
-                {renderTeamMemberItem(ChrisMillis.name, ChrisMillis.position,ChrisMillis.links, ChrisMillis.description, ChrisMillis.thumbnail_image,ChrisMillis.profile_image, "right",length)} 
+                {renderTeamMemberItem(ChrisMillis.name, ChrisMillis.position,ChrisMillis.links, ChrisMillis.description, ChrisMillis.thumbnail_image,ChrisMillis.profile_image, "left",length)} 
 
 
-                {renderTeamMemberItem(CristobalEchevarria.name, CristobalEchevarria.position,CristobalEchevarria.links, CristobalEchevarria.description,CristobalEchevarria.thumbnail_image ,CristobalEchevarria.profile_image,"left", length)} 
+                {renderTeamMemberItem(CristobalEchevarria.name, CristobalEchevarria.position,CristobalEchevarria.links, CristobalEchevarria.description,CristobalEchevarria.thumbnail_image ,CristobalEchevarria.profile_image,"right", length)} 
 
 
                 
-                {renderTeamMemberItem(LauraMolloy.name, LauraMolloy.position,LauraMolloy.links, LauraMolloy.description,LauraMolloy.thumbnail_image,LauraMolloy.profile_image,"right",length)} 
+                {renderTeamMemberItem(LauraMolloy.name, LauraMolloy.position,LauraMolloy.links, LauraMolloy.description,LauraMolloy.thumbnail_image,LauraMolloy.profile_image,"left",length)} 
                 
 
 
-                {renderTeamMemberItem(MayaraZucheli.name, MayaraZucheli.position, MayaraZucheli.links, MayaraZucheli.description, MayaraZucheli.thumbnail_image, MayaraZucheli.profile_image,"left", length)} 
+                {renderTeamMemberItem(MayaraZucheli.name, MayaraZucheli.position, MayaraZucheli.links, MayaraZucheli.description, MayaraZucheli.thumbnail_image, MayaraZucheli.profile_image,"right", length)} 
 
 
                                 
-                {renderTeamMemberItem(NishaPatel.name, NishaPatel.position,NishaPatel.links, NishaPatel.description, NishaPatel.thumbnail_image ,NishaPatel.profile_image,"right",length)} 
+                {renderTeamMemberItem(NishaPatel.name, NishaPatel.position,NishaPatel.links, NishaPatel.description, NishaPatel.thumbnail_image ,NishaPatel.profile_image,"left",length)} 
 
 
 
 
 
 
-                {renderTeamMemberItem(RebeccaWeigler.name, RebeccaWeigler.position,RebeccaWeigler.links, RebeccaWeigler.description, RebeccaWeigler.thumbnail_image, RebeccaWeigler.profile_image,"left", length)} 
+                {renderTeamMemberItem(RebeccaWeigler.name, RebeccaWeigler.position,RebeccaWeigler.links, RebeccaWeigler.description, RebeccaWeigler.thumbnail_image, RebeccaWeigler.profile_image,"right", length)} 
 
 
                 
-                {renderTeamMemberItem(SukhpreetChana.name, SukhpreetChana.position,SukhpreetChana.links, SukhpreetChana.description, SukhpreetChana.thumbnail_image,SukhpreetChana.profile_image,"right",length)} 
+                {renderTeamMemberItem(SukhpreetChana.name, SukhpreetChana.position,SukhpreetChana.links, SukhpreetChana.description, SukhpreetChana.thumbnail_image,SukhpreetChana.profile_image,"left",length)} 
                 
 
 
-                {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"left", length)} 
+                {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"right", length)} 
 
-                {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"right",length)} 
-
-                {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"left",length)} 
+                {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"left",length)} 
 
 
 
