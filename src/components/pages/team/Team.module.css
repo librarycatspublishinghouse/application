@@ -40,6 +40,9 @@
 
 
 }
+.teamMemberItem_content_header{
+    scroll-margin: 100px;
+}
 .teamMemberItem_content_header:hover {
     cursor: pointer;
 }
@@ -68,6 +71,8 @@
     font-weight: 600
 }
 .teamMember_description {
+    scroll-timeline: 100px;
+    scroll-margin: 100px;
     font-size: 0.9rem;
     font-weight: 600;
     hyphens: auto;

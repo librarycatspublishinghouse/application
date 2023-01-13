@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import style from './Team.module.css';
 
 import 'font-awesome/css/font-awesome.min.css';
@@ -15,10 +15,10 @@ function Team() {
 
     const [length, setLength] = React.useState("short");
 
-    const renderTeamMemberItem = (name, position,links,  description, thumbnail_image, profile_image, direction, length) => {
+    const renderTeamMemberItem = (name, position,links,  description, thumbnail_image, profile_image, direction, length, refOpen, refClosed ) => {
         const renderImage = () => {
             return(
-                <div className={style.teamMemberItem_image_container}>
+                <div className={style.teamMemberItem_image_container} >
                         <img className = {style.teamMember_image} src={profile_image} alt = ""/> 
                     </div>
             )
@@ -28,12 +28,12 @@ function Team() {
                
     
 
-        const renderContent = (name, position,links , description, length) => {
+        const renderContent = (name, position,links , description, length, refOpen, refClosed) => {
             return(
             <div className={style.teamMemberItem_content_container}>
                 {(length === "short") ? (
                     <>
-                    <div className={style.teamMemberItem_content_header} onClick = {handleClick}>
+                    <div className={style.teamMemberItem_content_header} onClick = {() => handleClick(refOpen, refClosed)} ref ={refClosed}>
                         <div className={style.teamMember_name}>
                             {name}
                         </div>
@@ -59,7 +59,7 @@ function Team() {
                     </>
                 ) : (
                 <>
-                    <div className={style.teamMember_description} onClick = {handleClick}>
+                    <div className={style.teamMember_description} onClick = {() => handleClick(refOpen, refClosed)} ref ={refOpen}>
                         {description}
                     </div>
                     <div className={style.teamMember_links} style = {{display: 'inline-block', justifyItems: 'flex-end'}}>
@@ -153,12 +153,15 @@ function Team() {
             </div>
             )
         }
-        const handleClick = () => {
+        const handleClick = async (refOpen, refClosed) => {
             if (length === "short") {
-                setLength("long");
+                await setLength("long");
+                refOpen.current.scrollIntoView( {behavior: "smooth", block: "start"})
             } else {
-                setLength("short");
+                await setLength("short");
+                refClosed.current.scrollIntoView();
             }
+            
         } 
 
         const renderBookThumbnail = () => {
@@ -198,11 +201,11 @@ function Team() {
                         {(direction === "left") ? (
                             <>
                                 {renderImage()}  
-                                {renderContent(name, position, links , description, length)}
+                                {renderContent(name, position, links , description, length, refOpen, refClosed)}
                             </>
                         ) : (     
                             <>
-                            {renderContent(name, position, links , description, length)}
+                            {renderContent(name, position, links , description, length, refOpen, refClosed)}
                             {renderImage()}  
                         </>
                         )}
@@ -236,6 +239,24 @@ function Team() {
         description: "I am an MSc student at the LSE, studying European Politics. I'm a bit of a book geek, but I also enjoy football, golf, chess, and movies, among other things. Here at Spread the Word, we cannot wait to hear from you and read what you have to say",
         thumbnail_image: "/pictures/team/book-thumbnails/bomarzo.webp",
         profile_image: `/pictures/team/member-images/marcos.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
+        id: "marcos-echevarria",
+    }
+
+    const PeterBarret  = {
+        name: " Peter Barrett",
+        position: "Chief Editor",
+        links: {
+            twitter: "",
+            instagram: "https://www.instagram.com/peterbarrett0",
+            linkedin: "",
+        },
+        description: "Hi, My name is Peter! I am London-based playwright and founder of Fundamentals Theatre Company. I graduated from the University of Edinburgh in 2021 reading Philosophy and English Literature - during my time there I was co-founder and editor of the student-run Hebenon Literary Journal and produced, directed, and wrote my first play (The Apology) through my theatre company that performed at EdinburghI study Creative Writing in Lancaster University. I am an aspiring poet and editor. I attempt to explore various aspects of humanity, life and the world in my poetry. By doing so, I hope to inspire my readers to view themselves, their lives and the world they live in from a fresh angle. I am also very interested in communicating with other writers and helping them with their works.",
+        thumbnail_image: "/pictures/team/book-thumbnails/the-crying-of-lot-49.webp",
+        profile_image: `/pictures/team/member-images/peterBarrett.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
     const AikateriniRoka  = {
@@ -249,6 +270,8 @@ function Team() {
         description: "A graduate of the English language and literature department at the National and Kapodistrian University of Athens. I'm currently doing a master’s in sociolinguistics at Leiden University. I've worked as a book editor in Amsterdam editing novels and fiction books.",
         thumbnail_image: "/pictures/team/book-thumbnails/wurthering-heights.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
     const BeatrizdeCastroPerez  = {
@@ -262,6 +285,8 @@ function Team() {
         description: "I am a final-year Economics and International Relations student at Lancaster University. I am passionate about the study of climate change in both economics and politics. My hobbies are reading, dancing, travelling and learning new languages.",
         thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.webp",
         profile_image:  `/pictures/team/member-images/beatriz.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
     const ChrisMillis  = {
@@ -275,6 +300,8 @@ function Team() {
         description: "I’m a student from South London, currently undertaking an MA in English Literary Studies at Lancaster University in the North-West of England. Taking on this role has been a fantastic privilege helping to promote otherwise unheard voices. As a student looking for a career in publishing/editing, it has also allowed me to develop professional skills that I’m sure will prove invaluable over the coming years. I’ve loved working with the team, and look forward to reading and editing our next project!",
         thumbnail_image: "/pictures/team/book-thumbnails/atonement.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
     const CristobalEchevarria  = {
@@ -288,6 +315,8 @@ function Team() {
         description: "I am a third-year graphic communication and illustration student at Loughborough University. I am very passionate about branding, editorial design and animation. Website: cristobalechevarria.com1",
         thumbnail_image: "/pictures/team/book-thumbnails/the-outsiders.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
 
@@ -302,6 +331,8 @@ function Team() {
         description: "I’m a first-year English Literature student studying in Dublin. I’m one of the editors at Spread The Word. My favourite genres are classics, poetry and romance. I love reading, writing and listening to music.",
         thumbnail_image: "/pictures/team/book-thumbnails/northanger-abbey.webp",
         profile_image: `/pictures/team/member-images/laura.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
 
@@ -316,6 +347,8 @@ function Team() {
         description: "I’m a designer with a bachelor’s in fine arts. I love books, travelling and cats.",
         thumbnail_image: "/pictures/team/book-thumbnails/4321.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
 
@@ -330,6 +363,8 @@ function Team() {
         description: "She has a solid BA in Creative Writing and English Language. She completed the New Writing Festival at university, where acclaimed poet Abena Essah  mentored  her.  She  was  shortlisted  at  Granta.  Her  work  appears  in  The  Wells  Street Journal. She has been longlisted at Young Poets Network. Her other interests include nature and art. She enjoys drawing as her hobby.",
         thumbnail_image: "/pictures/team/book-thumbnails/a-christmas-carol.webp",
         profile_image:  `/pictures/team/member-images/nisha.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
 
@@ -344,6 +379,8 @@ function Team() {
         description: "Hello,  my  name  is  Rebecca!  I  am  currently  studying  in  London  for  my  master's  degree  in Publishing, having recently graduated with a bachelor's degree in English. I love all things to do with books, art, travel and writing. When I am not working, I often read good books or with my Golden Retriever.",
         thumbnail_image: "/pictures/team/book-thumbnails/anne-of-green-gables.webp",
         profile_image:  `/pictures/team/member-images/rebecca.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
 
@@ -358,6 +395,8 @@ function Team() {
         description: "I am a book enthusiast, with a passion for reading crime, romance and psychological fiction novels. My hobbies and interest consist of writing short fiction novels and reading. I’m currently in the pursuit of expanding my knowledge and skills in the publishing industry/book world.",
         thumbnail_image: "/pictures/team/book-thumbnails/fifty-fifty.webp",
         profile_image:  `/pictures/team/member-images/sukhpreet.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
 
@@ -372,6 +411,8 @@ function Team() {
         description: "I’m Zori, a student studying English Literature, Spanish and History. I love to read and write, and being an editor for this project is exactly what I need to facilitate these passions!",
         thumbnail_image: "/pictures/team/book-thumbnails/normal-people-sally-rooney.webp",
         profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
     const BeatriceFeng  = {
@@ -385,20 +426,11 @@ function Team() {
         description: "I study Creative Writing in Lancaster University. I am an aspiring poet and editor. I attempt to explore various aspects of humanity, life and the world in my poetry. By doing so, I hope to inspire my readers to view themselves, their lives and the world they live in from a fresh angle. I am also very interested in communicating with other writers and helping them with their works.",
         thumbnail_image: "/pictures/team/book-thumbnails/collected-poems.webp",
         profile_image: `/pictures/team/member-images/beatrice.webp`,
+        id: "beatrice-feng",
+        refOpen: useRef(null),
+        refClosed: useRef(null),
     }
 
-    const PeterBarret  = {
-        name: " Peter Barrett",
-        position: "Chief Editor",
-        links: {
-            twitter: "",
-            instagram: "https://www.instagram.com/peterbarrett0",
-            linkedin: "",
-        },
-        description: "Hi, My name is Peter! I am London-based playwright and founder of Fundamentals Theatre Company. I graduated from the University of Edinburgh in 2021 reading Philosophy and English Literature - during my time there I was co-founder and editor of the student-run Hebenon Literary Journal and produced, directed, and wrote my first play (The Apology) through my theatre company that performed at EdinburghI study Creative Writing in Lancaster University. I am an aspiring poet and editor. I attempt to explore various aspects of humanity, life and the world in my poetry. By doing so, I hope to inspire my readers to view themselves, their lives and the world they live in from a fresh angle. I am also very interested in communicating with other writers and helping them with their works.",
-        thumbnail_image: "/pictures/team/book-thumbnails/the-crying-of-lot-49.webp",
-        profile_image: `/pictures/team/member-images/peterBarrett.webp`,
-    }
 
 
     return (
@@ -410,51 +442,51 @@ function Team() {
             </div>
 
         
-                {renderTeamMemberItem(MarcosEchevarria.name, MarcosEchevarria.position,MarcosEchevarria.links, MarcosEchevarria.description, MarcosEchevarria.thumbnail_image, MarcosEchevarria.profile_image,"left", length)} 
+                {renderTeamMemberItem(MarcosEchevarria.name, MarcosEchevarria.position,MarcosEchevarria.links, MarcosEchevarria.description, MarcosEchevarria.thumbnail_image, MarcosEchevarria.profile_image,"left", length, MarcosEchevarria.refOpen, MarcosEchevarria.refClosed)} 
 
-                {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"right",length)} 
+                {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"right",length, PeterBarret.refOpen, PeterBarret.refClosed)} 
                 
-                {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"left",length)} 
+                {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"left",length, AikateriniRoka.refOpen, AikateriniRoka.refClosed)} 
                 
 
 
-                {renderTeamMemberItem(BeatrizdeCastroPerez.name, BeatrizdeCastroPerez.position, BeatrizdeCastroPerez.links, BeatrizdeCastroPerez.description, BeatrizdeCastroPerez.thumbnail_image , BeatrizdeCastroPerez.profile_image,"right", length)} 
+                {renderTeamMemberItem(BeatrizdeCastroPerez.name, BeatrizdeCastroPerez.position, BeatrizdeCastroPerez.links, BeatrizdeCastroPerez.description, BeatrizdeCastroPerez.thumbnail_image , BeatrizdeCastroPerez.profile_image,"right", length, BeatrizdeCastroPerez.refOpen, BeatrizdeCastroPerez.refClosed)} 
 
 
                                 
-                {renderTeamMemberItem(ChrisMillis.name, ChrisMillis.position,ChrisMillis.links, ChrisMillis.description, ChrisMillis.thumbnail_image,ChrisMillis.profile_image, "left",length)} 
+                {renderTeamMemberItem(ChrisMillis.name, ChrisMillis.position,ChrisMillis.links, ChrisMillis.description, ChrisMillis.thumbnail_image,ChrisMillis.profile_image, "left",length, ChrisMillis.refOpen, ChrisMillis.refClosed)} 
 
 
-                {renderTeamMemberItem(CristobalEchevarria.name, CristobalEchevarria.position,CristobalEchevarria.links, CristobalEchevarria.description,CristobalEchevarria.thumbnail_image ,CristobalEchevarria.profile_image,"right", length)} 
+                {renderTeamMemberItem(CristobalEchevarria.name, CristobalEchevarria.position,CristobalEchevarria.links, CristobalEchevarria.description,CristobalEchevarria.thumbnail_image ,CristobalEchevarria.profile_image,"right", length, CristobalEchevarria.refOpen, CristobalEchevarria.refClosed)} 
 
 
                 
-                {renderTeamMemberItem(LauraMolloy.name, LauraMolloy.position,LauraMolloy.links, LauraMolloy.description,LauraMolloy.thumbnail_image,LauraMolloy.profile_image,"left",length)} 
+                {renderTeamMemberItem(LauraMolloy.name, LauraMolloy.position,LauraMolloy.links, LauraMolloy.description,LauraMolloy.thumbnail_image,LauraMolloy.profile_image,"left",length, LauraMolloy.refOpen, LauraMolloy.refClosed)} 
                 
 
 
-                {renderTeamMemberItem(MayaraZucheli.name, MayaraZucheli.position, MayaraZucheli.links, MayaraZucheli.description, MayaraZucheli.thumbnail_image, MayaraZucheli.profile_image,"right", length)} 
+                {renderTeamMemberItem(MayaraZucheli.name, MayaraZucheli.position, MayaraZucheli.links, MayaraZucheli.description, MayaraZucheli.thumbnail_image, MayaraZucheli.profile_image,"right", length, MayaraZucheli.refOpen, MayaraZucheli.refClosed)} 
 
 
                                 
-                {renderTeamMemberItem(NishaPatel.name, NishaPatel.position,NishaPatel.links, NishaPatel.description, NishaPatel.thumbnail_image ,NishaPatel.profile_image,"left",length)} 
+                {renderTeamMemberItem(NishaPatel.name, NishaPatel.position,NishaPatel.links, NishaPatel.description, NishaPatel.thumbnail_image ,NishaPatel.profile_image,"left",length, NishaPatel.refOpen, NishaPatel.refClosed)}
 
 
 
 
 
 
-                {renderTeamMemberItem(RebeccaWeigler.name, RebeccaWeigler.position,RebeccaWeigler.links, RebeccaWeigler.description, RebeccaWeigler.thumbnail_image, RebeccaWeigler.profile_image,"right", length)} 
+                {renderTeamMemberItem(RebeccaWeigler.name, RebeccaWeigler.position,RebeccaWeigler.links, RebeccaWeigler.description, RebeccaWeigler.thumbnail_image, RebeccaWeigler.profile_image,"right", length,  RebeccaWeigler.refOpen, RebeccaWeigler.refClosed)} 
 
 
                 
-                {renderTeamMemberItem(SukhpreetChana.name, SukhpreetChana.position,SukhpreetChana.links, SukhpreetChana.description, SukhpreetChana.thumbnail_image,SukhpreetChana.profile_image,"left",length)} 
+                {renderTeamMemberItem(SukhpreetChana.name, SukhpreetChana.position,SukhpreetChana.links, SukhpreetChana.description, SukhpreetChana.thumbnail_image,SukhpreetChana.profile_image,"left",length, SukhpreetChana.refOpen, SukhpreetChana.refClosed)} 
                 
 
 
-                {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"right", length)} 
+                {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"right", length, ZoriNencheva.refOpen, ZoriNencheva.refClosed)} 
 
-                {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"left",length)} 
+                {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"left",length, BeatriceFeng.refOpen, BeatriceFeng.refClosed)} 
 
 
 
