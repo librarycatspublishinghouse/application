@@ -1,9 +1,10 @@
 .contests {
     background-image: url("../../../../public/pictures/contests/contest-background.webp");
-    min-height: 1000px;
+    min-height: 400px;
     width: 100%;
     background-size: cover;
     padding-top: 100px;
+    padding-bottom: 50px;
     display: flex;
 }
 
