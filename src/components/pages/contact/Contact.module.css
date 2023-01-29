@@ -1,7 +1,7 @@
 
 .contact_container_container {
     background-color: #6fc3db;
-    height: 600px;
+    min-height: 600px;
 }
 .contact_container{
 
@@ -153,5 +153,8 @@
         margin-top: 2rem;
         font-size: 15vw;
         text-align: right;
+    }
+    .footer_description_text {
+        width: auto
     }
 }
