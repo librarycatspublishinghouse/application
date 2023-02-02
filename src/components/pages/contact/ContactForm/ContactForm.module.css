@@ -3,6 +3,7 @@
     text-align: left;
     font-size: 1.1rem;
     width: 18rem;
+    
 
 }
 
@@ -61,7 +62,7 @@
     cursor: pointer;
 }
 :root {
-    --duration: 2s;
+    --duration: 5s;
   }
 .error_message {
     color: rgb(148, 44, 44);
@@ -71,6 +72,8 @@
     -moz-animation: inAndOut var(--duration) ease-in forwards;
     -webkit-animation: inAndOut var(--duration) ease-in forwards;
     animation: inAndOut var(--duration) ease-in forwards;
+
+    transition: mex-height 2s;
 }
 @keyframes inAndOut {
     0% {
@@ -85,6 +88,12 @@
     100% {
       opacity: 0;
     }
+  }
+
+  .error_hidden {
+    max-height: 0;
+    transition: max-height 10s;
+
   }
 
 @media only screen and (max-width: 770px) {

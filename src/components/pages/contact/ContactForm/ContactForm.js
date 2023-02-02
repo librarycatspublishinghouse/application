@@ -104,7 +104,7 @@ function ContactForm() {
             <textarea className= {style.message_input} id="message" name="message" rows="7" value={formInput.message} onChange = {handleMessageChange}/>
         </div>
 
-        {errorMessage && <div className={style.error_message}>{errorMessage}</div>}
+        {<div className={errorMessage? style.error_message: style.error_hidden}>{errorMessage}</div>}
         <div className= {style.submit_button} onClick = {handleSubmit}>
             SUBMIT
         </div>
