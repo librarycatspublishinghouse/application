@@ -431,6 +431,22 @@ function Team() {
         refClosed: useRef(null),
     }
 
+    const KaiScotney  = {
+        name: "Kai Scotney",
+        position: "Editor",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "https://www.linkedin.com/in/kai-scotney-323a41158/",
+        },
+        description: "Recently finished an MA in Modern and Contemporary Literature at the University of Manchester. A lover of dogs, indie rock, and Bristol Rovers F.C. A firm believer that there’s a story inside everyone waiting to be told.",
+        thumbnail_image: "/pictures/team/book-thumbnails/on-beauty.webp",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        id: "kai-scotney",
+        refOpen: useRef(null),
+        refClosed: useRef(null),
+    }
+
 
 
     return (
@@ -488,7 +504,7 @@ function Team() {
 
                 {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"left",length, BeatriceFeng.refOpen, BeatriceFeng.refClosed)} 
 
-
+                {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"right",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
 
 
 

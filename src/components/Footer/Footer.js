@@ -26,7 +26,7 @@ function Footer() {
 
   const postSubmit = async (email) =>{
       const request = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/emailSubscription/create-new-email-subscription/`+email);
-      if (request.status == 200){
+      if (request.status === 200){
         console.log("submitted: ",email)
       }
       else {
