@@ -346,7 +346,7 @@ function Team() {
         },
         description: "I’m a designer with a bachelor’s in fine arts. I love books, travelling and cats.",
         thumbnail_image: "/pictures/team/book-thumbnails/4321.webp",
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        profile_image: `/pictures/team/member-images/mayara.webp`,
         refOpen: useRef(null),
         refClosed: useRef(null),
     }
