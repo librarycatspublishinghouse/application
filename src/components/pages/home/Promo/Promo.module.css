@@ -26,6 +26,7 @@
 
 .banner_image {
     width: 100%;
+    min-height: 269px;
 }
 
 .banner_button_container{
