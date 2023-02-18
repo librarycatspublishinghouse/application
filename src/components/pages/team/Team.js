@@ -448,6 +448,22 @@ function Team() {
     }
 
 
+    const RajaKhan  = {
+        name: "Raja Khan",
+        position: "Legal Advisor",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "",
+        },
+        description: "I would describe myself as a lawyer, entrepreneur and avid reader. In the words of Dolores Cannon, 'when we go someplace, we leave a part of our energy there and we influence more than we can ever imagine.'. Realising this makes me feel optimistic about the change that I can help generate in this world and it is with this in mind, I decided to make a change by joining STW.  I also like to play football, travel and design pottery in my free time",
+        thumbnail_image: "/pictures/team/book-thumbnails/the-power-of-positive-thinking.webp",
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        id: "kai-scotney",
+        refOpen: useRef(null),
+        refClosed: useRef(null),
+    }
+
 
     return (
     <div className={style.team}>
@@ -507,7 +523,7 @@ function Team() {
                 {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"right",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
 
 
-
+                {renderTeamMemberItem(RajaKhan.name, RajaKhan.position,RajaKhan.links, RajaKhan.description, RajaKhan.thumbnail_image,RajaKhan.profile_image,"left",length, RajaKhan.refOpen, RajaKhan.refClosed)} 
 
             
            
