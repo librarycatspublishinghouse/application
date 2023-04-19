@@ -464,6 +464,22 @@ function Team() {
         refClosed: useRef(null),
     }
 
+    const IslaMacFarlane  = {
+        name: "Isla MacFarlane",
+        position: "",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "https://www.linkedin.com/in/isla-macfarlane-0b042613b/",
+        },
+        description: " I am a recent MSc Psychology graduate at the University of Glasgow. I am fascinated by the intersection between literature, linguistics and psychology. My hobbies include reading, music and film.",
+        thumbnail_image: "/pictures/team/book-thumbnails/rebecca.webp",
+        profile_image: `/pictures/team/member-images/isla.webp`,
+        id: "isla-macfarlane",
+        refOpen: useRef(null),
+        refClosed: useRef(null),
+    }
+
 
     return (
     <div className={style.team}>
@@ -524,6 +540,8 @@ function Team() {
 
 
                 {renderTeamMemberItem(RajaKhan.name, RajaKhan.position,RajaKhan.links, RajaKhan.description, RajaKhan.thumbnail_image,RajaKhan.profile_image,"left",length, RajaKhan.refOpen, RajaKhan.refClosed)} 
+
+                {renderTeamMemberItem(IslaMacFarlane.name, IslaMacFarlane.position,IslaMacFarlane.links, IslaMacFarlane.description, IslaMacFarlane.thumbnail_image,IslaMacFarlane.profile_image,"right",length, IslaMacFarlane.refOpen, IslaMacFarlane.refClosed)}
 
             
            
