@@ -22,6 +22,15 @@
 .team_content {
     display:grid;
 }
+.teamMember_content{
+    animation: fadein 1s;
+    transition: 0.5s;
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 .book_thumbail_image_container {
     margin-top: 0.2rem;
@@ -66,6 +75,9 @@
     font-size: 1.2rem;
     line-height: 1rem;
 }
+.row_gap{
+    margin-bottom: 1rem;
+}
 .teamMember_position {
     font-size: 0.8rem;
     font-weight: 600
@@ -106,6 +118,14 @@
 .link:visited{
     text-decoration: none;
 
+}
+.former_members_label{
+    padding-top: 5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 750px) {
