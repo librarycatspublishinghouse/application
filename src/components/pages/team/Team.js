@@ -594,7 +594,7 @@ function Team() {
             {(showFormerMembers) && (
                 <div onClick={handleClickShowFormerMembers}>
                     
-                    {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"right",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
+                    {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"left",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
                 </div>
             )}
         </div>
