@@ -102,7 +102,7 @@ function Footer() {
 
             
           <div className = {style.copyright_container}>
-          © 2021 SPREAD THE WORD EDITORIAL
+          © 2021 LIBRARY CATS EDITORIAL
           </div>
         </div>
       </div>

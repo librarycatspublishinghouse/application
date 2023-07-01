@@ -35,7 +35,7 @@ function Contact() {
 
             <div className= {style.log_info_container}>
               <div className={style.logo_info_header}>
-                SPREAD THE WORD
+                LIBRARY CATS
               </div>
               <div className={style.logo_info_header_sub}>
                 EDITORIAL 
@@ -52,15 +52,15 @@ function Contact() {
         <div className= {style.footer_container_container}>
           <div className= {style.footer_container}>
             <div className= {style.footer_description_text}>
-              Spread the word editorial publishers is a UK based global digital organisation
+              Library Cats is a UK based global digital organisation
               <div className={style.footer_gap}/>
 
               Contact us with your budding future best sellers for advice from our editors, or with any enquiries.
             </div>
             <div className={style.footer_header}>
-              SPREAD 
+              LIBRARY
               <br />
-              THE WORD
+              CATS
 
             </div>
           </div>

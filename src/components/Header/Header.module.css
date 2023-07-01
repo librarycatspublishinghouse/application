@@ -14,6 +14,8 @@
     padding-bottom:25px;
     min-width: 230px;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
    
 }
 .grid_container{
@@ -71,6 +73,7 @@
     font-family:  barlow, sans-serif;
     line-height:1.2em;
     letter-spacing:0.05em;
+    
 }
 
 .page_slogan_container{

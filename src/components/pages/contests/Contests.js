@@ -8,7 +8,7 @@ function Contests() {
     <div className= {style.contests}>
       <div className= {style.contests_container}>
         <div className= {style.contests_title}>
-          SPREAD THE WORD  
+          LIBRARY CATS 
         </ div>
         <div className= {style.underline}>
         </div>

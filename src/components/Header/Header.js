@@ -31,15 +31,15 @@ const Header = ({toggle}) => {
                     <Link className = {style.logo_texts} to = "/">
                         <div className = "page-title-container">
                             <div className = {style.page_title_text}>
-                                <span> SPREAD THE WORD </span>
+                                <span> LIBRARY CATS  </span>
                                 
                             </div>
                         </div>
-                        <div className = {style.page_slogan_container}>
+                        {/* <div className = {style.page_slogan_container}>
                             <div className = {style.page_slogan_text}>
                                 The Digital Book Publisher
                             </div> 
-                        </div>
+                        </div> */}
                     </ Link>
                 </div>
                 <div className  = {style.navbar_items_container}>
