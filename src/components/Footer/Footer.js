@@ -102,7 +102,13 @@ function Footer() {
 
             
           <div className = {style.copyright_container}>
-          © 2021 LIBRARY CATS EDITORIAL
+          © 2023 Library Cats Publishing House CIC
+
+
+
+
+
+
           </div>
         </div>
       </div>
