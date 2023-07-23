@@ -73,7 +73,7 @@ function Footer() {
                 </a> 
               </li>
               <li className =  {style.social_media_list_item}>
-                <a className = {style.email_link} href = "mailto:spreadthewordeditorial@gmail.com">
+                <a className = {style.email_link} href = "mailto:librarycatseditorial@gmail.com">
                   <img className={style.social_media_item_image} src = "/pictures/email.png" alt = "email link"/>
                 </a>        
               </li>

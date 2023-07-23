@@ -55,7 +55,7 @@ function Send() {
 
     <div className = {style.share_link}>
       <a className  = {style.share_link_item} 
-      href = "https://drive.google.com/drive/folders/1ks8O0zIi7s8sqypEMzI7JD9QgJBkFTvE?usp=sharing">
+      href = "https://drive.google.com/drive/folders/1ydFA2mgF2VDMRhVWLedcYgJYBSxg0O7E?usp=sharing">
         <img className = {style.wobly_box} src="pictures/send/google-drive-box.webp" alt = ""/> 
         <div className={style.google_drive_text}>
           <span className={style.google}>Google </span> <span className={style.drive}>Drive</span>

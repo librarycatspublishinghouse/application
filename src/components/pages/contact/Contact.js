@@ -44,7 +44,7 @@ function Contact() {
                 Contact one of our global digital editors or send in your submission to:
               </div>
               <div className={style.logo_info_link}>
-                Email<a className={style.email_link_item} href="mailto:spreadthewordeditorial@gmail.com" >: spreadthewordeditorial@gmail.com </a>
+                Email<a className={style.email_link_item} href="mailto:librarycatseditorial@gmail.com" >: librarycatseditorial@gmail.com </a>
               </div>
             </div>
           </div>
