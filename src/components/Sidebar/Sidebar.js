@@ -28,6 +28,31 @@ return(
             </div>
             <div className = "menu_list_container">
 
+            <div className="sb_nav_list_container">
+
+                <NavLink to = "/books">
+                    <li className = {"nav_list_item"}>
+                        Books
+                    </li>
+                </ NavLink>
+                <NavLink to = "/authors">
+                    <li className = {"nav_list_item"}>
+                        Authors
+                    </li>
+                </ NavLink>
+                <NavLink to = "/contests">
+                    <li className = {"nav_list_item"}>
+                        Contests
+                    </li>
+                </ NavLink>
+                <NavLink to = "/send">
+                    <li className = {"nav_list_item"}>
+                        Send us
+                    </li>
+                </ NavLink>
+
+            </div>
+
                 <NavLink to = "/services">
                     <li className = "nav_list_item">
                         About Us - Services
@@ -48,6 +73,13 @@ return(
                         Contact
                     </li>
                 </ NavLink>
+                <NavLink to = "/terms-and-conditions">
+                    <li className = "nav_list_item">
+                        Terms and Conditions
+                    </li>
+                </ NavLink>
+
+                
 
             </div>
         </ProSidebar>

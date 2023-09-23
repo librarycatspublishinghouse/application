@@ -149,8 +149,16 @@
         display: none;
     }
     .nav_list_container{
-        margin-left: 30px;
+        margin-left: 0px;
   
 
+    }
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    .nav_list_container{
+        display: none;
     }
 }

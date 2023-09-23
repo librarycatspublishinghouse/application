@@ -173,5 +173,10 @@
     margin-left: 8px;
     margin-right: 8px;
 
-}
+    }
+    .cards_container{
+
+        width: 100%;
+
+    }
 }

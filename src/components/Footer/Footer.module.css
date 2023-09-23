@@ -86,14 +86,15 @@
 .form_container{
     width:500px;
     margin: 0 auto;
-    display:  flex;
+    display:  grid;
+    grid-template-columns: 2fr 1fr;
     margin-bottom: 35px;
 }
 
 
 .form_item{
+    width: 100%;
     height:45px;
-    width:300px;
     line-height: 50px;
     background: transparent;
     text-decoration: none;
@@ -107,7 +108,7 @@
     box-shadow:inset 0px 0px 0px 1px #000;
 }
 .form_button{
-    width: 150px;
+    width: 100%;
     height:49px;
     
     font-size: 20px;
@@ -190,6 +191,17 @@
 @media only screen and (max-width:520px){
     .form_container{
   
-        width: auto;
+        width: 100%;
     }
 }
+
+@media only screen and (max-width:400px){
+    .social_media_list_item{
+        padding-left: 7px;
+        padding-right: 7px;    
+    }
+    .social_media_item_image{
+        height:40px;
+        width: 40px;
+    }
+}    

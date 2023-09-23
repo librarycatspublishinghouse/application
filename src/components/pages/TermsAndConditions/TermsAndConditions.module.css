@@ -1,0 +1,244 @@
+.terms{
+
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: #233349;
+    overflow: hidden;
+
+}
+.terms_container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.container_1{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+.description_container{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1rem;
+    
+    background-color: #EDD6CC;
+    border-radius:  0px 0px 70px 0px;
+    filter: drop-shadow(0px 18px 29px rgba(0, 0, 0, 0.288));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+
+    padding: 6rem;
+    box-sizing: border-box;
+}
+.title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5rem;
+    line-height: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    color: #233349;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.description {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #444444;
+    text-align: left;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+}
+
+.descirption_image {
+    height: 308px;
+    width: 337px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 0px 75px;
+    filter: drop-shadow(0px 18px 29px rgba(0, 0, 0, 0.288));
+}
+.descirption_image_item {
+    width: 100%;
+    height: 100%;
+
+}
+
+.container_2 {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+.document_container {
+    padding: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    gap: 2rem;
+    column-gap:  2rem;
+    box-sizing: border-box;
+
+}
+.document {
+    width: 160px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.document:hover  {
+    cursor: pointer;
+
+}
+/* set child on hover */
+.document:hover .document_image {
+    filter: drop-shadow(0px 18px 29px rgba(0, 0, 0, 0.288));
+    transform: scale(1.1);
+}
+
+
+.document_image {
+    width: 160px;
+    height: 220px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 0px 75px;
+    filter: drop-shadow(0px 18px 29px rgba(0, 0, 0, 0.288));
+    transition: 0.2s ease-in-out;
+
+}
+
+.document_image_item {
+    width: 100%;
+    height: 100%;
+}
+.document_title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #dddddd;
+    text-align: center;
+    padding-top:2rem;
+    padding-bottom: 1.5rem;
+    height: 70px;
+}
+
+.download_button {
+    width: 100%;
+    height: 40px;
+    
+    border-radius: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    /* inner outline */
+    outline: solid 2px #c4772a;
+    outline-offset: -2px;
+    color: #c4772a;
+    transition: 0.2s ease-in-out;
+
+    
+}
+.download_button:hover {
+    color: #b69373;
+    outline: solid 2px #b69373;
+
+
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .descirption_image {
+        height: 230px;
+        width: 240px;
+    }
+    .document_image {
+        width: 120px;
+        height: 170px;
+    }
+    .document_title {
+        font-size: 1rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .document {
+        width: 120px;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .document_container {
+        padding: 3rem;
+    }
+    .description_container {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 640px ) {
+    .terms{
+        height: auto;
+    }
+    .terms_container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .document_container {
+        padding: 4rem 2rem;
+        justify-content: start;
+        
+    }
+}
+
+@media only screen and (max-width: 450px ) {
+    .description_container {
+        padding: 1rem;
+        width: 95%;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+    .descirption_image {
+        height: 200px;
+        width: 200px;
+    }
+}

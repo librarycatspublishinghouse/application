@@ -20,6 +20,7 @@ import Contact from './components/pages/contact/Contact';
 import Authors from './components/pages/authors/Authors';
 import AdminPage from './components/pages/adminPage/AdminPage';
 import ContestsShowcase from './components/pages/contests/contestsShowcase/ContestsShowcase';
+import TermsAndConditions from './components/pages/TermsAndConditions/TermsAndConditions';
 
 process.env['BACKEND_URL'] = 'https://spread-the-word.herokuapp.com/';
 function App() {
@@ -55,6 +56,7 @@ function App() {
             <Route path = '/contact' element = {<Contact />} />
             <Route path = '/authors' element = {<Authors />} />
             <Route path = '/admin-page' element = {<AdminPage />} />
+            <Route path = '/terms-and-conditions' element = {<TermsAndConditions />}  />
           </Routes>
         
         <Footer />
