@@ -196,6 +196,7 @@
         font-size: 3rem;
         line-height: 3rem;
         margin-bottom: 1.5rem;
+        letter-spacing:  0.3rem;
     }
     .document {
         width: 120px;
@@ -234,6 +235,7 @@
     }
     .title {
         font-size: 2.5rem;
+
     }
     .description {
         font-size: 1rem;
