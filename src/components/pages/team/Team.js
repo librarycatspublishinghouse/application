@@ -535,10 +535,8 @@ function Team() {
         
             {renderTeamMemberItem(MarcosEchevarria.name, MarcosEchevarria.position,MarcosEchevarria.links, MarcosEchevarria.description, MarcosEchevarria.thumbnail_image, MarcosEchevarria.profile_image,"left", length, MarcosEchevarria.refOpen, MarcosEchevarria.refClosed)} 
 
-            {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"right",length, PeterBarret.refOpen, PeterBarret.refClosed)} 
-            
-            {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"left",length, AikateriniRoka.refOpen, AikateriniRoka.refClosed)} 
-            
+           
+           
 
 
             {renderTeamMemberItem(BeatrizdeCastroPerez.name, BeatrizdeCastroPerez.position, BeatrizdeCastroPerez.links, BeatrizdeCastroPerez.description, BeatrizdeCastroPerez.thumbnail_image , BeatrizdeCastroPerez.profile_image,"right", length, BeatrizdeCastroPerez.refOpen, BeatrizdeCastroPerez.refClosed)} 
@@ -575,17 +573,16 @@ function Team() {
             
 
 
-            {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"right", length, ZoriNencheva.refOpen, ZoriNencheva.refClosed)} 
-
-            {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"left",length, BeatriceFeng.refOpen, BeatriceFeng.refClosed)} 
-
+           
+            {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"right",length, BeatriceFeng.refOpen, BeatriceFeng.refClosed)} 
 
 
-            {renderTeamMemberItem(RajaKhan.name, RajaKhan.position,RajaKhan.links, RajaKhan.description, RajaKhan.thumbnail_image,RajaKhan.profile_image,"right",length, RajaKhan.refOpen, RajaKhan.refClosed)} 
 
-            {renderTeamMemberItem(IslaMacFarlane.name, IslaMacFarlane.position,IslaMacFarlane.links, IslaMacFarlane.description, IslaMacFarlane.thumbnail_image,IslaMacFarlane.profile_image,"left",length, IslaMacFarlane.refOpen, IslaMacFarlane.refClosed)}
+            {renderTeamMemberItem(RajaKhan.name, RajaKhan.position,RajaKhan.links, RajaKhan.description, RajaKhan.thumbnail_image,RajaKhan.profile_image,"left",length, RajaKhan.refOpen, RajaKhan.refClosed)} 
 
-            {renderTeamMemberItem(AlfonsoBuhigas.name, AlfonsoBuhigas.position,AlfonsoBuhigas.links, AlfonsoBuhigas.description, AlfonsoBuhigas.thumbnail_image,AlfonsoBuhigas.profile_image,"right",length, AlfonsoBuhigas.refOpen, AlfonsoBuhigas.refClosed)}
+            {renderTeamMemberItem(IslaMacFarlane.name, IslaMacFarlane.position,IslaMacFarlane.links, IslaMacFarlane.description, IslaMacFarlane.thumbnail_image,IslaMacFarlane.profile_image,"right",length, IslaMacFarlane.refOpen, IslaMacFarlane.refClosed)}
+
+            {renderTeamMemberItem(AlfonsoBuhigas.name, AlfonsoBuhigas.position,AlfonsoBuhigas.links, AlfonsoBuhigas.description, AlfonsoBuhigas.thumbnail_image,AlfonsoBuhigas.profile_image,"left",length, AlfonsoBuhigas.refOpen, AlfonsoBuhigas.refClosed)}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
@@ -594,7 +591,14 @@ function Team() {
             {(showFormerMembers) && (
                 <div onClick={handleClickShowFormerMembers}>
                     
-                    {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"left",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
+                    {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"right",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
+               
+                    {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"left",length, AikateriniRoka.refOpen, AikateriniRoka.refClosed)} 
+            
+                    {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"right",length, PeterBarret.refOpen, PeterBarret.refClosed)} 
+            
+                    {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"left", length, ZoriNencheva.refOpen, ZoriNencheva.refClosed)} 
+
                 </div>
             )}
         </div>

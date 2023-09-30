@@ -12,10 +12,10 @@ const TermsAndConditions = () => {
                             Terms & Conditions
                         </div>
                         <div className={style.description}>
-                            Get to know our policies and how to contribute your support to our publishing team and comunity of emerging writers. By downloading one of our documents.
+                            Get to know our policies and how to contribute your support to our publishing team and community of emerging writers. 
                         </div>
-                        <div className={style.descirption_image}>
-                            <img className={style.descirption_image_item} src="pictures/terms-and-conditions/icon_laptop-screen.png" alt="Terms and Conditions" />
+                        <div className={style.description_image}>
+                            <img className={style.description_image_item} src="pictures/terms-and-conditions/icon_laptop-screen.png" alt="Terms and Conditions" />
                         </div>
                     
                     </div>
