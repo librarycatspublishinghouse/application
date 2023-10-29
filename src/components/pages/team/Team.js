@@ -529,8 +529,42 @@ function Team() {
         description: "Originally from Hertfordshire, UK, Victoria currently resides in the north of the country in Manchester. Victoria is a keen YA fantasy writer, and her first novel, Your World Shall Be Mine, is forthcoming with publisher L R Price Publications in 2024. Eventually, she plans to make the series a trilogy, but for now she’s just happy hibernating with her cats and playing video games!",
 
         thumbnail_image: "/pictures/team/book-thumbnails/battle-royale.webp",
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        profile_image: `/pictures/team/member-images/victoria.jpg`,
         id: "victoria-marie-smith",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+    const FionaBanham  = {
+        name:  "Fiona Banham",
+        position: "",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "www.linkedin.com/in/fiona-banham-1707891b7",
+        },
+        description: "Originally hailing from Manchester, I am a PhD student in Modern History at the University of St Andrews. I have a passion for reading and editing; books are my escape from the world when things get tough. When not reading, writing, or researching, you will either find me at a gig, running my accidental pet-sitting business, or enduring the trials and tribulations of being a Manchester United supporter.",
+
+        thumbnail_image: "/pictures/team/book-thumbnails/alone-in-berlin.jpg",
+        profile_image: `/pictures/team/member-images/fiona.JPG`,
+        id: "fiona-banham",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+    const RebeccaThomas  = {
+        name:  "Rebecca Thomas",
+        position: "Editor",
+        links: {
+            twitter: "",
+            instagram: "https://www.instagram.com/cheekanzoop",
+            linkedin: "https://www.linkedin.com/in/rebecca--thomas",
+        },
+        description: "Rebecca is an English native who has lived in the rainy north west almost all of her life. After graduating from Lancaster University with a BA Hons in Film and Cultural Studies, she has gone on to work as a content editor in jobs up and down the country, including the Liverpool Echo and Imperial War Museum, London. While she still edits as her day job, in her spare time she is a self-published author, gamer and avid film and TV watcher",
+
+        thumbnail_image: "/pictures/team/book-thumbnails/every-day.jpeg",
+        profile_image: `/pictures/team/member-images/rebecca-thomas.png`,
+        id: "rebecca-thomas",
         refOpen: useRef(),
         refClosed: useRef(),
     }
@@ -567,36 +601,34 @@ function Team() {
             {renderTeamMemberItem(CristobalEchevarria.name, CristobalEchevarria.position,CristobalEchevarria.links, CristobalEchevarria.description,CristobalEchevarria.thumbnail_image ,CristobalEchevarria.profile_image,"right", length, CristobalEchevarria.refOpen, CristobalEchevarria.refClosed)} 
 
 
-            
-            {renderTeamMemberItem(LauraMolloy.name, LauraMolloy.position,LauraMolloy.links, LauraMolloy.description,LauraMolloy.thumbnail_image,LauraMolloy.profile_image,"left",length, LauraMolloy.refOpen, LauraMolloy.refClosed)} 
-            
 
-
-            {renderTeamMemberItem(MayaraZucheli.name, MayaraZucheli.position, MayaraZucheli.links, MayaraZucheli.description, MayaraZucheli.thumbnail_image, MayaraZucheli.profile_image,"right", length, MayaraZucheli.refOpen, MayaraZucheli.refClosed)} 
+            {renderTeamMemberItem(MayaraZucheli.name, MayaraZucheli.position, MayaraZucheli.links, MayaraZucheli.description, MayaraZucheli.thumbnail_image, MayaraZucheli.profile_image,"left", length, MayaraZucheli.refOpen, MayaraZucheli.refClosed)} 
 
 
                             
-            {renderTeamMemberItem(NishaPatel.name, NishaPatel.position,NishaPatel.links, NishaPatel.description, NishaPatel.thumbnail_image ,NishaPatel.profile_image,"left",length, NishaPatel.refOpen, NishaPatel.refClosed)}
-
+            {renderTeamMemberItem(NishaPatel.name, NishaPatel.position,NishaPatel.links, NishaPatel.description, NishaPatel.thumbnail_image ,NishaPatel.profile_image,"right",length, NishaPatel.refOpen, NishaPatel.refClosed)}
 
 
             
-            {renderTeamMemberItem(SukhpreetChana.name, SukhpreetChana.position,SukhpreetChana.links, SukhpreetChana.description, SukhpreetChana.thumbnail_image,SukhpreetChana.profile_image,"right",length, SukhpreetChana.refOpen, SukhpreetChana.refClosed)} 
+            {renderTeamMemberItem(SukhpreetChana.name, SukhpreetChana.position,SukhpreetChana.links, SukhpreetChana.description, SukhpreetChana.thumbnail_image,SukhpreetChana.profile_image,"left",length, SukhpreetChana.refOpen, SukhpreetChana.refClosed)} 
             
-
 
            
-            {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"left",length, BeatriceFeng.refOpen, BeatriceFeng.refClosed)} 
+            {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"right",length, BeatriceFeng.refOpen, BeatriceFeng.refClosed)} 
 
 
 
-            {renderTeamMemberItem(RajaKhan.name, RajaKhan.position,RajaKhan.links, RajaKhan.description, RajaKhan.thumbnail_image,RajaKhan.profile_image,"right",length, RajaKhan.refOpen, RajaKhan.refClosed)} 
+            {renderTeamMemberItem(RajaKhan.name, RajaKhan.position,RajaKhan.links, RajaKhan.description, RajaKhan.thumbnail_image,RajaKhan.profile_image,"left",length, RajaKhan.refOpen, RajaKhan.refClosed)} 
 
-            {renderTeamMemberItem(IslaMacFarlane.name, IslaMacFarlane.position,IslaMacFarlane.links, IslaMacFarlane.description, IslaMacFarlane.thumbnail_image,IslaMacFarlane.profile_image,"left",length, IslaMacFarlane.refOpen, IslaMacFarlane.refClosed)}
+            {renderTeamMemberItem(IslaMacFarlane.name, IslaMacFarlane.position,IslaMacFarlane.links, IslaMacFarlane.description, IslaMacFarlane.thumbnail_image,IslaMacFarlane.profile_image,"right",length, IslaMacFarlane.refOpen, IslaMacFarlane.refClosed)}
 
-            {renderTeamMemberItem(AlfonsoBuhigas.name, AlfonsoBuhigas.position,AlfonsoBuhigas.links, AlfonsoBuhigas.description, AlfonsoBuhigas.thumbnail_image,AlfonsoBuhigas.profile_image,"right",length, AlfonsoBuhigas.refOpen, AlfonsoBuhigas.refClosed)}
+            {renderTeamMemberItem(AlfonsoBuhigas.name, AlfonsoBuhigas.position,AlfonsoBuhigas.links, AlfonsoBuhigas.description, AlfonsoBuhigas.thumbnail_image,AlfonsoBuhigas.profile_image,"left",length, AlfonsoBuhigas.refOpen, AlfonsoBuhigas.refClosed)}
             
-            {renderTeamMemberItem(VictoriaMarieSmith.name, VictoriaMarieSmith.position,VictoriaMarieSmith.links, VictoriaMarieSmith.description, VictoriaMarieSmith.thumbnail_image,VictoriaMarieSmith.profile_image,"left",length, VictoriaMarieSmith.refOpen, VictoriaMarieSmith.refClosed)}
+            {renderTeamMemberItem(VictoriaMarieSmith.name, VictoriaMarieSmith.position,VictoriaMarieSmith.links, VictoriaMarieSmith.description, VictoriaMarieSmith.thumbnail_image,VictoriaMarieSmith.profile_image,"right",length, VictoriaMarieSmith.refOpen, VictoriaMarieSmith.refClosed)}
+
+            {renderTeamMemberItem(FionaBanham.name, FionaBanham.position,FionaBanham.links, FionaBanham.description, FionaBanham.thumbnail_image,FionaBanham.profile_image,"left",length, FionaBanham.refOpen, FionaBanham.refClosed)}
+
+            {renderTeamMemberItem(RebeccaThomas.name, RebeccaThomas.position,RebeccaThomas.links, RebeccaThomas.description, RebeccaThomas.thumbnail_image,RebeccaThomas.profile_image,"right",length, RebeccaThomas.refOpen, RebeccaThomas.refClosed)}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
@@ -605,15 +637,17 @@ function Team() {
             {(showFormerMembers) && (
                 <div onClick={handleClickShowFormerMembers}>
                     
-                    {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"right",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
+                    {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"left",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
                
-                    {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"left",length, AikateriniRoka.refOpen, AikateriniRoka.refClosed)} 
+                    {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"right",length, AikateriniRoka.refOpen, AikateriniRoka.refClosed)} 
             
-                    {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"right",length, PeterBarret.refOpen, PeterBarret.refClosed)} 
+                    {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"left",length, PeterBarret.refOpen, PeterBarret.refClosed)} 
             
-                    {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"left", length, ZoriNencheva.refOpen, ZoriNencheva.refClosed)} 
+                    {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"right", length, ZoriNencheva.refOpen, ZoriNencheva.refClosed)} 
 
-                    {renderTeamMemberItem(RebeccaWeigler.name, RebeccaWeigler.position,RebeccaWeigler.links, RebeccaWeigler.description, RebeccaWeigler.thumbnail_image, RebeccaWeigler.profile_image,"right", length,  RebeccaWeigler.refOpen, RebeccaWeigler.refClosed)} 
+                    {renderTeamMemberItem(RebeccaWeigler.name, RebeccaWeigler.position,RebeccaWeigler.links, RebeccaWeigler.description, RebeccaWeigler.thumbnail_image, RebeccaWeigler.profile_image,"left", length,  RebeccaWeigler.refOpen, RebeccaWeigler.refClosed)} 
+
+                    {renderTeamMemberItem(LauraMolloy.name, LauraMolloy.position,LauraMolloy.links, LauraMolloy.description,LauraMolloy.thumbnail_image,LauraMolloy.profile_image,"right",length, LauraMolloy.refOpen, LauraMolloy.refClosed)} 
 
                 </div>
             )}
