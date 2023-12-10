@@ -376,7 +376,7 @@ function Team() {
 
     const NishaPatel  = {
         name: "Nisha Patel",
-        position: "",
+        position: "Editor",
         links: {
             twitter: "",
             instagram: "",
@@ -439,7 +439,7 @@ function Team() {
 
     const BeatriceFeng  = {
         name: "Beatrice Feng",
-        position: "",
+        position: "Editor",
         links: {
             twitter: "",
             instagram: "",
@@ -488,7 +488,7 @@ function Team() {
 
     const IslaMacFarlane  = {
         name: "Isla MacFarlane",
-        position: "",
+        position: "Editor",
         links: {
             twitter: "",
             instagram: "",
@@ -537,7 +537,7 @@ function Team() {
 
     const FionaBanham  = {
         name:  "Fiona Banham",
-        position: "",
+        position: "Editor",
         links: {
             twitter: "",
             instagram: "",
@@ -565,6 +565,57 @@ function Team() {
         thumbnail_image: "/pictures/team/book-thumbnails/every-day.jpeg",
         profile_image: `/pictures/team/member-images/rebecca-thomas.png`,
         id: "rebecca-thomas",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+    const MeganEllis  = {
+        name:  "Megan Ellis",
+        position: "Marketing Assistant",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "",
+        },
+        description: "I am an MSc Marketing student at Cardiff University with a deep admiration of fantasy and sci-fi worlds! I enjoy exploring these worlds through my long love of video and tabletop games, novels, and performing arts.",
+
+        thumbnail_image: "/pictures/team/book-thumbnails/dune.jpg",
+        profile_image: `/pictures/team/member-images/megan.png`,
+        id: "megan-ellis",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+    
+    const MaddieTyler  = {
+        name:  "Maddie Tyler",
+        position: "Editor",
+        links: {
+            twitter: "https://twitter.com/madelinetylerr",
+            instagram: "",
+            linkedin: "https://linkedin.com/in/maddietyler/",
+        },
+        description: "Hailing from the flatlands of East Anglia, I recently completed an MA in Global Literature and Culture from the University of York and currently work in academic publishing in Cambridge. I love reading, writing, and collecting shiny things, all while drinking copious amounts of tea that I’ve forgotten about and accidentally let go cold.",
+
+        thumbnail_image: "/pictures/team/book-thumbnails/the-book-of-goose.jpg",
+        profile_image: `/pictures/team/member-images/maddie.png`,
+        id: "maddie-tyler",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+    
+    const AndySalazar = {
+        name:  "Andy Salazar",
+        position: "",
+        links: {
+            twitter: "",
+            instagram: "https://www.instagram.com/andy_slzr/?hl=en-gb",
+            linkedin: "https://www.linkedin.com/in/andrea-espinosa-salazar-a96a00207/?originalSubdomain=uk",
+        },
+        description: "My name is Andy and I am a recent graduate from the University of Manchester where I completed a Psychology degree. Fun fact about me: I have lived in 4 different countries (Ecuador, Spain, France and now the UK!)",
+
+        thumbnail_image: "/pictures/team/book-thumbnails/a-room-of-ones-own.jpg",
+        profile_image: `/pictures/team/member-images/andy.png`,
+        id: "andy-salazar",
         refOpen: useRef(),
         refClosed: useRef(),
     }
@@ -629,6 +680,12 @@ function Team() {
             {renderTeamMemberItem(FionaBanham.name, FionaBanham.position,FionaBanham.links, FionaBanham.description, FionaBanham.thumbnail_image,FionaBanham.profile_image,"left",length, FionaBanham.refOpen, FionaBanham.refClosed)}
 
             {renderTeamMemberItem(RebeccaThomas.name, RebeccaThomas.position,RebeccaThomas.links, RebeccaThomas.description, RebeccaThomas.thumbnail_image,RebeccaThomas.profile_image,"right",length, RebeccaThomas.refOpen, RebeccaThomas.refClosed)}
+
+            {renderTeamMemberItem(MeganEllis.name, MeganEllis.position,MeganEllis.links, MeganEllis.description, MeganEllis.thumbnail_image,MeganEllis.profile_image,"left",length, MeganEllis.refOpen, MeganEllis.refClosed)}
+            
+            {renderTeamMemberItem(MaddieTyler.name, MaddieTyler.position,MaddieTyler.links, MaddieTyler.description, MaddieTyler.thumbnail_image,MaddieTyler.profile_image,"right",length, MaddieTyler.refOpen, MaddieTyler.refClosed)}
+
+            {renderTeamMemberItem(AndySalazar.name, AndySalazar.position,AndySalazar.links, AndySalazar.description, AndySalazar.thumbnail_image,AndySalazar.profile_image,"left",length, AndySalazar.refOpen, AndySalazar.refClosed)}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
