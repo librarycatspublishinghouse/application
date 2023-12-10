@@ -605,7 +605,7 @@ function Team() {
     
     const AndySalazar = {
         name:  "Andy Salazar",
-        position: "",
+        position: "Marketing Assistant",
         links: {
             twitter: "",
             instagram: "https://www.instagram.com/andy_slzr/?hl=en-gb",
