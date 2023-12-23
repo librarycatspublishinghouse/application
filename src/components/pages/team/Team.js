@@ -313,7 +313,7 @@ function Team() {
 
     const ChrisMillis  = {
         name: "Chris Millis",
-        position: "Editor",
+        position: "Chief Editor",
         links: {
             twitter: "https://twitter.com/MillisChris",
             instagram: "https://www.instagram.com/cjmillis/",
