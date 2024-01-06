@@ -17,7 +17,17 @@ function Team() {
     const [clickHeight, setClickHeight] = React.useState(0);
 
 
-    const renderTeamMemberItem = (name, position,links,  description, thumbnail_image, profile_image, direction, length, refOpen, refClosed ) => {
+    const renderTeamMemberItem = ( member,  direction, length ) => {
+
+        const name = member.name
+        const position = member.position
+        const links = member.links
+        const description = member.description
+        const thumbnail_image = member.thumbnail_image
+        const profile_image = member.profile_image
+        const refOpen = member.refOpen
+        const refClosed = member.refClosed
+
         const renderImage = () => {
             return(
                 <div className={style.teamMemberItem_image_container} >
@@ -620,6 +630,22 @@ function Team() {
         refClosed: useRef(),
     }
     
+    const DevoraMoleman = {
+        name:  "Devora Moleman",
+        position: "Marketing Assistant",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "https://www.instagram.com/devoradraws/?hl=en",
+        },
+        description: "I am an artist currently working in education. I’m interested in Illustration and literature and how they intersect. I also have a slight obsession with The Sims.",
+
+        thumbnail_image: "/pictures/team/book-thumbnails/northern-lights.jpg",
+        profile_image: `/pictures/team/member-images/devora.jpg`,
+        id: "devora-moleman",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
 
     const [showFormerMembers, setShowFormerMembers] = React.useState(false)
     const handleClickShowFormerMembers = () => {
@@ -636,56 +662,58 @@ function Team() {
             </div>
 
         
-            {renderTeamMemberItem(MarcosEchevarria.name, MarcosEchevarria.position,MarcosEchevarria.links, MarcosEchevarria.description, MarcosEchevarria.thumbnail_image, MarcosEchevarria.profile_image,"left", length, MarcosEchevarria.refOpen, MarcosEchevarria.refClosed)} 
+            {renderTeamMemberItem(MarcosEchevarria, "left", length )} 
 
            
            
 
 
-            {renderTeamMemberItem(BeatrizdeCastroPerez.name, BeatrizdeCastroPerez.position, BeatrizdeCastroPerez.links, BeatrizdeCastroPerez.description, BeatrizdeCastroPerez.thumbnail_image , BeatrizdeCastroPerez.profile_image,"right", length, BeatrizdeCastroPerez.refOpen, BeatrizdeCastroPerez.refClosed)} 
+            {renderTeamMemberItem(BeatrizdeCastroPerez,"right", length)} 
 
 
                             
-            {renderTeamMemberItem(ChrisMillis.name, ChrisMillis.position,ChrisMillis.links, ChrisMillis.description, ChrisMillis.thumbnail_image,ChrisMillis.profile_image, "left",length, ChrisMillis.refOpen, ChrisMillis.refClosed)} 
+            {renderTeamMemberItem(ChrisMillis, "left",length )} 
 
 
-            {renderTeamMemberItem(CristobalEchevarria.name, CristobalEchevarria.position,CristobalEchevarria.links, CristobalEchevarria.description,CristobalEchevarria.thumbnail_image ,CristobalEchevarria.profile_image,"right", length, CristobalEchevarria.refOpen, CristobalEchevarria.refClosed)} 
+            {renderTeamMemberItem(CristobalEchevarria,"right", length )} 
 
 
 
-            {renderTeamMemberItem(MayaraZucheli.name, MayaraZucheli.position, MayaraZucheli.links, MayaraZucheli.description, MayaraZucheli.thumbnail_image, MayaraZucheli.profile_image,"left", length, MayaraZucheli.refOpen, MayaraZucheli.refClosed)} 
+            {renderTeamMemberItem(MayaraZucheli,"left", length )} 
 
 
                             
-            {renderTeamMemberItem(NishaPatel.name, NishaPatel.position,NishaPatel.links, NishaPatel.description, NishaPatel.thumbnail_image ,NishaPatel.profile_image,"right",length, NishaPatel.refOpen, NishaPatel.refClosed)}
+            {renderTeamMemberItem(NishaPatel,"right",length )}
 
 
             
-            {renderTeamMemberItem(SukhpreetChana.name, SukhpreetChana.position,SukhpreetChana.links, SukhpreetChana.description, SukhpreetChana.thumbnail_image,SukhpreetChana.profile_image,"left",length, SukhpreetChana.refOpen, SukhpreetChana.refClosed)} 
+            {renderTeamMemberItem(SukhpreetChana,"left",length )} 
             
 
            
-            {renderTeamMemberItem(BeatriceFeng.name, BeatriceFeng.position,BeatriceFeng.links, BeatriceFeng.description, BeatriceFeng.thumbnail_image,BeatriceFeng.profile_image,"right",length, BeatriceFeng.refOpen, BeatriceFeng.refClosed)} 
+            {renderTeamMemberItem(BeatriceFeng,"right",length )} 
 
 
 
-            {renderTeamMemberItem(RajaKhan.name, RajaKhan.position,RajaKhan.links, RajaKhan.description, RajaKhan.thumbnail_image,RajaKhan.profile_image,"left",length, RajaKhan.refOpen, RajaKhan.refClosed)} 
+            {renderTeamMemberItem(RajaKhan,"left",length )} 
 
-            {renderTeamMemberItem(IslaMacFarlane.name, IslaMacFarlane.position,IslaMacFarlane.links, IslaMacFarlane.description, IslaMacFarlane.thumbnail_image,IslaMacFarlane.profile_image,"right",length, IslaMacFarlane.refOpen, IslaMacFarlane.refClosed)}
+            {renderTeamMemberItem(IslaMacFarlane,"right",length )}
 
-            {renderTeamMemberItem(AlfonsoBuhigas.name, AlfonsoBuhigas.position,AlfonsoBuhigas.links, AlfonsoBuhigas.description, AlfonsoBuhigas.thumbnail_image,AlfonsoBuhigas.profile_image,"left",length, AlfonsoBuhigas.refOpen, AlfonsoBuhigas.refClosed)}
+            {renderTeamMemberItem(AlfonsoBuhigas,"left", length )}
             
-            {renderTeamMemberItem(VictoriaMarieSmith.name, VictoriaMarieSmith.position,VictoriaMarieSmith.links, VictoriaMarieSmith.description, VictoriaMarieSmith.thumbnail_image,VictoriaMarieSmith.profile_image,"right",length, VictoriaMarieSmith.refOpen, VictoriaMarieSmith.refClosed)}
+            {renderTeamMemberItem(VictoriaMarieSmith,"right",length )}
 
-            {renderTeamMemberItem(FionaBanham.name, FionaBanham.position,FionaBanham.links, FionaBanham.description, FionaBanham.thumbnail_image,FionaBanham.profile_image,"left",length, FionaBanham.refOpen, FionaBanham.refClosed)}
+            {renderTeamMemberItem(FionaBanham,"left",length )}
 
-            {renderTeamMemberItem(RebeccaThomas.name, RebeccaThomas.position,RebeccaThomas.links, RebeccaThomas.description, RebeccaThomas.thumbnail_image,RebeccaThomas.profile_image,"right",length, RebeccaThomas.refOpen, RebeccaThomas.refClosed)}
+            {renderTeamMemberItem(RebeccaThomas,"right",length )}
 
-            {renderTeamMemberItem(MeganEllis.name, MeganEllis.position,MeganEllis.links, MeganEllis.description, MeganEllis.thumbnail_image,MeganEllis.profile_image,"left",length, MeganEllis.refOpen, MeganEllis.refClosed)}
+            {renderTeamMemberItem(MeganEllis,"left",length )}
             
-            {renderTeamMemberItem(MaddieTyler.name, MaddieTyler.position,MaddieTyler.links, MaddieTyler.description, MaddieTyler.thumbnail_image,MaddieTyler.profile_image,"right",length, MaddieTyler.refOpen, MaddieTyler.refClosed)}
+            {renderTeamMemberItem(MaddieTyler,"right",length )}
 
-            {renderTeamMemberItem(AndySalazar.name, AndySalazar.position,AndySalazar.links, AndySalazar.description, AndySalazar.thumbnail_image,AndySalazar.profile_image,"left",length, AndySalazar.refOpen, AndySalazar.refClosed)}
+            {renderTeamMemberItem(AndySalazar,"left",length )}
+
+            {renderTeamMemberItem(DevoraMoleman,"right",length )}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
@@ -694,17 +722,17 @@ function Team() {
             {(showFormerMembers) && (
                 <div onClick={handleClickShowFormerMembers}>
                     
-                    {renderTeamMemberItem(KaiScotney.name, KaiScotney.position,KaiScotney.links, KaiScotney.description, KaiScotney.thumbnail_image,KaiScotney.profile_image,"left",length, KaiScotney.refOpen, KaiScotney.refClosed)} 
+                    {renderTeamMemberItem(KaiScotney,"left",length )} 
                
-                    {renderTeamMemberItem(AikateriniRoka.name, AikateriniRoka.position,AikateriniRoka.links, AikateriniRoka.description, AikateriniRoka.thumbnail_image, AikateriniRoka.profile_image,"right",length, AikateriniRoka.refOpen, AikateriniRoka.refClosed)} 
+                    {renderTeamMemberItem(AikateriniRoka,"right",length )} 
             
-                    {renderTeamMemberItem(PeterBarret.name, PeterBarret.position,PeterBarret.links, PeterBarret.description, PeterBarret.thumbnail_image,PeterBarret.profile_image,"left",length, PeterBarret.refOpen, PeterBarret.refClosed)} 
+                    {renderTeamMemberItem(PeterBarret,"left",length )} 
             
-                    {renderTeamMemberItem(ZoriNencheva.name, ZoriNencheva.position, ZoriNencheva.links, ZoriNencheva.description, ZoriNencheva.thumbnail_image,ZoriNencheva.profile_image,"right", length, ZoriNencheva.refOpen, ZoriNencheva.refClosed)} 
+                    {renderTeamMemberItem(ZoriNencheva,"right", length )} 
 
-                    {renderTeamMemberItem(RebeccaWeigler.name, RebeccaWeigler.position,RebeccaWeigler.links, RebeccaWeigler.description, RebeccaWeigler.thumbnail_image, RebeccaWeigler.profile_image,"left", length,  RebeccaWeigler.refOpen, RebeccaWeigler.refClosed)} 
+                    {renderTeamMemberItem(RebeccaWeigler,"left", length )} 
 
-                    {renderTeamMemberItem(LauraMolloy.name, LauraMolloy.position,LauraMolloy.links, LauraMolloy.description,LauraMolloy.thumbnail_image,LauraMolloy.profile_image,"right",length, LauraMolloy.refOpen, LauraMolloy.refClosed)} 
+                    {renderTeamMemberItem(LauraMolloy,"right",length )} 
 
                 </div>
             )}
