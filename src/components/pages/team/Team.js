@@ -331,7 +331,7 @@ function Team() {
         },
         description: "I’m a student from South London, currently undertaking an MA in English Literary Studies at Lancaster University in the North-West of England. Taking on this role has been a fantastic privilege helping to promote otherwise unheard voices. As a student looking for a career in publishing/editing, it has also allowed me to develop professional skills that I’m sure will prove invaluable over the coming years. I’ve loved working with the team, and look forward to reading and editing our next project!",
         thumbnail_image: "/pictures/team/book-thumbnails/atonement.webp",
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        profile_image: `/pictures/team/member-images/chris.jpg`,
         refOpen: useRef(),
         refClosed: useRef(),
     }
@@ -346,7 +346,7 @@ function Team() {
         },
         description: "I am a third-year graphic communication and illustration student at Loughborough University. I am very passionate about branding, editorial design and animation. Website: cristobalechevarria.com1",
         thumbnail_image: "/pictures/team/book-thumbnails/the-outsiders.webp",
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        profile_image: `/pictures/team/member-images/cristobal.png`,
         refOpen: useRef(),
         refClosed: useRef(),
     }
