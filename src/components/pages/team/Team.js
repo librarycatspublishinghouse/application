@@ -66,6 +66,9 @@ function Team() {
                             {(links.linkedin) &&  (
                                 <a className = {style.link} href={links.linkedin} target="_blank" rel="noopener noreferrer"><img  className= {style.link_icon} src={"pictures/linkedin.webp"} alt="Linkedin"/></a>
                             )}
+                             {(links.website) &&  (
+                                <a className = {style.link} href={links.website} target="_blank" rel="noopener noreferrer"><img  className= {style.link_icon} src={"pictures/website.webp"} alt="Linkedin"/></a>
+                            )}
         
                         </div>
                     </div>
@@ -342,9 +345,10 @@ function Team() {
         links: {
             twitter: "",
             instagram: "",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/cristobal-ech/",
+            website: "https://www.cristobalechevarria.com/"
         },
-        description: "I am a third-year graphic communication and illustration student at Loughborough University. I am very passionate about branding, editorial design and animation. Website: cristobalechevarria.com1",
+        description: "I am a final-year Graphic Communication student at Loughborough University with a love for fiction and action novels. I am very passionate about motion graphics, design and music.",
         thumbnail_image: "/pictures/team/book-thumbnails/the-outsiders.webp",
         profile_image: `/pictures/team/member-images/cristobal.png`,
         refOpen: useRef(),
