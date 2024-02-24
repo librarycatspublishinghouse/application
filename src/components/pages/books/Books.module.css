@@ -1,6 +1,11 @@
+
+.books{
+
+    min-height: 100vh;
+}
+
 .cards_container_container{
     width: 100%;
-    background-color: red;
 }
 .search_container{
     padding-top: 30px;

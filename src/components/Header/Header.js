@@ -34,12 +34,13 @@ const Header = ({toggle}) => {
                                 <span> LIBRARY CATS  </span>
                                 
                             </div>
+   
                         </div>
-                        {/* <div className = {style.page_slogan_container}>
+                        <div className = {style.page_slogan_container}>
                             <div className = {style.page_slogan_text}>
-                                The Digital Book Publisher
+                            Your passion, our platform
                             </div> 
-                        </div> */}
+                        </div>
                     </ Link>
                 </div>
                 <div className  = {style.navbar_items_container}>
