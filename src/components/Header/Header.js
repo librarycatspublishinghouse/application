@@ -56,9 +56,9 @@ const Header = ({toggle}) => {
                                 Authors
                             </li>
                         </ NavLink>
-                        <NavLink to = "/contests">
+                        <NavLink to = "/collaborations">
                             <li className = {style.nav_list_item}>
-                                Contests
+                                Collaborations
                             </li>
                         </ NavLink>
                         <NavLink to = "/send">

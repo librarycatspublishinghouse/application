@@ -40,9 +40,9 @@ return(
                         Authors
                     </li>
                 </ NavLink>
-                <NavLink to = "/contests">
+                <NavLink to = "/collaborations">
                     <li className = {"nav_list_item"}>
-                        Contests
+                        Collaborations
                     </li>
                 </ NavLink>
                 <NavLink to = "/send">
@@ -71,6 +71,11 @@ return(
                 <NavLink to = "/contact">
                     <li className = "nav_list_item">
                         Contact
+                    </li>
+                </ NavLink>
+                <NavLink to = "/donate">
+                    <li className = "nav_list_item">
+                        Support Us
                     </li>
                 </ NavLink>
                 <NavLink to = "/terms-and-conditions">

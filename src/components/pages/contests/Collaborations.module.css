@@ -1,6 +1,6 @@
 .contests {
     background-image: url("../../../../public/pictures/contests/contest-background.webp");
-    min-height: 400px;
+    min-height: 100vh;
     width: 100%;
     background-size: cover;
     padding-top: 100px;
@@ -54,9 +54,14 @@
 
 .link {
     text-decoration: none;
+    color: #000;
 }
 .link:visited{
     text-decoration: none;
+    color: #000;
+}
+.link:hover{
+    text-decoration: underline;
     color: #000;
 }
 
