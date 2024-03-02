@@ -1,0 +1,175 @@
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+} 
+
+.modal_background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    animation: fadein 0.5s;
+    transition: 0.5s;
+}
+
+.modal {
+    position: fixed;
+    width: 680px;
+    height: 850px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: center;
+    background: url('../../../../../public/pictures/donations/donate-background.webp');
+}
+
+.close {
+    position: absolute;
+    align-self: flex-end;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(224, 224, 224);
+}
+.modal_header_banner{
+    width: 100%;
+    height: 250px;
+}
+
+.modal_content{
+    width: 100%;
+    height: 100%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+.modal_content_inner {
+    box-sizing: border-box;
+}
+
+.modal_text {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+  
+}
+
+.payment_information{
+    display: grid;
+    
+    width: 380px;
+    padding-top: 20px;
+    margin: 10px auto 60px auto;
+    
+    box-sizing: border-box; 
+    grid-template-columns: 1fr 1.3fr;
+
+    text-align: left;
+}
+.payment_info_header {
+    margin-bottom: 10px;
+} 
+.paypal_link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.paypal_link:hover{
+    color: #2c291f;
+}
+
+.email_link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.policy_link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.policy_link:hover{
+    color: #1f242c;
+}
+
+.policies{
+    margin-top: 80px;
+ 
+}
+
+@media only screen and (max-width: 700px) {
+    .modal {
+        width: 90%;
+        height: 90%;
+        background-position: 50% 50%; 
+    }
+
+
+    .modal_text {
+        margin-bottom: 20px;
+    }
+    .modal_header_banner{
+        height: 230px;
+    }
+
+    .modal_text {
+
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+        font-weight: 500;
+      
+    }
+    .payment_info_header {
+        margin-bottom: 5px;
+    } 
+    .payment_information {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .payment_information {
+        width: 85%;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        text-align: left;
+        padding-top: 15px;
+        margin-bottom: 40px;
+    }
+    .modal_content{
+        padding: 10px 20px;
+    }
+    .payment_info_header {
+        margin-bottom: 0px;
+    } 
+}
+
+@media only screen and (max-width: 450px) {
+    .payment_information { 
+        padding-top: 5px;
+        margin-bottom: 20px;
+    }
+    .policies{
+        margin-top: 30px;
+    }
+}

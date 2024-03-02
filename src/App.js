@@ -14,13 +14,14 @@ import Publication from './components/pages/publication/Publication';
 import Author from './components/pages/author/Author';
 import Books from './components/pages/books/Books';
 import Team from './components/pages/team/Team';
-import Contests from './components/pages/contests/Contests';
+import Collaborations from './components/pages/contests/Collaborations';
 import Mission from './components/pages/mission/Mission';
 import Contact from './components/pages/contact/Contact';
 import Authors from './components/pages/authors/Authors';
 import AdminPage from './components/pages/adminPage/AdminPage';
 import ContestsShowcase from './components/pages/contests/contestsShowcase/ContestsShowcase';
 import TermsAndConditions from './components/pages/TermsAndConditions/TermsAndConditions';
+import Donations from './components/pages/donations/Donations';
 
 process.env['BACKEND_URL'] = 'https://spread-the-word.herokuapp.com/';
 function App() {
@@ -46,11 +47,12 @@ function App() {
             <Route path = '/send' element = {<Send />}/>
             <Route path = '/services' element = {<Services />}/>
             <Route path = '/About' element = {<About />}/>
+            <Route path = '/donate' element = {<Donations />}  />
             <Route  path = "/publication/:id"  exact element = {<Publication />}/>
             <Route  path = "/author/:id"  exact element = {<Author />}/>
             <Route path = '/books' element = {<Books />} />
             <Route path = '/team' element = {<Team />} />
-            <Route path = '/contests' element = {<Contests />} />
+            <Route path = '/collaborations' element = {<Collaborations />} />
             <Route path = '/contests/showcase' element = {<ContestsShowcase /> } />
             <Route path = '/mission' element = {<Mission />} />
             <Route path = '/contact' element = {<Contact />} />

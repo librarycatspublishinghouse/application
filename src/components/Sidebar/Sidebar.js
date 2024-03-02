@@ -50,6 +50,11 @@ return(
                         Send us
                     </li>
                 </ NavLink>
+                <NavLink to = "/donate">
+                    <li className = "nav_list_item">
+                        Support Us
+                    </li>
+                </ NavLink>
 
             </div>
 
@@ -73,11 +78,7 @@ return(
                         Contact
                     </li>
                 </ NavLink>
-                <NavLink to = "/donate">
-                    <li className = "nav_list_item">
-                        Support Us
-                    </li>
-                </ NavLink>
+             
                 <NavLink to = "/terms-and-conditions">
                     <li className = "nav_list_item">
                         Terms and Conditions

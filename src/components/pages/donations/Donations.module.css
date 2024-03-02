@@ -1,0 +1,147 @@
+.donations {
+    background-image: url("../../../../public/pictures/donations/donations-background.webp");
+    min-height: 400px;
+    width: 100%;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.donations_container {
+    width: 70%;
+    margin: 0 auto;
+}
+.info_container {
+    background-color: white;
+    width: 100%;
+
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.donations_title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2.5rem;
+    font-family: barlow-medium, barlow, sans-serif;
+}
+.donations_title_highlight{
+    outline: 0.25rem solid #f9d342;
+    padding:0.04rem;
+    box-sizing: border-box;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    filter:  drop-shadow(0 0 0.4rem rgba(2, 2, 2, 0.479));
+
+}
+
+.info_description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-top: 6rem;
+    font-family: barlow-medium, barlow, sans-serif;
+}
+
+.donate_button_container {
+    margin-top: 7rem;
+}
+
+.donate_button {
+    background-color: rgb(255, 123, 130);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    font-family: barlow-medium, barlow, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.donate_button:hover {
+
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.policy_text {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5rem;
+    font-family: barlow-medium, barlow, sans-serif;
+
+}
+
+.link {
+    color: rgb(255, 123, 130);
+    text-decoration: none;
+    font-family: barlow-medium, barlow, sans-serif;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .donations {
+        padding-top: 50px;
+    }
+    .donations_container {
+        width: 90%;
+    }
+    .info_description {
+        margin-top: 3rem;
+    }
+    .donate_button_container {
+        margin-top: 5rem;
+    }
+    .policy_text {
+        margin-top: 3rem;
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .donations_title {
+        font-size: 1.5rem;
+    }
+    .info_description {
+        font-size: 1.2rem;
+    }
+    .donate_button {
+        padding: 0.5rem 1.3rem;
+        font-size: 1.2rem;
+    }
+    .policy_text {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px ) {
+    .donations_title {
+        font-size: 1.2rem;
+    }
+    .info_description {
+        font-size: 1rem;
+    }
+
+    .policy_text {
+        font-size: 1rem;
+    }
+    .info_container{
+        padding: 1.5rem;
+    }
+}

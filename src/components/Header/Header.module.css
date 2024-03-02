@@ -144,7 +144,7 @@
     }
 }
 
-@media only screen and (max-width: 535px) {
+@media only screen and (max-width: 650px) {
     .header_logo_container{
         display: none;
     }
@@ -157,7 +157,7 @@
 
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 535px) {
     .nav_list_container{
         display: none;
     }
