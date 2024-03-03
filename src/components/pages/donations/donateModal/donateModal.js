@@ -45,7 +45,7 @@ const DonateModal = (props) => {
                                     </div>
                                 </div>
                                 <div className={style.payment_information_bank}>
-                                    <div className={style.payment_info_header}> Bank Account </div>
+                                    <div className={style.payment_info_header}> Bank Transfer </div>
                                     <div className={style.Account_Info}>
                                         Account Number: 31063337
                                     </div>
@@ -71,7 +71,7 @@ const DonateModal = (props) => {
                         <div className={style.policies}>
                             <div className={style.modal_text}> 
                                 <span>
-                                    learn how Paypal keeps your transfer secure at <a className={style.policy_link} href="https://www.paypal.com/">paypal.com</a> <br />
+                                    Learn how Paypal keeps your transfer secure at <a className={style.policy_link} href="https://www.paypal.com/">paypal.com</a> <br />
                                     and how we use your donations at <NavLink className={style.policy_link} to = "/terms-and-conditions">Policies</NavLink>
                                 </span>
                             </div>
