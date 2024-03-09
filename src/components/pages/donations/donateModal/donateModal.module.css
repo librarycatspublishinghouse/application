@@ -58,6 +58,7 @@
     height: 100%;
     padding: 10px 50px;
     box-sizing: border-box;
+
 }
 .modal_content_inner {
     box-sizing: border-box;
@@ -117,11 +118,30 @@
  
 }
 
+
+@media only screen and (max-height: 900px) {
+    .modal{
+        zoom: 0.9;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .modal{
+        zoom: 0.8;
+    }
+}
+
+@media only screen and (max-height: 690px) {
+    .modal{
+        zoom: 0.6;
+    }
+}
 @media only screen and (max-width: 700px) {
     .modal {
-        width: 90%;
-        height: 90%;
-        background-position: 50% 50%; 
+        width: 510px;
+        height: 637.5px;
+        background-position: 50% 50%;
+        background-size: 100%;
     }
 
 
@@ -129,7 +149,7 @@
         margin-bottom: 20px;
     }
     .modal_header_banner{
-        height: 230px;
+        height: 175px;
     }
 
     .modal_text {
@@ -145,17 +165,36 @@
     .payment_information {
         font-size: 0.9rem;
     }
+    .modal_content{
+        padding: 10px 30px;
+    }
+    .payment_information{
+        margin: 10px auto 30px auto;
+    }
+    .policies{
+        margin-top: 40px;
+    }
 }
 
-@media only screen and (max-width: 500px) {
-    .payment_information {
+@media only screen and (max-width: 525px) {
+    .modal {
+        width: 408px;
+        height: 700px;
+        background-size: 140%;
+
+    }
+    .modal_header_banner{
+        height: 200px;
+    }
+
+    /* .payment_information {
         width: 85%;
         grid-template-columns: 1fr;
         row-gap: 10px;
         text-align: left;
         padding-top: 15px;
         margin-bottom: 40px;
-    }
+    } */
     .modal_content{
         padding: 10px 20px;
     }
