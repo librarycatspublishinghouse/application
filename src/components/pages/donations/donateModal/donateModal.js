@@ -24,7 +24,7 @@ const DonateModal = (props) => {
                         <div className={style.modal_text}>
                             <span>
                                 Join us in spreading the word about the power of reading. <br />
-                                Your support fuels our mission to share the joy of books with even more minds. <br />
+                                Your support fuels our mission to share the joy of books with even more people. <br />
                             </span>
                         </div>
                         
