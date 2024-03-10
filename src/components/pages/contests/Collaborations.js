@@ -13,7 +13,7 @@ function Collaborations() {
         <div className= {style.underline}>
         </div>
         <div className= {style.contests_list_title}>
-          Contests
+          Collaborations
           <div className= {style.contest_list}>
               <li className={style.contests_list_item}> 
                 <a  className={style.link} href='https://www.instagram.com/p/CZezLpkMJjZ/?img_index=1' target='_blank'> STWxUOS Contest</a>
@@ -29,6 +29,9 @@ function Collaborations() {
               </li>
               <li className={style.contests_list_item}>
                 <a  className={style.link} href='https://www.instagram.com/p/Cz32QKYC-N_/' target='_blank'> KCL Creative Writing Society Collaboration </a>
+              </li>
+              <li className={style.contests_list_item}>
+                <a  className={style.link} href='https://www.instagram.com/p/C37637-CwdF/?img_index=1' target='_blank'> Freestyle Writing Society at Glasgow Caledonian University Submission Window </a>
               </li>
           </div>
         </div>
