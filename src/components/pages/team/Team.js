@@ -651,6 +651,24 @@ function Team() {
         refClosed: useRef(),
     }
 
+    const SamMorgan = {
+        name:  "Sam Morgan",
+        position: "Graphic Designer",
+        links: {
+            twitter: "",
+            instagram: "https://www.instagram.com/_samannas/",
+            linkedin: "https://www.linkedin.com/in/samannas/",
+        },
+        description: "I’m a freelance creative specializing in graphic design and illustration with a background in digital marketing design. I have a love for books and publishing design, so I’m enthusiastic to work with our authors to materialize their passion projects. My favorite genre is fantasy, but I also love juicy autobiographies and semi-biographical stories.",
+
+        thumbnail_image: "/pictures/team/book-thumbnails/stardust.jpg",
+        profile_image: `/pictures/team/member-images/sam.jpg`,
+        id: "sam-morgan",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+
     const [showFormerMembers, setShowFormerMembers] = React.useState(false)
     const handleClickShowFormerMembers = () => {
         setShowFormerMembers(!showFormerMembers)
@@ -718,6 +736,8 @@ function Team() {
             {renderTeamMemberItem(AndySalazar,"left",length )}
 
             {renderTeamMemberItem(DevoraMoleman,"right",length )}
+
+            {renderTeamMemberItem(SamMorgan,"left",length )}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
