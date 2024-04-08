@@ -105,6 +105,17 @@
     font-size: 24px;
     text-align: center;
 }
+.mail_link{
+    text-decoration: none;
+    color: rgb(137, 68, 146);
+}
+.mail_link:hover{
+    text-decoration: underline;
+}
+.mail_link:visited{
+    text-decoration: none;
+    color: black;
+}
 
 @media only screen and (max-width: 1140px) {
     .reasons_container{

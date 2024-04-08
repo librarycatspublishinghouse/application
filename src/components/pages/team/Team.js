@@ -668,6 +668,24 @@ function Team() {
         refClosed: useRef(),
     }
 
+    const HelaJoshi = {
+        name:  "Hela Joshi",
+        position: "Graphic Designer",
+        links: {
+            twitter: "",
+            instagram: "https://www.instagram.com/hela_joshi/",
+            linkedin: "",
+        },
+        description: "Graphic designer with a passion for creating fresh, vibrant designs, that reflect my simple, caring nature. I find joy in life’s simple pleasures, cherishing moments with loved ones and my six adorable fur babies. As a devoted dog mom, my heart is full of love and laughter, which often inspires my work. With a playful spirit and a love for creativity, I strive to bring happiness and beauty into the world through my designs.",
+
+        thumbnail_image:  "/pictures/team/book-thumbnails/the-kite-runner.jpg", 
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        id: "hela-joshi",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+
 
     const [showFormerMembers, setShowFormerMembers] = React.useState(false)
     const handleClickShowFormerMembers = () => {
@@ -738,6 +756,7 @@ function Team() {
             {renderTeamMemberItem(DevoraMoleman,"right",length )}
 
             {renderTeamMemberItem(SamMorgan,"left",length )}
+            {renderTeamMemberItem(HelaJoshi,"right",length )}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>

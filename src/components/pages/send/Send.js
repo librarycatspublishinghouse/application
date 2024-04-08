@@ -50,7 +50,8 @@ function Send() {
       </div>
 
     <div className = {style.share_title}>
-      SHARE WITH US HERE: 
+      SHARE WITH US VIA DRIVE OR EMAIL <a href="mailto:librarycatseditorial@gmail.com" 
+      className={style.mail_link}> (librarycatseditorial@gmail.com) </a> 
     </div>
 
     <div className = {style.share_link}>
