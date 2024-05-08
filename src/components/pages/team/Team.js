@@ -494,7 +494,7 @@ function Team() {
         },
         description: "I would describe myself as a lawyer, entrepreneur and avid reader. In the words of Dolores Cannon, 'when we go someplace, we leave a part of our energy there and we influence more than we can ever imagine.'. Realising this makes me feel optimistic about the change that I can help generate in this world and it is with this in mind, I decided to make a change by joining STW.  I also like to play football, travel and design pottery in my free time",
         thumbnail_image: "/pictures/team/book-thumbnails/the-power-of-positive-thinking.webp",
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        profile_image: `/pictures/team/member-images/raja.jpg`,
         id: "kai-scotney",
         refOpen: useRef(),
         refClosed: useRef(),
@@ -534,7 +534,7 @@ function Team() {
 
     const VictoriaMarieSmith  = {
         name: "Victoria Marie Smith",
-        position: "",
+        position: "Editor",
         links: {
             twitter: "",
             instagram: "",
@@ -679,11 +679,30 @@ function Team() {
         description: "Graphic designer with a passion for creating fresh, vibrant designs, that reflect my simple, caring nature. I find joy in life’s simple pleasures, cherishing moments with loved ones and my six adorable fur babies. As a devoted dog mom, my heart is full of love and laughter, which often inspires my work. With a playful spirit and a love for creativity, I strive to bring happiness and beauty into the world through my designs.",
 
         thumbnail_image:  "/pictures/team/book-thumbnails/the-kite-runner.jpg", 
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        profile_image:`/pictures/team/member-images/hela.jpg`,
         id: "hela-joshi",
         refOpen: useRef(),
         refClosed: useRef(),
     }
+
+
+    const HannahHolmes = {
+        name:  "Hannah Holmes",
+        position: "Graphic Designer",
+        links: {
+            twitter: "",
+            instagram: "",
+            linkedin: "linkedin.com/in/hannahholmesgraphicdesign",
+        },
+        description: "I am a graphic designer from the North West of England. I am grateful to live in a place near beautiful scenery and nature. Where most people I meet are friendly and there is a strong sense of community. I am a social graphic designer who wants to make a difference in young people’s lives and create a brighter future. Since graduating, I have been working with some great charities and organisations to offer support wherever and whenever I can.",
+
+        thumbnail_image:  "/pictures/team/book-thumbnails/magicians-nephew.jpg", 
+        profile_image:`/pictures/team/member-images/hannah.jpg`,
+        id: "hannah-holmes",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
 
 
 
@@ -757,6 +776,7 @@ function Team() {
 
             {renderTeamMemberItem(SamMorgan,"left",length )}
             {renderTeamMemberItem(HelaJoshi,"right",length )}
+            {renderTeamMemberItem(HannahHolmes,"left",length )}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
