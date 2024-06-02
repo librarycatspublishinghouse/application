@@ -2,29 +2,23 @@ import React from 'react';
 
 
 import EmailSubmission from './EmailSubmission/EmailSubmission';
-import Recomendations from './Recomendations/Recomendations';
-
 import style from './Home.module.css'
-import News from './News/News';
+import News from './News/NewsBanner/News';
 
 import Carousel from '../../Carousel/Carousel'; //removing breaks flickity but is never used
 import Flickity from 'react-flickity-component'
 import BestSeller from './Recomendations/BestSeller';
-import NewsCard from '../../NewsCard/NewsCard';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 import Mockup from './mockup/Mouckup';
-import Promo from './Promo/Promo';
+import Promo from './Promo/PromoPages/ContemporarySubjectsPromo';
+import PromoBanner from './Promo/PromoBanners/PromoBanner';
+import NewsArticle from './News/NewsArticles/NewsArticles';
 
 const flickityOptions = {
-    initialIndex: 0
+  initialIndex: 0
 }
-const flickityOptions2 = {
-  initialIndex: 1,
-
-}
-
 
 function Home() {
 
@@ -48,7 +42,9 @@ function Home() {
 
   return (
     <div className={style.home}>
-      <Promo />
+      <PromoBanner />
+
+      {/* <Promo /> */}
       {/* <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'
@@ -60,48 +56,31 @@ function Home() {
             {[
             <News title = "Test Title" description = {placeholder} html_code = {<> </>}/> ,
             <News title = "Test Title2" description = {placeholder} html_code = {<> </>}/> ]}
-          </Flickity> */}
+        </Flickity> */}
             
           
               
             
+      <div className = {style.card_list_title}>
+            News
+      </div>
 
+      <NewsArticle />
           
        
-{/* 
-      <div className = {style.card_list_title}>
+
+      {/* <div className = {style.card_list_title}>
             RECOMENDATIONS
       </div>
 
-      <BestSeller /> */}
-     
-
-      {/* <Flickity
-      className={'carousel'} // default ''
-      elementType={'div'} // default 'div'
-      options={flickityOptions2} // takes flickity options {}
-      disableImagesLoaded={false} // default false
-      reloadOnUpdate // default false
-      static // default false
-      
-      
-    >
-        
-        {newsData.map((news) => {
-               
-               return(
-               <NewsCard title = {news.title} image = {news.image} date = {news.date} description = {news.description} />
-               )
-        })}
-      </Flickity> */}
   
-      {/* <div className = {style.card_list_title}>
+      <div className = {style.card_list_title}>
             BEST SELLERS
       </div>
 
-      <BestSeller /> */}
-      {/* <EmailSubmission /> */}
-      
+      <BestSeller />
+      <EmailSubmission />
+       */}
     </div>
     );
 }

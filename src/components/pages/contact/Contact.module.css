@@ -45,6 +45,7 @@
 
 .logo_image {
     width: 20rem;
+    caret-color: transparent;
 }
 
 .log_info_container {

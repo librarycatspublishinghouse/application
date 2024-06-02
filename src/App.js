@@ -41,7 +41,7 @@ function App() {
           <Sidebar menuCollapse = {menuCollapse} toggle = {menuIconClick}/>
           <Header toggle = {menuIconClick} />
           <Routes>
-            
+            <Route path = '*' element = {<Home />}/>
             <Route path = '/' element = {<Home />}/>
             <Route path = '/publications' element = {<></>}/>
             <Route path = '/send' element = {<Send />}/>

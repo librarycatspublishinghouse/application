@@ -1,7 +1,16 @@
 .footer_container{
     height: 470px;
     width:100%;
-    background-color: white;
+    /* background-image: url("/public/pictures/footer/cat-footer.webp"); */
+
+    background-size: cover;
+    background-position: center top;
+    padding-top:50px;
+    padding-bottom: 90px;
+}
+.footer_container.cats_background {
+    background-image: url("/public/pictures/footer/cat-footer.webp");
+
 }
 
 
@@ -10,6 +19,7 @@
     font-size: 30px;
     text-align: center;
     padding-top: 45px;
+
     line-height: 70px;
    font-weight: 100;
     
@@ -64,6 +74,7 @@
     text-decoration: none;
     padding-left: 15px;
     padding-right: 15px;
+    caret-color: transparent;
 
     
 }
@@ -100,6 +111,7 @@
     text-decoration: none;
     border: 1px solid black;
     border-radius: 2px 0px 0px 2px;
+    padding-left: 15px;
 }
 .form_item:focus{
     outline:none;

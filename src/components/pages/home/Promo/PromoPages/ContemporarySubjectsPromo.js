@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import style from './Promo.module.css';
+import style from './ContemporarySubjectsPromo.module.css';
 import axios from 'axios'
 
 
@@ -61,7 +61,7 @@ function Promo() {
         
             <div className = {style.content_image_container}>
                 <div className = {style.book_cover}>
-                    <img  className ={style.content_image} src = "/pictures/home/promos/book.webp" alt = "banner" />
+                    <img  className ={style.content_image} src = "/pictures/home/promos/contemporary-subjects-book.webp" alt = "banner" />
                 </div>
             </div>
             <div className = {style.content}>

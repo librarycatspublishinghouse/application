@@ -75,6 +75,7 @@
 .image_item{
     min-width: 200px;
     width: 200px;
+    caret-color: transparent;
 }
 .info_container{
     text-align: left;

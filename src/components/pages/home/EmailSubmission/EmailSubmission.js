@@ -37,7 +37,7 @@ function EmailSubmission() {
                         JOIN OUR NEWSLETTER
                     </div>
                     <div className = {style.sub_title_text}>
-                        Sign up for our newsletter to stay up to date with all our news
+                        Sign up to our newsletter to stay up to date with all our projects and releases
                     </div>
                     
                     <div className = {style.submission_container}>

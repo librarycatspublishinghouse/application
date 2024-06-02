@@ -2,7 +2,7 @@
 import style from './Footer.module.css';
 import * as React from 'react';
 import axios from 'axios';
-
+import { useNavigate } from "react-router-dom"; 
 
 
 function Footer() {
@@ -13,11 +13,20 @@ function Footer() {
   // especially for the request part since it may change and we currently have to remember both occurences
 
   const [emails, setEmail] = React.useState("");
+  const [footerContainerClass, setFooterContainerClass] = React.useState(style.footer_container);
+
+  
+  const navigate = useNavigate()
+  React.useEffect(() => {
+    setFooterContainerClass( getFooterContainerStyle( navigate ) )
+  }, [navigate])
+
   const handleEmailChange = (e) => {
 
     const {value} = e.target
       setEmail(value);
   };
+
 
   const handleSubmit = (e) => {
       console.log("handling email input: ",emails.input_text);
@@ -35,11 +44,30 @@ function Footer() {
       setEmail("")
   }
 
+  const getFooterContainerStyle = (navigate ) => {
+    // only show the footer background image on certain pages/paths
+    const footerCatsBackgroundPaths = [
+      "",
+      "home", // this doesnt actually exist
+      "books",
+    ]
+
+    let footerContainerStyle = style.footer_container 
+    const currentPath = window.location.pathname.split("/")[1]
+
+    if (footerCatsBackgroundPaths.includes(currentPath)) {
+      footerContainerStyle += " " + style.cats_background
+    }
+
+    return footerContainerStyle
+  }
+
+
 
 
   return (
     <div className={style.footer}> 
-        <div className = {style.footer_container}>
+        <div className = {footerContainerClass}>
 
 
             <div className = {style.follow_container}>

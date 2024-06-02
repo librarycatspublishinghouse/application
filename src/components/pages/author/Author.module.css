@@ -29,6 +29,7 @@
 .image_item{
     object-fit:fill;
     width: 350px ;
+    caret-color: transparent;
     
 }
 
