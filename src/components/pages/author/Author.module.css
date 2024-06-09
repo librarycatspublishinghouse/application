@@ -6,6 +6,7 @@
 .top_container{
     height:auto;
     width:100%;
+    min-height: 530px;
     
 
     margin-top:50px;
@@ -75,6 +76,7 @@
 .author_main_container{
     height: 100%;
     text-align: left;
+    padding-right: 50px;
     
     
 }

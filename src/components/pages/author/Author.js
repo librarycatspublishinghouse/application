@@ -32,23 +32,27 @@ function Author() {
     <div className= {style.author} id = 'top'>
        
         <div className= {style.top_container}>
+          {authorData.firstName && (
+            <>
 
-          <div className = {style.thumbnail_container} >
-            <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}${authorData.image}`} alt = ""/> 
+            <div className = {style.thumbnail_container} >
+              <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}${authorData.image}`} alt = ""/> 
 
-          </div>
-
-          
-          <div className={style.author_main_container}>
-            <div className = {style.author_name}>
-              {authorData.firstName + " " + authorData.otherNames}
             </div>
-            <div className= {style.author_description}>
-              {authorData.info}
-            </div>
-          
 
-          </div>
+            
+            <div className={style.author_main_container}>
+              <div className = {style.author_name}>
+                {authorData.firstName + " " + authorData.otherNames}
+              </div>
+              <div className= {style.author_description}>
+                {authorData.info}
+              </div>
+            
+
+            </div>
+            </>
+          )}
         </div>
         
         
