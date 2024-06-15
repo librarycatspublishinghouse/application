@@ -54,6 +54,8 @@
     flex-wrap: wrap;
     
     margin: 0 auto;
+    column-gap: 24px;
+    box-sizing: border-box;
 
     
 }
@@ -61,6 +63,7 @@
 .card{
     min-width: 200px;
     width: 200px;
+
 
     margin-top: 40px;
     margin-bottom: 50px;
@@ -71,6 +74,7 @@
 .image_container{
     min-width: 200px;
     width: 200px;
+    height: 300px;
 }
 .image_item{
     min-width: 200px;

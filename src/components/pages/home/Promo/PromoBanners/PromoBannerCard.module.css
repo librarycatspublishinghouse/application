@@ -17,10 +17,11 @@
     grid-template-columns: 1fr 1.75fr;
 }
 .image_container{
+    height: 500px;
 }
 .image {
     max-width: 400px;
-    height: auto;
+    height: 100%;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
