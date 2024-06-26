@@ -16,6 +16,12 @@ function Collaborations() {
           Collaborations
           <div className= {style.contest_list}>
               <li className={style.contests_list_item}> 
+                <a  className={style.link} href='https://www.instagram.com/p/C4-rY59uShI/' target='_blank'> Creative Writing Society at the University of Huddersfield Open Submission</a>
+              </li>
+              <li className={style.contests_list_item}> 
+                <a  className={style.link} href='https://www.instagram.com/p/C50-BTgu7Y1/' target='_blank'> Swansea Creative Writing Society Open Submission</a>
+              </li>
+              <li className={style.contests_list_item}> 
                 <a  className={style.link} href='https://www.instagram.com/p/CZezLpkMJjZ/?img_index=1' target='_blank'> STWxUOS Contest</a>
               </li>
               <li className={style.contests_list_item}>
