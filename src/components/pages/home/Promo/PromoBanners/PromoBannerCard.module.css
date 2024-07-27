@@ -43,7 +43,35 @@
 .description {
     font-size: 16px;
     font-weight: 400;
-    padding-bottom: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+
+}
+.button_container {
+    margin-top: 10px;
+}
+.button_container a {
+    text-decoration: none;
+}
+
+
+.go_to_button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 120px;
+    background-color: #222222;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.go_to_button:hover {
+    background-color: #333333;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -68,26 +96,22 @@
     .promo_banner_content {
         grid-template-columns: 1fr;
     }
-    .image {
-        max-width: 250px;
+    .image_container{
+        height: 500px;
     }
     .text_container{
         padding: 20px;
-    }
-    .promo_banner {
-        height: 675px;
     }
 }
 
 
 @media only screen and (max-width: 550px) {
     .promo_banner {
-        height: 800px;
         padding: 20px 50px;
         align-items: flex-start;
     }
-    .image {
-        max-width: 200px;
+    .image_container {
+        height: 300px;
     }
     .text_container{
         padding: 10px;

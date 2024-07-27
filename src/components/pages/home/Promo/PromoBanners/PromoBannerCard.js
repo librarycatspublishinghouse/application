@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./PromoBannerCard.module.css";
 import { getTheme } from "../../../../../components/Themes/Themes";
+import { NavLink } from "react-router-dom";
 
 export default function PromoBannerCard(props) {
 
@@ -24,6 +25,15 @@ export default function PromoBannerCard(props) {
                     <div className={style.description}>
                         {props.description}
                     </div>
+                    <div className={style.button_container}>
+                    <NavLink to={props.bookNavlink} className={style.button}>
+                        <div className={style.go_to_button}>
+                            Download Now
+                        </div>
+                    </NavLink>
+                    </div>
+
+                            
                 </div>
             </div>
         </div>

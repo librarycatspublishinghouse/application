@@ -10,6 +10,7 @@ import { getTheme } from "../../../../Themes/Themes";
 const flickityOptions = {
     initialIndex: 0,
     pageDots: false,
+    setGallerySize: true
 }
 
 
