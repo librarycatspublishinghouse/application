@@ -29,7 +29,11 @@ return(
             <div className = "menu_list_container">
 
             <div className="sb_nav_list_container">
-
+                 <NavLink to = "/books">
+                    <li className = {"nav_list_item"}>
+                        Home
+                    </li>
+                </ NavLink>
                 <NavLink to = "/books">
                     <li className = {"nav_list_item"}>
                         Books

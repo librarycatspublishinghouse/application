@@ -7,6 +7,9 @@
     background-position: center top;
     padding-top:50px;
     padding-bottom: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 .footer_container.cats_background {
     background-image: url("/public/pictures/footer/cat-footer.webp");
