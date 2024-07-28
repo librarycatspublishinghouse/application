@@ -63,7 +63,7 @@ const Header = ({toggle}) => {
                         </ NavLink>
                         <NavLink to = "/send">
                             <li className = {style.nav_list_item}>
-                                Send us
+                                Send Us
                             </li>
                         </ NavLink>
                         <NavLink to = "/donate">

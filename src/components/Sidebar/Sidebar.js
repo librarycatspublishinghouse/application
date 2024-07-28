@@ -51,7 +51,7 @@ return(
                 </ NavLink>
                 <NavLink to = "/send">
                     <li className = {"nav_list_item"}>
-                        Send us
+                        Send Us
                     </li>
                 </ NavLink>
                 <NavLink to = "/donate">
