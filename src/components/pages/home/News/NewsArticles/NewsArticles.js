@@ -6,6 +6,21 @@ import NewsCard from "../NewsCard/NewsCard";
 
 const NewsArticlesConfig = [ 
     {
+        image: "/pictures/news/blue-moon-release.jpg",
+        text: "@racheldeleglise ‘s collection is out!! We’re really excited for you to read it 🤩",
+        link: "https://www.instagram.com/p/C8Psppqiejy/?img_index=1"
+    },
+    {
+        image: "/pictures/news/lse-spring-micro.jpg",
+        text: "We’re collaborating my with the LSE’s Internship Scheme!🤩🤩",
+        link: "https://www.instagram.com/p/C84nSxRiTxp/?img_index=1"
+    },
+    {
+        image: "/pictures/news/meet-the-team.webp",
+        text: "Join us in this new web series where we get to know the members our team here at Library Cats! ⭐👀",
+        link: "https://www.instagram.com/stories/highlights/17939836970744895/"
+    },
+    {
         image: "/pictures/news/new-book-blue-moon.jpg",
         text: "We’re incredibly excited to announce that we’re publishing again! 🎉 Our next book is a collection of poems by @racheldeleglise. It will be available on our website for everyone to read and enjoy 😊 More info soon... 👀",
         link: "https://www.instagram.com/p/C6jdJAnRPpY/?img_index=1"
