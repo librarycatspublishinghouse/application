@@ -756,17 +756,17 @@ function Team() {
 
             {renderTeamMemberItem(RebeccaThomas,"right",length )}
 
-            {renderTeamMemberItem(MeganEllis,"left",length )}
+           
             
-            {renderTeamMemberItem(MaddieTyler,"right",length )}
+            {renderTeamMemberItem(MaddieTyler,"left",length )}
 
-            {renderTeamMemberItem(AndySalazar,"left",length )}
+            {renderTeamMemberItem(AndySalazar,"right",length )}
 
-            {renderTeamMemberItem(DevoraMoleman,"right",length )}
+            {renderTeamMemberItem(DevoraMoleman,"left",length )}
 
-            {renderTeamMemberItem(SamMorgan,"left",length )}
-            {renderTeamMemberItem(HelaJoshi,"right",length )}
-            {renderTeamMemberItem(HannahHolmes,"left",length )}
+            {renderTeamMemberItem(SamMorgan,"right",length )}
+            {renderTeamMemberItem(HelaJoshi,"left",length )}
+            {renderTeamMemberItem(HannahHolmes,"right",length )}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
@@ -786,6 +786,7 @@ function Team() {
                     {renderTeamMemberItem(RebeccaWeigler,"left", length )} 
 
                     {renderTeamMemberItem(LauraMolloy,"right",length )} 
+                    {renderTeamMemberItem(MeganEllis,"left",length )}
 
                 </div>
             )}
