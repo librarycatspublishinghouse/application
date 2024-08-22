@@ -698,6 +698,22 @@ function Team() {
     }
 
 
+    const HarrietSolomon = {
+        name:  "Harriet Solomon",
+        position: "Editor",
+        links: [
+            link("instagram", "https://www.instagram.com/harriet_solomon/?hl=en-gb"),
+            link("linkedin", "https://uk.linkedin.com/in/harriet-solomon-04207b185"),
+        ],
+        description: "Harriet is a PhD candidate in International History at the London School of Economics and Political Science. Her PhD explores the representation of Islam and Islamist organisations in British and American media since 1979. Beyond her studies, Harriet is Managing Editor of the Cold War History Journal and Features Writer for the Kleio Historical Journal. Outside of academia, she works in editing and publishing at Bradt Guides, the world’s largest independent travel publishing house. When she isn’t writing (or reading...or editing...) Harriet can be found on the hunt for bargain flights and the best Chinese food in London.",
+
+        thumbnail_image:  "/pictures/team/book-thumbnails/kitchen-confidential.jpg", 
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,        id: "harriet-solomon",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+
 
 
     const [showFormerMembers, setShowFormerMembers] = React.useState(false)
@@ -767,6 +783,7 @@ function Team() {
             {renderTeamMemberItem(SamMorgan,"right",length )}
             {renderTeamMemberItem(HelaJoshi,"left",length )}
             {renderTeamMemberItem(HannahHolmes,"right",length )}
+            {renderTeamMemberItem(HarrietSolomon,"left",length )}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
