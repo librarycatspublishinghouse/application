@@ -781,9 +781,8 @@ function Team() {
             {renderTeamMemberItem(DevoraMoleman,"left",length )}
 
             {renderTeamMemberItem(SamMorgan,"right",length )}
-            {renderTeamMemberItem(HelaJoshi,"left",length )}
-            {renderTeamMemberItem(HannahHolmes,"right",length )}
-            {renderTeamMemberItem(HarrietSolomon,"left",length )}
+            {renderTeamMemberItem(HannahHolmes,"left",length )}
+            {renderTeamMemberItem(HarrietSolomon,"right",length )}
            
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
@@ -804,6 +803,8 @@ function Team() {
 
                     {renderTeamMemberItem(LauraMolloy,"right",length )} 
                     {renderTeamMemberItem(MeganEllis,"left",length )}
+                    {renderTeamMemberItem(HelaJoshi,"right",length )}
+
 
                 </div>
             )}
