@@ -120,6 +120,47 @@
     padding-left: 50px;
     padding-top: 10px;
 }
+.donation_reminder_container{
+    padding: 20px 1% 
+}   
+.donation_reminder_box {
+    background-color: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.donation_reminder_link{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: black
+}
+.donation_reminder_link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .top_container{
+        grid-template-columns: 1.2fr 1.8fr;
+        grid-template-areas: 
+                "left right"
+                "both both"; 
+    }
+    .author_main_container{
+        margin-top: 20px;
+        grid-area: both; 
+    }
+    
+}
+
 
 @media only screen and (max-width: 1000px) {
     .top_container{
@@ -133,6 +174,10 @@
     .author_main_container{
         margin-top: 20px;
         grid-area: both; 
+    }
+
+    .donation_reminder_container{
+        padding: 20px 0px;
     }
     
     
@@ -156,6 +201,9 @@
         object-fit:fill;
         width: 250px ;
         
+    }
+    .donation_reminder_box {
+        padding: 15px;
     }
     
 }

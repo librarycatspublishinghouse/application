@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import Recomendations from './../home/Recomendations/Recomendations'
 import { Link } from 'react-router-dom';
+import { IoIosShareAlt } from "react-icons/io";
 
 
 function Publication() {
@@ -108,7 +109,7 @@ function Publication() {
 
           <div className = {style.thumbnail_container} >
             <img className = {style.image_item} src={`${process.env.REACT_APP_BACKEND_URL}`+bookData.thumbnailLink} alt=""/> 
-
+   
           </div>
 
           <div className= {style.book_main_container}>
@@ -126,6 +127,17 @@ function Publication() {
             <div className={style.download_container}>
               <a className={style.download_link} onClick = {handleDownload} href = {`${process.env.REACT_APP_BACKEND_URL}`+bookData.downloadLink} download = "bookname.pdf" target="_blank" rel="noreferrer" ><i className="fa fa-download"></i> Download</a>
                 
+            </div>
+            <div className={style.donation_reminder_container}>
+              <div className={style.donation_reminder_box}>
+                <div className={style.donation_reminder_link}>
+                  <Link to = {"/donate"}  className={style.donation_reminder_link} >
+                    This book is available for free. However, if you’d like to offer a donation, that’d be greatly appreciated! &nbsp; 
+                    <b>Your support helps us continue our mission. <IoIosShareAlt />
+                    </b> 
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div className={style.author_main_container}>
