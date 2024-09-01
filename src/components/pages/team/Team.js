@@ -708,7 +708,8 @@ function Team() {
         description: "Harriet is a PhD candidate in International History at the London School of Economics and Political Science. Her PhD explores the representation of Islam and Islamist organisations in British and American media since 1979. Beyond her studies, Harriet is Managing Editor of the Cold War History Journal and Features Writer for the Kleio Historical Journal. Outside of academia, she works in editing and publishing at Bradt Guides, the world’s largest independent travel publishing house. When she isn’t writing (or reading...or editing...) Harriet can be found on the hunt for bargain flights and the best Chinese food in London.",
 
         thumbnail_image:  "/pictures/team/book-thumbnails/kitchen-confidential.jpg", 
-        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,        id: "harriet-solomon",
+        profile_image:`/pictures/team/member-images/harriet.jpeg`,
+        id: "harriet-solomon",
         refOpen: useRef(),
         refClosed: useRef(),
     }
