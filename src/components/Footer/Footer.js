@@ -90,11 +90,11 @@ function Footer() {
                   <img className={style.social_media_item_image} src = '/pictures/instagram.png' alt = "instagram link" />
                 </a> 
               </li>
-              <li className =  {style.social_media_list_item}>
+              {/* <li className =  {style.social_media_list_item}>
                 <a href = "https://twitter.com/LibraryCatsEd" target = "_blank" rel="noreferrer">
                   <img className={style.social_media_item_image} src = "/pictures/twitter.png" alt = "twitter link" />
                 </a> 
-              </li>
+              </li> */}
               <li className =  {style.social_media_list_item}>
                 <a href = "https://www.linkedin.com/company/80904896/admin/feed/posts/" target = "_blank" rel="noreferrer">
                   <img className={style.social_media_item_image} src = "/pictures/linkedin.png" alt = "linkedin link"/>
