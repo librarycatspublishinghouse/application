@@ -24,7 +24,6 @@ return(
         onClick = {toggle}>
             <div className = "close_icon_container" onClick = {toggle} >
                 <FaTimes className = "close_icon"/>
-
             </div>
             <div className = "menu_list_container">
 

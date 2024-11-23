@@ -6,9 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 
 function Footer() {
-
-  
-
   // this is litterally coppied from the email subscription file <--- TODO combine the logic to another file and use that instead
   // especially for the request part since it may change and we currently have to remember both occurences
 

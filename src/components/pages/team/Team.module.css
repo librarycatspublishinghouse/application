@@ -99,7 +99,7 @@
 
 }
 .teamMember_links {
-    display:flow-root
+    display:flow-root;
 }
 .teamMember_link {
     display: flex;

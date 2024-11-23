@@ -60,7 +60,7 @@ function Team() {
                                 <>
                                 {(link.type == "twitter") &&  (
                                 <a className = {style.link} href={link.link} target="_blank" rel="noopener noreferrer">
-                                    <img  className= {style.link_icon} src={"pictures/twitter.webp"} alt="Twitter"   />
+                                    <img  className= {style.link_icon} src={"pictures/x-social-media.svg"} alt="Twitter"   />
                                 </a>
                                 )}
                                 {(link.type == "instagram") &&  (
@@ -78,6 +78,7 @@ function Team() {
                         </div>
                     </div>
                 ) : (
+                //TODO we can clean up some of the CSS in this file
                 <div className={style.teamMember_content}>
                     <div className={style.teamMember_name}>
                         {name}
@@ -86,13 +87,13 @@ function Team() {
                     <div className={style.teamMember_description} onClick = {(e) => handleClick(e,refOpen, refClosed)} ref ={refOpen}>
                         {description}
                     </div>
-                    <div className={style.teamMember_links} style = {{display: 'inline-block', justifyItems: 'flex-end'}}>
+                    <div className={style.teamMember_links} style = {(direction === "right" )? { display: 'inline-block', justifyItems: 'flex-end'} : { display: 'inline-block', justifyItems: 'flex-start'}}>
 
                     {links.map((link) => {
                         return(
                             <>
                                 {(link.type == "twitter") &&  (
-                                    <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyContent: "flex-end"}: {}}>
+                                    <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyContent: "flex-end"}: {justifyContent: "flex-start"}}>
                                         {direction === "right" ? (
                                             <>
                                                 <a className = {style.link} href={link.link} target="_blank" rel="noopener noreferrer" style={{display:"flex", }}>
@@ -100,14 +101,14 @@ function Team() {
                                                         Twitter
                                                     </div>
                                     
-                                                    <img  className= {style.link_icon} src={"pictures/twitter.webp"} alt="Twitter" style={{marginLeft: "0.5rem"}}/>
+                                                    <img  className= {style.link_icon} src={"pictures/x-social-media.svg"} alt="Twitter" style={{marginLeft: "0.5rem"}}/>
                                                 </a>
                                             </>
                                         ) : (
                                             <>
                                             
                                             <a className = {style.link} href={link.link} target="_blank" rel="noopener noreferrer" style={{display:"flex"}}>
-                                                    <img  className= {style.link_icon} src={"pictures/twitter.webp"} alt="Twitter"/>
+                                                    <img  className= {style.link_icon} src={"pictures/x-social-media.svg"} alt="Twitter"/>
                                                 
                                                     <div className={style.teamMember_link_text}>
                                                         Twitter
@@ -309,7 +310,6 @@ function Team() {
         name: "Marcos Echevarria",
         position: "Founder & CEO",
         links: [
-            link("twitter", "https://twitter.com/marcoseche00"),
             link("instagram", "https://www.instagram.com/marcoseche/"),
             link("linkedin", "https://www.linkedin.com/in/marcos-e-76826712b/"),
         ],
