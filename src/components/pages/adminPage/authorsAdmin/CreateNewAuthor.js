@@ -77,7 +77,7 @@ function CreateNewAuthor(props) {
             }
     
         }).then(res => { 
-            if (res.status == 201 | res.status == 200) {
+            if (res.status === 201 | res.status === 200) {
                 const image_link = res.data.filePath.replace(/\\/g, '/');
                 console.log("image_link: ", image_link)
 
@@ -88,7 +88,7 @@ function CreateNewAuthor(props) {
                     image: image_link,
                 }).then(res => {
                     console.log("creating new author: status: ", res.status);
-                    if (res.status == 200) {
+                    if (res.status === 200) {
                         props.onCreateAuthor();
                     }
                 });

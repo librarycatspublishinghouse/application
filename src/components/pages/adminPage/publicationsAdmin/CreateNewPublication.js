@@ -133,7 +133,7 @@ function CreateNewPublication(props) {
             }
     
         }).then(res => { 
-            if (res.status == 201 | res.status == 200) {
+            if (res.status === 201 | res.status === 200) {
                 thumbnailLink = res.data.filePath.replace(/\\/g, '/');
                 var bookData = new FormData();
                 bookData.append('file', downloadFile);
@@ -148,7 +148,7 @@ function CreateNewPublication(props) {
                     downloadLink = res.data.filePath.replace(/\\/g, '/');
                     setSingleProgress(0);
                     console.log("uploading book: ", res.status);
-                    if (res.status == 200 | res.status == 201) {
+                    if (res.status === 200 | res.status === 201) {
                         axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/create`, {
                             title: formInput.title,
                             authorID: formInput.authorID,
@@ -164,7 +164,7 @@ function CreateNewPublication(props) {
                             price: price,
                             downloads: downloads
                         }).then(res => {
-                            if (res.status == 200){
+                            if (res.status === 200){
                                 props.onCreate();
                             }
                         })

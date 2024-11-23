@@ -58,18 +58,18 @@ function Team() {
                         {links.map((link) => {
                             return(
                                 <>
-                                {(link.type == "twitter") &&  (
+                                {(link.type === "twitter") &&  (
                                 <a className = {style.link} href={link.link} target="_blank" rel="noopener noreferrer">
                                     <img  className= {style.link_icon} src={"pictures/x-social-media.svg"} alt="Twitter"   />
                                 </a>
                                 )}
-                                {(link.type == "instagram") &&  (
+                                {(link.type === "instagram") &&  (
                                     <a className = {style.link} href={link.link} target="_blank" rel="noopener noreferrer"><img  className= {style.link_icon} src={"pictures/insta.webp"} alt="Instagram"/></a>
                                 )}
-                                {(link.type == "linkedin" ) &&  (
+                                {(link.type === "linkedin" ) &&  (
                                     <a className = {style.link} href={link.link}  target="_blank" rel="noopener noreferrer"><img  className= {style.link_icon} src={"pictures/linkedin.webp"} alt="Linkedin"/></a>
                                 )}
-                                {(link.type == "website" ) &&  (
+                                {(link.type === "website" ) &&  (
                                     <a className = {style.link} href={link.link}  target="_blank" rel="noopener noreferrer"><img  className= {style.link_icon} src={"pictures/website.webp"} alt="Linkedin"/></a>
                                 )}
                                 </>)
@@ -92,7 +92,7 @@ function Team() {
                     {links.map((link) => {
                         return(
                             <>
-                                {(link.type == "twitter") &&  (
+                                {(link.type === "twitter") &&  (
                                     <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyContent: "flex-end"}: {justifyContent: "flex-start"}}>
                                         {direction === "right" ? (
                                             <>
@@ -119,7 +119,7 @@ function Team() {
                                         
                                     </div>
                                 )}
-                                {(link.type == "instagram") &&  (
+                                {(link.type === "instagram") &&  (
                                     <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyItems: "flex-end"}: {}} >
                                         {direction === "right" ? (
                                             < >
@@ -147,7 +147,7 @@ function Team() {
                                         
                                     </div>
                                 )}
-                                {(link.type == "linkedin" ) &&  (
+                                {(link.type === "linkedin" ) &&  (
                                     <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyContent: "flex-end"}: {}}>
                                         {direction === "right" ? (
                                             < >
@@ -174,7 +174,7 @@ function Team() {
                                     </div>
                                 )}
 
-                                {(link.type == "website" ) &&  (
+                                {(link.type === "website" ) &&  (
                                     <div className={style.teamMember_link} style = {(direction === "right" )?  {justifyContent: "flex-end"}: {}}>
                                         {direction === "right" ? (
                                             < >
