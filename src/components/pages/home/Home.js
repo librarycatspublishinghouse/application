@@ -16,6 +16,7 @@ import Promo from './Promo/PromoPages/ContemporarySubjectsPromo';
 import PromoBanner from './Promo/PromoBanners/PromoBanner';
 import NewsArticle from './News/NewsArticles/NewsArticles';
 
+
 const flickityOptions = {
   initialIndex: 0
 }
@@ -23,7 +24,7 @@ const flickityOptions = {
 function Home() {
 
   const[newsData, setNewsData] = useState([]);
-  
+
 
   
   useEffect(() => {

@@ -1,7 +1,7 @@
 
 import './App.css';
 import Footer from './components/Footer/Footer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home from './components/pages/home/Home';
@@ -22,8 +22,13 @@ import AdminPage from './components/pages/adminPage/AdminPage';
 import ContestsShowcase from './components/pages/contests/contestsShowcase/ContestsShowcase';
 import TermsAndConditions from './components/pages/TermsAndConditions/TermsAndConditions';
 import Donations from './components/pages/donations/Donations';
+import ReactGA from 'react-ga';
+
 
 process.env['BACKEND_URL'] = 'https://spread-the-word.herokuapp.com/';
+const TRACKING_ID = "G-SBF08R4CCR"
+ReactGA.initialize( TRACKING_ID );
+
 function App() {
 
   const [menuCollapse, setMenuCollapse] = useState(true);
@@ -32,6 +37,10 @@ function App() {
       console.log("collapsed: ",menuCollapse);
       menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
+
+  useEffect( ()=> {
+    ReactGA.pageview( window.location.pathname + window.location.search)
+  }, [])
 
 
 

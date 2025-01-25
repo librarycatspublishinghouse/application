@@ -7,9 +7,12 @@ import 'font-awesome/css/font-awesome.min.css';
 import Recomendations from './../home/Recomendations/Recomendations'
 import { Link } from 'react-router-dom';
 import { IoIosShareAlt } from "react-icons/io";
-
+import useAnalyticsEventTracker from "./../../Hooks/googleAnalyticsEventHook";
 
 function Publication() {
+
+  const gaEventTracker = useAnalyticsEventTracker( "Publication");
+
   let params = useParams();
   
   const[bookData, setBookData] = useState([]);
@@ -59,6 +62,9 @@ function Publication() {
     //update downloads to plus one
     console.log("incrementing downloads")
     await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/publication/increment-downloads/`, {id: params.id});
+
+    // send google analytics event
+    gaEventTracker( "Publication Download", `Book: ${params.id}`)
 
   }
 
