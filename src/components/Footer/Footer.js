@@ -22,6 +22,7 @@ function Footer() {
       page: window.location.pathname + window.location.search,
       title: "Page Load"
     } )
+    console.log( "google analytics event sent")
   }, [navigate])
 
   const handleEmailChange = (e) => {
