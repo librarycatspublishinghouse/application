@@ -22,7 +22,7 @@ import AdminPage from './components/pages/adminPage/AdminPage';
 import ContestsShowcase from './components/pages/contests/contestsShowcase/ContestsShowcase';
 import TermsAndConditions from './components/pages/TermsAndConditions/TermsAndConditions';
 import Donations from './components/pages/donations/Donations';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 
 process.env['BACKEND_URL'] = 'https://spread-the-word.herokuapp.com/';
@@ -39,7 +39,11 @@ function App() {
   };
 
   useEffect( ()=> {
-    ReactGA.pageview( window.location.pathname + window.location.search)
+    ReactGA.send( {
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+      title: "Page Load"
+    } )
   }, [])
 
 

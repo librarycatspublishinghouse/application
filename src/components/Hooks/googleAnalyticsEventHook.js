@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga4'
 
 // TODO move to a custom hoook to be used from any page where we want to track an event
 const useAnalyticsEventTracker = (category = "Download") => {
