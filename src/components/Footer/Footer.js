@@ -3,7 +3,7 @@ import style from './Footer.module.css';
 import * as React from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom"; 
-
+import ReactGA from 'react-ga4';
 
 function Footer() {
   // this is litterally coppied from the email subscription file <--- TODO combine the logic to another file and use that instead
@@ -16,6 +16,12 @@ function Footer() {
   const navigate = useNavigate()
   React.useEffect(() => {
     setFooterContainerClass( getFooterContainerStyle( navigate ) )
+    // TODO probably not the best place but simples for now 
+    ReactGA.send( {
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+      title: "Page Load"
+    } )
   }, [navigate])
 
   const handleEmailChange = (e) => {
