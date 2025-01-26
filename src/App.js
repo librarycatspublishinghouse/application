@@ -2,7 +2,7 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
 import { useEffect, useState } from 'react';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
 
 import Home from './components/pages/home/Home';
 import Send from './components/pages/send/Send';
@@ -38,13 +38,16 @@ function App() {
       menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
 
+  const location = useLocation()
+
   useEffect( ()=> {
+    console.log( "pageview"); 
     ReactGA.send( {
       hitType: "pageview",
       page: window.location.pathname + window.location.search,
       title: "Page Load"
     } )
-  }, [])
+  }, [location])
 
 
 
