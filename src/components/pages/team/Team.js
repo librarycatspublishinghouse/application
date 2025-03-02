@@ -714,6 +714,70 @@ function Team() {
         refClosed: useRef(),
     }
 
+    
+    const BethStears = {
+        name:  "Beth Stears",
+        position: "Direction",
+        links: [
+            link("linkedin", "https://www.linkedin.com/in/beth-stears-766a8123b"),
+        ],
+        description: "Being in my third year of an English Language and Literature degree , I have developed a great appreciation for the use of language and how literature complements education. This particular role relates very well to what I am studying and gives me valuable experience. Apart from reading books, I’m usually watching horror films or play video games .",
+
+        thumbnail_image:  "/pictures/team/book-thumbnails/dracula.webp", 
+        profile_image:`/pictures/team/member-images/beth.jpg`,
+        id: "beth-stears",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+    const SophiaVoukelatos = {
+        name:  "Sophia Voukelatos",
+        position: "Direction",
+        links: [
+            link("linkedin", "https://www.linkedin.com/in/sophia-voukelatos-124b7b285?trk=contact-info"),
+            link("instagram", "https://www.instagram.com/sophiavouk/"),
+        ],
+        description: "I’m a Master of Publishing and Communications student at the University of Melbourne, in Australia. I am an avid reader of fiction and non-fiction, who also loves travelling, art, fashion and history",
+
+        thumbnail_image:  "/pictures/team/book-thumbnails/a-gentleman-in-moscow.jpg", 
+        profile_image:`/pictures/team/member-images/sophia.jpeg`,
+        id: "sophia-voukelatos",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+
+    const AlessandraCappuccio = {
+        name:  "Alessandra Cappuccio",
+        position: "Direction",
+        links: [
+            link("linkedin", "https://www.linkedin.com/in/alessandra-cappuccio-01ab4921a/"),
+            link("instagram", "https://www.instagram.com/alessandra.cappuccio/"),
+        ],
+        description: "I’m a recent graduate of the LLB European Law programme at Maastricht University. I’m an avid reader with a deep love for classics and a growing curiosity for the publishing world. I’m outgoing and adventurous, always eager to take on challenges. I love exploring new things, whether it’s through travelling, cooking or reading a good book.",
+
+        thumbnail_image:  "/pictures/team/book-thumbnails/the-unbearable-lightness-of-being.jpg", 
+        profile_image: `${process.env.REACT_APP_BACKEND_URL}files/authors/thumbnails/placeholder.webp`,
+        id: "alessandra-cappuccio",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
+    const OliviaDean = {
+        name:  "Olivia Dean",
+        position: "Marketing Assistant",
+        links: [
+            link("linkedin", "https://www.linkedin.com/in/olivia-g-dean/"),
+        ],
+        description: "Olivia is a writer, reader, and an editor of fantasy fiction. She is originally from England but moved to the States when she was 10. She’s lived on both coasts, but has spent more of her time on the East Coast, having attended the University of Maryland where she received her BA in Cinema and Media Studies in 2023. Since working on her first novel throughout college (and being obsessed with the TV show “Younger” in high school), Olivia has been drawn to the world of publishing and is currently pursuing opportunities within the industry.",
+
+        thumbnail_image:  "/pictures/team/book-thumbnails/gormenghast.jpg", 
+        profile_image:`/pictures/team/member-images/olivia.jpg`,
+        id: "olivia-dean",
+        refOpen: useRef(),
+        refClosed: useRef(),
+    }
+
 
 
 
@@ -733,58 +797,47 @@ function Team() {
 
         
             {renderTeamMemberItem(MarcosEchevarria, "left", length )} 
-
             {renderTeamMemberItem(BeatrizdeCastroPerez,"right", length)} 
 
 
                             
             {renderTeamMemberItem(ChrisMillis, "left",length )} 
-
-
             {renderTeamMemberItem(CristobalEchevarria,"right", length )} 
 
 
 
-            {renderTeamMemberItem(MayaraZucheli,"left", length )} 
-
-
-                            
+            {renderTeamMemberItem(MayaraZucheli,"left", length )}         
             {renderTeamMemberItem(NishaPatel,"right",length )}
 
 
             
             {renderTeamMemberItem(SukhpreetChana,"left",length )} 
-            
-
-           
+    
             {renderTeamMemberItem(BeatriceFeng,"right",length )} 
 
 
 
             {renderTeamMemberItem(RajaKhan,"left",length )} 
-
             {renderTeamMemberItem(IslaMacFarlane,"right",length )}
 
             {renderTeamMemberItem(AlfonsoBuhigas,"left", length )}
-            
             {renderTeamMemberItem(VictoriaMarieSmith,"right",length )}
 
             {renderTeamMemberItem(FionaBanham,"left",length )}
+            {renderTeamMemberItem(MaddieTyler,"right",length )}
 
-            {renderTeamMemberItem(RebeccaThomas,"right",length )}
 
-           
-            
-            {renderTeamMemberItem(MaddieTyler,"left",length )}
-
-            {renderTeamMemberItem(AndySalazar,"right",length )}
 
             {renderTeamMemberItem(DevoraMoleman,"left",length )}
-
             {renderTeamMemberItem(SamMorgan,"right",length )}
+
             {renderTeamMemberItem(HannahHolmes,"left",length )}
-            {renderTeamMemberItem(HarrietSolomon,"right",length )}
-           
+            {renderTeamMemberItem(BethStears, "right", length)}
+
+            {renderTeamMemberItem(SophiaVoukelatos, "left", length)}
+            {renderTeamMemberItem(AlessandraCappuccio, "right", length)}
+
+            {renderTeamMemberItem(OliviaDean, "left", length)}
         
             <div className={style.former_members_label} onClick={handleClickShowFormerMembers}>
                 SHOW FORMER MEMBERS
@@ -805,8 +858,9 @@ function Team() {
                     {renderTeamMemberItem(LauraMolloy,"right",length )} 
                     {renderTeamMemberItem(MeganEllis,"left",length )}
                     {renderTeamMemberItem(HelaJoshi,"right",length )}
-
-
+                    {renderTeamMemberItem(AndySalazar,"left",length )}
+                    {renderTeamMemberItem(RebeccaThomas,"right",length )}
+                    {renderTeamMemberItem(HarrietSolomon,"left",length )}
                 </div>
             )}
         </div>

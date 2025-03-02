@@ -64,9 +64,13 @@
 .logo_texts{
     text-align: left;
     text-decoration: none;
+    color: #000;    
 }
 .logo_texts:visited{
-    color: inherit;
+    color: black;
+}
+.logo_texts:active {
+    color: #000;
 }
 .page_title_container{
     padding-top: 12px;
