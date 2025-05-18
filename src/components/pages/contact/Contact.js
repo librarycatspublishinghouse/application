@@ -1,73 +1,75 @@
 import React from 'react';
-import ComingSoon from '../../ComingSoon/ComingSoon';
-import style from  './Contact.module.css';
+import style from './Contact.module.css';
 import ContactForm from './ContactForm/ContactForm';
 
-
-function Contact() {
+const Contact = () => {
   return (
-    <div className= {style.contact}>
-        <div className= {style.contact_container_container}>
-          <div className= {style.contact_container}>
-            
-            <div className= {style.contact_header}>
-              DROP 
-              <br />
-              US
-              <br /> 
-              A
-              <br /> 
-              LINE
-            </div>
+    <div className={style.contact}>
+      {/* Hero Section */}
+      <section className={style.hero}>
+          <div className={style.heroContent}>
+            <h1 className={style.heroTitle}>
+              <span>DROP US</span>
+              <span>A LINE</span>
+            </h1>
+            <ContactForm />
+          </div>
 
-            <div className= {style.contact_content}>
-              <ContactForm />
-            </div>
+      </section>
 
+      {/* Info Section */}
+      <section className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className={style.brandInfo}>
+            <img 
+              className={style.logoImage} 
+              src="/pictures/contact/logo.webp" 
+              alt="Library Cats Editorial Logo" 
+              loading="lazy"
+            />
+          </div>
+          <div className={style.contactInfo}>
+            <h2 className={style.brandTitle}>
+              LIBRARY CATS
+              <span className={style.brandSubtitle}>EDITORIAL</span>
+            </h2>
+            <p className={style.contactText}>
+              Contact one of our global digital editors or send in your submission to:
+            </p>
+            <div className={style.emailContainer}>
+              <span>Email:</span>
+              <a 
+                className={style.emailLink} 
+                href="mailto:librarycatseditorial@gmail.com"
+                aria-label="Send email to Library Cats Editorial"
+              >
+                librarycatseditorial@gmail.com
+              </a>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div className= {style.logo_section_container_container}>
-          <div className= {style.logo_section_container}>
-            <div className= {style.logo_container}>
-              <img className={style.logo_image} src="/pictures/contact/logo.webp" alt="logo" />
-            </div>
-
-            <div className= {style.log_info_container}>
-              <div className={style.logo_info_header}>
-                LIBRARY CATS
-              </div>
-              <div className={style.logo_info_header_sub}>
-                EDITORIAL 
-              </div>
-              <div className={style.logo_info_text}>
-                Contact one of our global digital editors or send in your submission to:
-              </div>
-              <div className={style.logo_info_link}>
-                Email<a className={style.email_link_item} href="mailto:librarycatseditorial@gmail.com" >: librarycatseditorial@gmail.com </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className= {style.footer_container_container}>
-          <div className= {style.footer_container}>
-            <div className= {style.footer_description_text}>
+      {/* Footer Section */}
+      <section className={style.footer}>
+        <div className={style.footerContent}>
+          <div className={style.footerInfo}>
+            <p className={style.footerText}>
               Library Cats is a UK based global digital organisation
-              <div className={style.footer_gap}/>
-
+            </p>
+            <p className={style.footerText}>
               Contact us with your budding future best sellers for advice from our editors, or with any enquiries.
-            </div>
-            <div className={style.footer_header}>
-              LIBRARY
-              <br />
-              CATS
-
-            </div>
+            </p>
           </div>
+          <h2 className={style.footerBrand}>
+            LIBRARY
+            <br />
+            CATS
+          </h2>
         </div>
-
+      </section>
     </div>
-    );
-}
+  );
+};
 
 export default Contact;

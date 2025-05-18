@@ -68,6 +68,15 @@ function Send() {
     <div className = {style.share_info}>
       PLEASE ADD YOUR NAME AND EMAIL TO THE MANUSCRIPT
     </div>
+    <br />
+    <a className = {style.style_guide_link} 
+      href={`${process.env.REACT_APP_BACKEND_URL}`+`/files/guides/style_guide_LC_2025.pdf`}
+       target='_blank' rel="noreferrer"
+      
+      >
+      Check out our style guide
+    </a>
+
 
     </div>
   );

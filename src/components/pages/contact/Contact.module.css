@@ -1,163 +1,241 @@
-
-.contact_container_container {
-    background-color: #6fc3db;
-    min-height: 600px;
-    
-}
-.contact_container{
-
-    display: grid;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    grid-template-columns: auto 1fr;
-    width: auto;
-    padding-left: 5rem;
-    transition: all .5s ease-in-out;
-    
-}
-.contact_header{
-    font-size: 5rem;
-    font-weight: 700;
-    color: white;
-    text-align: left;
-    
-    letter-spacing: 0.5rem;
-    width: 333px;
-    max-width:333px;
-
-
-}
-.contact_content {
+.contact {
+  min-height: 100vh;
+  background-color: #ffffff;
 }
 
-.logo_section_container_container {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-.logo_section_container {
-    width: 800px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.logo_container {
+/* Hero Section */
+.hero {
+  background-color: #6fc3db;
+  min-height: 600px;
+  padding: 4rem 2rem;
+  text-align: left;
 }
 
-.logo_image {
-    width: 20rem;
-    caret-color: transparent;
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
 }
 
-.log_info_container {
-    padding-top: 3.2rem;
-    background-color: rgb(255, 255, 255);
-    text-align: left;
-
+.heroLeft {
+  max-width: 600px;
 }
 
-.logo_info_header {
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5rem;
+  margin: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heroTitle span {
+  line-height: 1.1;
+  transition: transform 0.3s ease;
+}
+
+.heroTitle span:hover {
+  transform: translateX(20px);
+}
+
+/* Info Section */
+.infoSection {
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.infoContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  text-align: left;
+}
+
+.brandInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.logoImage {
+  width: 20rem;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logoImage:hover {
+  transform: scale(1.05);
+}
+
+.contactInfo {
+  padding: 2rem;
+}
+
+.brandTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.brandSubtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #6fc3db;
+  margin-top: 0.5rem;
+}
+
+.contactText {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 2rem 0;
+}
+
+.emailContainer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.emailLink {
+  color: #6fc3db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+  color: #4a90e2;
+}
+
+/* Footer Section */
+.footer {
+  background-image: url('../../../../public/pictures/contact/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.footerContent {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4rem;
+  color: white;
+}
+
+.footerInfo {
+  max-width: 600px;
+}
+
+.footerText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.footerBrand {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  line-height: 1;
+  margin: 0;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .infoContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+
+  .footerBrand {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .brandTitle {
     font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
+  }
 
-}
+  .brandSubtitle {
+    font-size: 1.5rem;
+  }
 
-.logo_info_header_sub {
-    font-size: 2.3rem;
-    font-weight: 200;
+  .footerContent {
+    grid-template-columns: 1fr;
+  }
 
-}
-
-.logo_info_text {
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    
-    line-height: 1.7rem;
-    color: rgba(0, 0, 0, 0.80);
-
-    margin-top: 1.8rem;
-}
-.logo_info_link{
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    line-height: 1.7rem;
-    color: rgba(0, 0, 0, 0.80);
-
-    margin-top: 1.8rem;
-}
-
-.email_link_item{
-    text-decoration: none;
-    color: #ff00f7e8;
-
-}
-
-.footer_container_container{
-
-    background-image: url('../../../../public/pictures/contact/background.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-
+  .footerBrand {
     text-align: left;
-    padding-left: 5rem;
-    padding-top: 15rem;
-    padding-bottom: 9rem;
+    font-size: 3rem;
+  }
+
+  .logoImage {
+    width: 15rem;
+  }
 }
 
-.footer_description_text {
-    font-weight: 600;
-    font-size: 1.2rem;
-    width: 35rem;
-}
-.footer_gap {
-    margin-top: 2rem;
-}
-.footer_header {
-    font-size: 8rem;
-    letter-spacing: 0.5rem;
-    font-weight: 700;
-    color: white;
+@media screen and (max-width: 600px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+  }
 }
 
+@media (max-width: 480px) {
 
-
-@media only screen and (max-width: 1100px) {
-    .logo_section_container {
-        grid-template-columns: 1fr;
-        width: auto;
-    }
-   
-    .log_info_container {
-        text-align: center;
-    
-    }
-    .contact_container{
-        width: auto
-    }
-    
-    .footer_container{
-        width: 80%;
-    }
-}
-
-
-@media only screen and (max-width: 770px) {
-    .contact_container{
-        grid-template-columns: 1fr 
-    }
-    .contact_content {
-        margin-top: 2rem;
-    }
-    .footer_header {
-        margin-top: 2rem;
-        font-size: 15vw;
-        text-align: right;
-    }
-    .footer_description_text {
-        width: auto
-    }
+  .footerText {
+    font-size: 1rem;
+  }
+  .brandInfo {
+    display: flex;
+    justify-content: center;
+  }
+  .logoImage {
+    width: 10rem;
+  }
+  .heroTitle {
+    font-size: 2.5rem;
+  }
 }
