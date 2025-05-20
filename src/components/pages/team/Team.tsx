@@ -36,7 +36,7 @@ const Team: React.FC = () => {
           {currentTeamMembers.map((member, index) => (
             <TeamMemberCard
               key={member.id}
-              id={`team-member-${member.id}`} // Add this line
+              id={`team-member-${member.id}`} 
               member={member}
               direction={index % 2 === 0 ? 'left' : 'right'}
               expanded={expandMemberCards}
@@ -58,10 +58,10 @@ const Team: React.FC = () => {
             {formerTeamMembers.map((member, index) => (
               <TeamMemberCard
                 key={member.id}
-                id={`team-member-${member.id}`} // Add this line
+                id={`team-member-${member.id}`}
                 member={member}
                 direction={index % 2 === 0 ? 'left' : 'right'}
-                expanded={expandedMemberId === member.id}
+                expanded={expandMemberCards}
                 onToggleExpand={() => handleMemberClick(member.id)}
               />
             ))}
