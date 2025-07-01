@@ -1,17 +1,17 @@
 const themes = [
     {
+        backgroundColour : "#FFEBCD",
+        textColour : "#8B5A2B",
+    },
+
+    {
         backgroundColour : "#7FB3D5",
         textColour : "#195775",
     },
 
-
     {
         backgroundColour : "#ffd299",
         textColour : "#dd6236",
-    },
-    {
-        backgroundColour : "#9B111E",
-        textColour : "#ffaea0",
     },
 
     {
@@ -19,12 +19,9 @@ const themes = [
         textColour : "#345e37",
     },
     {
-        backgroundColour : "#FFEBCD",
-        textColour : "#8B5A2B",
+        backgroundColour : "#9B111E",
+        textColour : "#ffaea0",
     },
-
-
-
 ]
 
 
