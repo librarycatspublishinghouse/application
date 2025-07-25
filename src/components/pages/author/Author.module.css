@@ -1,146 +1,110 @@
-.publication{
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.top_container{
-    height:auto;
-    width:100%;
-    min-height: 530px;
-    
-
-    margin-top:50px;
-       
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1.2fr 1.8fr ;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    background-color: rgb(241, 241, 241);
-}
-
-
-
-
-.thumbnail_container{
-    text-align: center;
-    height: 100%;
-    
-}
-.image_item{
-    object-fit:fill;
-    width: 350px ;
-    caret-color: transparent;
-    
-}
-
-
-
-
-.title_author{
-    font-size: 31px !important;
-    line-height: 35px;
-    font-family: 'Raleway', sans-serif;
+.author {
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .authorCard {
+    display: flex;
+    gap: 3rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .imageContainer {
+    flex: 0 0 300px;
+  }
+  
+  .authorImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .authorContent {
+    flex: 1;
+  }
+  
+  .authorName {
+    font-size: 2.5rem;
     font-weight: 700;
-}
-.book_title{
-    font-size: 37px !important;
-    line-height: 41px;
-    font-family: "Sabon", serif !important;
-    font-weight: 100;
-    margin-bottom: 20px;
-}
-
-.book_description{
-    font-size: 16px;
-    line-height: 22px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-
-.download_link{
-    color: #6f76c7 !important;
-    display: block;
-    float: left;
-    
-}
-.download_link:visited{
-    text-decoration: none;
-    color: #6f76c7 !important;
-}
-.download_link:hover{
-    text-decoration:none;
-}
-
-.author_main_container{
-    height: 100%;
-    text-align: left;
-    padding-right: 50px;
-    
-    
-}
-.author_name{
-    color: #6f76c7 !important;
-    font-family: "Sabon", serif !important;
-    font-weight: 100;
-    font-size: 21px !important;
-    line-height: 21px;
-    margin-bottom:20px;
-}
-.author_description{
-    font-size: 14px;
-    line-height: 22px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-
-    
-}
-.author_link{
-    font-size: 14px;
-    line-height: 22px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    text-decoration: underline;
-    color: #6f76c7 !important;
-}
-.author_link:hover{
-    text-decoration: none;
-    cursor: pointer;
-}
-.recomendations_text{
-    text-align: left;
-    font-weight: 700;
-    font-size: 21px;
-    font-family: sans-serif;
-    
-    padding-left: 50px;
-    padding-top: 10px;
-}
-
-@media only screen and (max-width: 950px) {
-
-    .author_main_container{
-        margin-left: 15px;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .authorBio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    color: #4a5568;
+  }
+  
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    color: #e53e3e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .authorCard {
+      flex-direction: column;
+      gap: 2rem;
     }
-}
-
-@media only screen and (max-width: 750px) {
-
-    .image_item{
-        
-        width: 250px ;
+  
+    .imageContainer {
+      flex: 0 0 auto;
     }
-        
-}
-@media only screen and (max-width: 650px) {
-
-    .top_container{
-        display:inline-block;
-        padding-top: 35px;
+  
+    .authorImage {
+      height: 300px;
     }
-    .author_name{
-        margin-top: 15px;
+  
+    .authorName {
+      font-size: 2rem;
     }
-        
-}
+  }
+  
+  @media (max-width: 480px) {
+    .author {
+      padding: 1rem;
+    }
+  
+    .container {
+      padding: 1rem;
+    }
+  
+    .authorCard {
+      padding: 1rem;
+    }
+  
+    .authorImage {
+      height: 250px;
+    }
+  
+    .authorName {
+      font-size: 1.75rem;
+    }
+  }
