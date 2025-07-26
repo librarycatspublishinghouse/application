@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stwWebFrontend/static/css/main.25d6d050.css",
-    "main.js": "/stwWebFrontend/static/js/main.16925334.js",
+    "main.js": "/stwWebFrontend/static/js/main.5b09ad62.js",
     "static/js/787.cda612ba.chunk.js": "/stwWebFrontend/static/js/787.cda612ba.chunk.js",
     "static/media/contest-background.webp": "/stwWebFrontend/static/media/contest-background.a188aad05079e46f5feb.webp",
     "static/media/background.webp": "/stwWebFrontend/static/media/background.0e1dc88850390ecb7a66.webp",
@@ -19,11 +19,11 @@
     "static/media/send-background.webp": "/stwWebFrontend/static/media/send-background.f3497c6fe3d9e1bb415c.webp",
     "index.html": "/stwWebFrontend/index.html",
     "main.25d6d050.css.map": "/stwWebFrontend/static/css/main.25d6d050.css.map",
-    "main.16925334.js.map": "/stwWebFrontend/static/js/main.16925334.js.map",
+    "main.5b09ad62.js.map": "/stwWebFrontend/static/js/main.5b09ad62.js.map",
     "787.cda612ba.chunk.js.map": "/stwWebFrontend/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25d6d050.css",
-    "static/js/main.16925334.js"
+    "static/js/main.5b09ad62.js"
   ]
 }
