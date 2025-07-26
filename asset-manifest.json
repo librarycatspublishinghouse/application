@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/stwWebFrontend/static/css/main.25d6d050.css",
+    "main.js": "/stwWebFrontend/static/js/main.16925334.js",
+    "static/js/787.cda612ba.chunk.js": "/stwWebFrontend/static/js/787.cda612ba.chunk.js",
+    "static/media/contest-background.webp": "/stwWebFrontend/static/media/contest-background.a188aad05079e46f5feb.webp",
+    "static/media/background.webp": "/stwWebFrontend/static/media/background.0e1dc88850390ecb7a66.webp",
+    "static/media/team-background.webp": "/stwWebFrontend/static/media/team-background.38ebbc25278a15bca20f.webp",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/stwWebFrontend/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/donations-background.webp": "/stwWebFrontend/static/media/donations-background.ad82c8819c0aa59400d9.webp",
+    "static/media/services-background.webp": "/stwWebFrontend/static/media/services-background.ad82c8819c0aa59400d9.webp",
+    "static/media/mission-page-background.webp": "/stwWebFrontend/static/media/mission-page-background.06c30aa95b7ba6a0432d.webp",
+    "static/media/fontawesome-webfont.eot": "/stwWebFrontend/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/stwWebFrontend/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/cat-footer.webp": "/stwWebFrontend/static/media/cat-footer.b73186d66768e383eb71.webp",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/stwWebFrontend/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/stwWebFrontend/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/donate-background.webp": "/stwWebFrontend/static/media/donate-background.8f0868bec6b8f3eea9ed.webp",
+    "static/media/send-background.webp": "/stwWebFrontend/static/media/send-background.f3497c6fe3d9e1bb415c.webp",
+    "index.html": "/stwWebFrontend/index.html",
+    "main.25d6d050.css.map": "/stwWebFrontend/static/css/main.25d6d050.css.map",
+    "main.16925334.js.map": "/stwWebFrontend/static/js/main.16925334.js.map",
+    "787.cda612ba.chunk.js.map": "/stwWebFrontend/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25d6d050.css",
+    "static/js/main.16925334.js"
+  ]
+}
