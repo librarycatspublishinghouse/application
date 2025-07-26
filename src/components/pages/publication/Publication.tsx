@@ -16,7 +16,7 @@ function Publication() {
 
   let params = useParams();
   
-  const[bookData, setBookData] = useState<IBook>([]);
+  const[bookData, setBookData] = useState<IBook>(null);
 
   useEffect(() => {
       async function fetchPublication(id){
@@ -37,7 +37,7 @@ function Publication() {
   }
 
  
-
+if ( bookData )
   return (
     <div className= {styles.publication} id = 'top'>
        
@@ -88,6 +88,7 @@ function Publication() {
     </div>
 
     );
+    return( <div></div>)
 }
 
 export default Publication;
