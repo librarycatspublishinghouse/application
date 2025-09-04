@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Team.module.css';
-import { TeamMemberCard } from '../../TeamMemberCard/TeamMemberCard.tsx';
-import { currentTeamMembers, formerTeamMembers } from '../../../data/teamMembers.ts';
+import { TeamMemberCard } from '../../TeamMemberCard/TeamMemberCard';
+import { currentTeamMembers, formerTeamMembers } from '../../../data/teamMembers';
 
 const Team: React.FC = () => {
   const [expandedMemberId, setExpandedMemberId] = useState<string | null>(null);

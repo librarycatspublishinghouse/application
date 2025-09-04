@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react';
 import styles from './Authors.module.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { authorData, IAuthor } from '../../../data/AuthorData.ts';
+import { authorData, IAuthor } from '../../../data/AuthorData';
 
 
 // Separate component for individual author card
-const AuthorCard = ({ author }) => (
+interface AuthorCardProps {
+  author: IAuthor;
+}
+
+const AuthorCard: React.FC<AuthorCardProps> = ({ author }) => (
   <div className={styles.author_item}>
     <div className={styles.author_image}>
       <img 

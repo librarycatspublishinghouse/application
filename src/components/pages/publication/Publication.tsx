@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {MouseEventHandler, useEffect} from 'react';
 import styles from  './Publication.module.css';
 import axios from 'axios';
 import { useState } from 'react';
@@ -8,7 +8,7 @@ import Recomendations from '../home/Recomendations/Recomendations'
 import { Link } from 'react-router-dom';
 import { IoIosShareAlt } from "react-icons/io";
 import useAnalyticsEventTracker from "../../Hooks/googleAnalyticsEventHook";
-import { IBook, Books } from '../../../data/BookData.ts'; 
+import { IBook, Books } from '../../../data/BookData'; 
 
 function Publication() {
 
@@ -16,10 +16,10 @@ function Publication() {
 
   let params = useParams();
   
-  const[bookData, setBookData] = useState<IBook>(null);
+  const[bookData, setBookData] = useState<IBook|null>(null);
 
   useEffect(() => {
-      async function fetchPublication(id){
+      async function fetchPublication(id: string){
         //book data
         const book = Books.find( (b) => b.id === id )
         if( !book )
@@ -27,11 +27,12 @@ function Publication() {
 
         setBookData(book);    
       }
-    fetchPublication(params.id);
+    if( params.id)
+      fetchPublication(params.id);
     window.scrollTo(0, 0);
   },[params.id]);
 
-  const handleDownload = async (event) => {
+  const handleDownload = async (_event: React.MouseEvent<HTMLElement>) => {
     // send google analytics event
     gaEventTracker( "Publication Download", `Book: ${params.id}`)
   }

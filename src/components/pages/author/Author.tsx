@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
-import { authorData, IAuthor } from '../../../data/AuthorData.ts';
+import { authorData, IAuthor } from '../../../data/AuthorData';
 
 function Author() {
   const params = useParams();

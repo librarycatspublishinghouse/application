@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from './Books.module.css'
 import { Link } from 'react-router-dom'
-import { IBook, Books as BookData } from '../../../data/BookData.ts';
-import { authorData } from '../../../data/AuthorData.ts';
+import { IBook, Books as BookData } from '../../../data/BookData';
+import { authorData } from '../../../data/AuthorData';
 
 
 const initialValues = {
     input_text: "",
 };
-function Books(props) {
+const Books: React.FC = () => {
 
     const [books, setBooks] = useState<IEnrichedBookData[]>([])
     const [ isLoading, setLoading] = useState<boolean>(true);
@@ -40,11 +40,11 @@ function Books(props) {
        
         console.log("called");
         fetchCards();
-    },[props.dontInclude,sort_type]);
+    },[sort_type]);
 
 
    
-   const handleInputChange = (e) => {
+   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
        const { name, value } = e.target;
        setQuery({
            ...search_query.input_text,
@@ -53,7 +53,7 @@ function Books(props) {
        console.log(search_query)
    };
 
-   const handleChangeSelect = (e) => {
+   const handleChangeSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
        setSort(e.target.value);
     
    }
