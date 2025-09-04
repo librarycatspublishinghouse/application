@@ -9,11 +9,11 @@ function Services() {
 
       <div className = {style.info_block}>
         <div className = {style.image_container}>
-          <img className = {style.image_item} src="pictures/services/hands.webp" alt=""/>  
+          <img className = {style.image_item} src={`${process.env.PUBLIC_URL}/pictures/services/hands.webp`} alt=""/>  
         </div>
 
         <div className = {style.info_container}>
-          <img className = {style.info_box_image} src="pictures/services/white-box-1.svg"  alt=""/> 
+          <img className = {style.info_box_image} src={`${process.env.PUBLIC_URL}/pictures/services/white-box-1.svg`}  alt=""/> 
           <div className={style.info}>
             <div className={style.info_title}>
               EQUAL OPPORTUNITY TO ALL MANUSCRIPTS
@@ -38,7 +38,7 @@ function Services() {
       <div className = {style.info_block_left_text}>
        <div className = {style.info_container}>
 
-        <img className = {style.info_box_image} src="pictures/services/white-box-2.svg"  alt=""/> 
+        <img className = {style.info_box_image} src={`${process.env.PUBLIC_URL}/pictures/services/white-box-2.svg`}  alt=""/> 
           <div className={style.info}>
             EDITING AND DESIGN         
             <ul className={style.info_list}>
@@ -54,7 +54,7 @@ function Services() {
 
         </div>
         <div className = {style.image_container} style = {{justifyContent:'flex-end'}}>
-        <img className = {style.image_item} src="pictures/services/design.webp"  alt=""/>  
+        <img className = {style.image_item} src={`${process.env.PUBLIC_URL}/pictures/services/design.webp`}  alt=""/>  
         </div>       
       </div>
 
@@ -62,11 +62,11 @@ function Services() {
 
       <div className = {style.info_block}>
         <div className = {style.image_container}>
-        <img className = {style.image_item} src="pictures/services/books.webp" alt=""/>  
+        <img className = {style.image_item} src={`${process.env.PUBLIC_URL}/pictures/services/books.webp`} alt=""/>  
 
         </div>
         <div className = {style.info_container}>
-          <img className = {style.info_box_image} src="pictures/services/white-box-3.svg"  alt=""/> 
+          <img className = {style.info_box_image} src={`${process.env.PUBLIC_URL}/pictures/services/white-box-3.svg`}  alt=""/> 
           <div className={style.info}>
             PUBLICATION AND EXPOSURE
             

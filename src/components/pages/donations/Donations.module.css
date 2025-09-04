@@ -1,5 +1,5 @@
 .donations {
-    background-image: url("../../../../public/stwWebFrontend/pictures/donations/donations-background.webp");
+    background-image: url(../../../assets/images/donations/donations-background.webp);
     min-height: 400px;
     width: 100%;
     background-size: cover;

@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className = "App">
-      <Router>
+      <Router basename="/application">
           <Sidebar menuCollapse = {menuCollapse} toggle = {menuIconClick}/>
           <Header toggle = {menuIconClick} />
           <Routes>

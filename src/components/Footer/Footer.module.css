@@ -1,7 +1,7 @@
 .footer_container{
     height: 470px;
     width:100%;
-    /* background-image: url("/public/stwWebFrontend/pictures/footer/cat-footer.webp"); */
+    /* background-image: url("/public/pictures/footer/cat-footer.webp"); */
 
     background-size: cover;
     background-position: center top;
@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 .footer_container.cats_background {
-    background-image: url("/public/stwWebFrontend/pictures/footer/cat-footer.webp");
+    background-image: url(../../assets/images/footer/cat-footer.webp);
 
 }
 

@@ -1,5 +1,5 @@
 /* .home {
-    background-image: url('../../../../public/stwWebFrontend/pictures/home/homepage-background.webp');
+    background-image: url('%PUBLIC_URL%/pictures/home/homepage-background.webp');
     background-size: 2700px;
     padding-bottom: 120px;
     min-height: 600px;

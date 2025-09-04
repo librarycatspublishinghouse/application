@@ -1,6 +1,6 @@
 .team {
     min-height: 100vh;
-    background: url('../../../../public/stwWebFrontend/pictures/team/team-background.webp');
+    background: url(../../../assets/images/team/team-background.webp);
     padding: 4rem 0;
     position: relative;
     overflow: hidden;

@@ -54,7 +54,7 @@
     ]
   },
   "proxy": "https://spread-the-word.herokuapp.com/",
-  "homepage": "https://spread-the-word-developer.github.io/stwWebFrontend/",
+  "homepage": "https://librarycatspublishinghouse.github.io/application",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }

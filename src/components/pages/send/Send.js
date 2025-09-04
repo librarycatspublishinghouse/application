@@ -13,35 +13,35 @@ function Send() {
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-2.webp" alt = ""/> 
+            <img className = {style.list_item_image} src={`${process.env.PUBLIC_URL}/pictures/send/elipse-2.webp`} alt = ""/> 
               <div className={style.list_item_text}>
                 IT IS COMPLETELY FREE!
               </div>
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-3.webp" alt = ""/> 
+            <img className = {style.list_item_image} src={`${process.env.PUBLIC_URL}/pictures/send/elipse-3.webp`} alt = ""/> 
               <div className={style.list_item_text}>
                 WE READ ALL THE MANUSCRIPTS
               </div>
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-4.webp" alt = ""/> 
+            <img className = {style.list_item_image} src={`${process.env.PUBLIC_URL}/pictures/send/elipse-4.webp`} alt = ""/> 
             <div className={style.list_item_text}>
               WE OFFER ONE-TO-ONE FEEDBACK SESSIONS
             </div>
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-5.webp" alt = ""/> 
+            <img className = {style.list_item_image} src={`${process.env.PUBLIC_URL}/pictures/send/elipse-5.webp`} alt = ""/> 
             <div className={style.list_item_text}>
               WE ALWAYS PROVIDE CONSTRUCTIVE FEEDBACK
             </div>
           </div>
 
           <div className = {style.list_item}>
-            <img className = {style.list_item_image} src="pictures/send/elipse-6.webp" alt = ""/> 
+            <img className = {style.list_item_image} src={`${process.env.PUBLIC_URL}/pictures/send/elipse-6.webp`} alt = ""/> 
             <div className={style.list_item_text}>
               IT IS YOUR CHANCE TO GET PUBLISHED!
             </div>
@@ -57,7 +57,7 @@ function Send() {
     <div className = {style.share_link}>
       <a className  = {style.share_link_item} 
       href = "https://drive.google.com/drive/folders/1ydFA2mgF2VDMRhVWLedcYgJYBSxg0O7E?usp=sharing">
-        <img className = {style.wobly_box} src="pictures/send/google-drive-box.webp" alt = ""/> 
+        <img className = {style.wobly_box} src={`${process.env.PUBLIC_URL}/pictures/send/google-drive-box.webp`} alt = ""/> 
         <div className={style.google_drive_text}>
           <span className={style.google}>Google </span> <span className={style.drive}>Drive</span>
         </div>
@@ -70,7 +70,7 @@ function Send() {
     </div>
     <br />
     <a className = {style.style_guide_link} 
-      href={`${process.env.REACT_APP_BACKEND_URL}`+`/files/guides/style_guide_LC_2025.pdf`}
+      href="#"
        target='_blank' rel="noreferrer"
       
       >

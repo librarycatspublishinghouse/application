@@ -22,7 +22,7 @@ const Header = ({toggle}) => {
                    
                     <div className = {style.header_logo} >
                         <Link to = "/">
-                            <img className={style.logo_item} src = "/stwWebFrontend/pictures/site-logo-white-bg.jpeg" alt = "logo"/>
+                            <img className={style.logo_item} src = "./pictures/site-logo-white-bg.jpeg" alt = "logo"/>
                         </Link>
                     </div>
                 </div>

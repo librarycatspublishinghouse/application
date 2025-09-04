@@ -7,6 +7,6 @@
     text-shadow: 60px;
     height:780px;
     width:100%;
-    background-image: url('../../../public/stwWebFrontend/pictures/send/send-background.webp');
+    background-image: url(../../assets/images/send/send-background.webp);
     padding-top: 100px;
 }

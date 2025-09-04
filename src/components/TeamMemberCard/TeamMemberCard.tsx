@@ -61,7 +61,7 @@ export const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
             title={link.type}
           >
             <img
-              src={`/stwWebFrontend/pictures/${iconName}.webp`}
+              src={`${process.env.PUBLIC_URL}/pictures/${iconName}.webp`}
               alt={link.type}
               className={styles.socialIcon}
             />

@@ -146,7 +146,7 @@ function Books(props) {
                 <Link className = {styles.link} to = {"/publication/"+card.id}  >
                 <div className= {styles.card_inner}>
                     <div className= {styles.image_container}>
-                        <img className = {styles.image_item} src={`${card.thumbnailLink}`} alt=""/> 
+                        <img className = {styles.image_item} src={card.thumbnailLink} alt=""/> 
                     </div>
                     <div className = {styles.info_container}>
                         { card.authorID && (

@@ -1,5 +1,5 @@
 .send{
-    background-image: url('../../../../public/stwWebFrontend/pictures/send/send-background.webp');
+    background-image: url(../../../assets/images/send/send-background.webp);
     padding-top:80px;
     padding-bottom: 70px;
 }

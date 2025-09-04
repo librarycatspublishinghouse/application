@@ -23,7 +23,7 @@ const Contact = () => {
           <div className={style.brandInfo}>
             <img 
               className={style.logoImage} 
-              src="/stwWebFrontend/pictures/contact/logo.webp" 
+              src={`${process.env.PUBLIC_URL}/pictures/contact/logo.webp`} 
               alt="Library Cats Editorial Logo" 
               loading="lazy"
             />

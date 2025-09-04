@@ -9,7 +9,7 @@ return (
 
         <div className={style.contest_card}>
             <div className={style.contest_card_logo}>
-                <img className = {style.star_image} src="/stwWebFrontend/pictures/contests/star.webp" alt="uos logo" />
+                <img className = {style.star_image} src={`${process.env.PUBLIC_URL}/pictures/contests/star.webp`} alt="uos logo" />
             </div>
             <div className={style.contest_card_title}>
                 STWxUoS Contest
@@ -59,7 +59,7 @@ return (
 
         <div className={style.contest_card}>
             <div className={style.contest_card_logo}>
-                <img className = {style.star_image} src="/stwWebFrontend/pictures/contests/star.webp" alt="uos logo" />
+                <img className = {style.star_image} src={`${process.env.PUBLIC_URL}/pictures/contests/star.webp`} alt="uos logo" />
             </div>
             <div className={style.contest_card_title}>
                 STWxUCD Contest

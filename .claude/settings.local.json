@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/C:\\Users\\table\\Documents\\code\\spreadTheWord\\stwFrontend\\stwWebFrontend/**)",
+      "Read(/C:\\Users\\table\\Documents\\code\\spreadTheWord\\stwFrontend\\stwWebFrontend/**)",
+      "Read(/C:\\Users\\table\\Documents\\code\\spreadTheWord\\stwFrontend\\stwWebFrontend\\src\\components\\pages\\home/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

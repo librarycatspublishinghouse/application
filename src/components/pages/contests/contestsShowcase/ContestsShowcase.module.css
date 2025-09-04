@@ -1,5 +1,5 @@
 .contests_showcase {
-    background-image: url("../../../../../public/stwWebFrontend/pictures/contests/contest-background.webp");
+    background-image: url(../../../../assets/images/contests/contest-background.webp);
     min-height: 1000px;
     width: 100%;
     background-size: cover;

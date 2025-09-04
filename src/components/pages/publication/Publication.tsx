@@ -44,7 +44,7 @@ if ( bookData )
         <div className= {styles.top_container}>
 
           <div className = {styles.thumbnail_container} >
-            <img className = {styles.image_item} src={`${bookData.thumbnailLink}`} alt=""/> 
+            <img className = {styles.image_item} src={bookData.thumbnailLink} alt=""/> 
    
           </div>
 
@@ -59,7 +59,7 @@ if ( bookData )
             </div>
 
             <div className={styles.download_container}>
-              <a className={styles.download_link} onClick = {handleDownload} href = {`${bookData.downloadLink}`} download ={`${bookData.title}.pdf`} target="_blank" rel="noreferrer" ><i className="fa fa-download"></i> Download</a>
+              <a className={styles.download_link} onClick = {handleDownload} href = {bookData.downloadLink} download ={`${bookData.title}.pdf`} target="_blank" rel="noreferrer" ><i className="fa fa-download"></i> Download</a>
                 
             </div>
             <div className={styles.donation_reminder_container}>

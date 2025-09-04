@@ -12,7 +12,7 @@ function Mission() {
         </div>
 
         <div className={style.mission_info_container}>
-        <img className = {style.white_box_image} src="pictures/mission/white-box.webp"  alt=""/> 
+        <img className = {style.white_box_image} src={`${process.env.PUBLIC_URL}/pictures/mission/white-box.webp`}  alt=""/> 
           <div className={style.mission_info}>
             <p>
               Our main goal is to promote the activities of writing and reading.  

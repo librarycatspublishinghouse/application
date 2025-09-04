@@ -91,22 +91,22 @@ function Footer() {
             <div className =  {style.social_media_list}>
               <li className =  {style.social_media_list_item}>
                 <a href = "https://www.instagram.com/librarycatspublishinghouse/" target = "_blank" rel="noreferrer">
-                  <img className={style.social_media_item_image} src = '/stwWebFrontend/pictures/instagram.png' alt = "instagram link" />
+                  <img className={style.social_media_item_image} src = './pictures/instagram.png' alt = "instagram link" />
                 </a> 
               </li>
               {/* <li className =  {style.social_media_list_item}>
                 <a href = "https://twitter.com/LibraryCatsEd" target = "_blank" rel="noreferrer">
-                  <img className={style.social_media_item_image} src = "/stwWebFrontend/pictures/twitter.png" alt = "twitter link" />
+                  <img className={style.social_media_item_image} src = "./pictures/twitter.png" alt = "twitter link" />
                 </a> 
               </li> */}
               <li className =  {style.social_media_list_item}>
                 <a href = "https://www.linkedin.com/company/80904896/admin/feed/posts/" target = "_blank" rel="noreferrer">
-                  <img className={style.social_media_item_image} src = "/stwWebFrontend/pictures/linkedin.png" alt = "linkedin link"/>
+                  <img className={style.social_media_item_image} src = "./pictures/linkedin.png" alt = "linkedin link"/>
                 </a> 
               </li>
               <li className =  {style.social_media_list_item}>
                 <a className = {style.email_link} href = "mailto:librarycatseditorial@gmail.com">
-                  <img className={style.social_media_item_image} src = "/stwWebFrontend/pictures/email.png" alt = "email link"/>
+                  <img className={style.social_media_item_image} src = "./pictures/email.png" alt = "email link"/>
                 </a>        
               </li>
             </div>
