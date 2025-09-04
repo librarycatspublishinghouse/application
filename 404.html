@@ -21,15 +21,26 @@
       // This script should be placed at the root of your repository (or `dist/` folder in some cases).
 
       var pathSegmentsToKeep = 1;
+      var projectName = 'stwWebFrontend';
 
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      
+      // Check if the path starts with our project name
+      var pathParts = l.pathname.split('/').filter(function(part) { return part !== ''; });
+      
+      if (pathParts.length === 0 || pathParts[0] !== projectName) {
+        // Path doesn't start with our project name, redirect to homepage
+        l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/' + projectName + '/');
+      } else {
+        // Path starts with our project name, handle normal SPA routing
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      }
 
     </script>
   </head>
