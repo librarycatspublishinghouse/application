@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.2e4fbb5a.css",
-    "main.js": "./static/js/main.03f853b9.js",
-    "static/js/787.cda612ba.chunk.js": "./static/js/787.cda612ba.chunk.js",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "./static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/fontawesome-webfont.eot": "./static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "./static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "./static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "./static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "index.html": "./index.html",
-    "main.2e4fbb5a.css.map": "./static/css/main.2e4fbb5a.css.map",
-    "main.03f853b9.js.map": "./static/js/main.03f853b9.js.map",
-    "787.cda612ba.chunk.js.map": "./static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/stwWebFrontend/static/css/main.644b8594.css",
+    "main.js": "/stwWebFrontend/static/js/main.d47adaeb.js",
+    "static/js/787.cda612ba.chunk.js": "/stwWebFrontend/static/js/787.cda612ba.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/stwWebFrontend/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/stwWebFrontend/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/stwWebFrontend/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/stwWebFrontend/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/stwWebFrontend/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/stwWebFrontend/index.html",
+    "main.644b8594.css.map": "/stwWebFrontend/static/css/main.644b8594.css.map",
+    "main.d47adaeb.js.map": "/stwWebFrontend/static/js/main.d47adaeb.js.map",
+    "787.cda612ba.chunk.js.map": "/stwWebFrontend/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e4fbb5a.css",
-    "static/js/main.03f853b9.js"
+    "static/css/main.644b8594.css",
+    "static/js/main.d47adaeb.js"
   ]
 }
