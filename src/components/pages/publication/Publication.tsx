@@ -67,7 +67,7 @@ if ( bookData )
               <div className={styles.donation_reminder_box}>
                 <div className={styles.donation_reminder_link}>
                   <Link to = {"/donate"}  className={styles.donation_reminder_link} >
-                    This book is available for free. However, if you’d like to offer a donation, that’d be greatly appreciated! &nbsp; 
+                    This book is available for free. However, if you’d like to offer a donation, that’d be greatly appreciated!&nbsp; 
                     <b>Your support helps us continue our mission. <IoIosShareAlt />
                     </b> 
                   </Link>
