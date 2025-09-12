@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/application/static/css/main.25cb16ab.css",
-    "main.js": "/application/static/js/main.72f04060.js",
+    "main.css": "/application/static/css/main.380095bb.css",
+    "main.js": "/application/static/js/main.d5b100b6.js",
     "static/js/787.cda612ba.chunk.js": "/application/static/js/787.cda612ba.chunk.js",
     "static/media/contest-background.webp": "/application/static/media/contest-background.a188aad05079e46f5feb.webp",
     "static/media/background.webp": "/application/static/media/background.0e1dc88850390ecb7a66.webp",
@@ -18,12 +18,12 @@
     "static/media/donate-background.webp": "/application/static/media/donate-background.8f0868bec6b8f3eea9ed.webp",
     "static/media/send-background.webp": "/application/static/media/send-background.f3497c6fe3d9e1bb415c.webp",
     "index.html": "/application/index.html",
-    "main.25cb16ab.css.map": "/application/static/css/main.25cb16ab.css.map",
-    "main.72f04060.js.map": "/application/static/js/main.72f04060.js.map",
+    "main.380095bb.css.map": "/application/static/css/main.380095bb.css.map",
+    "main.d5b100b6.js.map": "/application/static/js/main.d5b100b6.js.map",
     "787.cda612ba.chunk.js.map": "/application/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25cb16ab.css",
-    "static/js/main.72f04060.js"
+    "static/css/main.380095bb.css",
+    "static/js/main.d5b100b6.js"
   ]
 }
