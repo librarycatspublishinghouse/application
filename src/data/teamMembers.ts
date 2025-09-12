@@ -32,7 +32,7 @@ export const teamMembers: TeamMember[] = [
       createLink('instagram', 'https://www.instagram.com/marcoseche/'),
       createLink('linkedin', 'https://www.linkedin.com/in/marcos-e-76826712b/'),
     ],
-    description: 'I am a PhD Political Science student at UNC-Chapel Hill. I\'m a bit of a book geek, but I also enjoy football, golf, chess, and movies, among other things. I founded Library Cats out of my love for books and a desire to promote the beautiful activities of reading and writing.',
+    description: 'I am a PhD Political Science researcher at the European University Institute. I’m a bit of a book geek, but I also enjoy football, golf, chess, and movies, among other things. I founded Library Cats out of my love for books and a desire to promote the beautiful activities of reading and writing.',
     thumbnailImage: getImagePath('/pictures/team/book-thumbnails/bomarzo.webp'),
     profileImage: getImagePath('/pictures/team/member-images/marcos.webp'),
   },

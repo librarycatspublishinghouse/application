@@ -47,5 +47,21 @@ export const authorData: IAuthor[] = [
         info: "Rachel Deléglise is a 28-year-old writer from Montpellier, France. She felt the need and pleasure to write from a very early age and has carried on ever since. Her main artistic activities are translation and poetry. Rachel’s poetry focuses on themes such as time, loss and discovery, human connections, mental health, existential matters, nature, and one’s place in the world. Her poems speak to every human being, with the intent of showing that coping with one’s vulnerability and strength, one’s share of darkness and light, is a universal quest.",
         image: getImagePath("/pictures/author/thumbnails/RachelDeleglise.webp"),
     },
+    {
+        id: "66656848c823c04078783be8",
+        firstName: "Joseph",
+        otherNames: "Blythe",
+        info: "Joseph Blythe is from the north of England. He has short stories and poems present or forthcoming from Stand, Pennine Platform, Ink, Sweat and Tears, Grist Books, London Grip, SwimPress, Allegro Poetry and more. From 2022-2024, he served as an editor at Grist Books. He is currently working on a novel about the fallibility of memory. He holds an undergraduate degree in English Literature with Creative Writing and a Master’s in Creative Writing. He tweets, Instagrams, and Blueskys @wooperark.",
+        image: getImagePath("/pictures/author/thumbnails/JosephBlythe.png"),
+    },
+    {
+        id: "66656848c823c04078783be9",
+        firstName: "Matthew",
+        otherNames: "Ethan Gurteen",
+        info: "Matthew Ethan Gurteen (M.E.G.) is a writer from the north of England. They studied their PhD in English Literature at the University of Huddersfield. Their horror short stories have been published in several anthologies and online blogs.",
+        image: getImagePath("/pictures/author/thumbnails/MathewEthanGurteen.png"),
+    },
+
+
 ]
 
