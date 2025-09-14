@@ -89,7 +89,20 @@ if ( bookData )
     </div>
 
     );
-    return( <div></div>)
+    return( 
+      <div className= {styles.publication}>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          minHeight: '60vh',
+          color: '#7f8c8d',
+          fontSize: '1.1rem'
+        }}>
+          Loading...
+        </div>
+      </div>
+    )
 }
 
 export default Publication;

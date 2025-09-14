@@ -172,15 +172,29 @@ const Books: React.FC = () => {
 
 
     return (
-
-
         <div className={styles.books}>
+            <div className={styles.hero_section}>
+                <h1 className={styles.hero_title}>Our Collection</h1>
+                <p className={styles.hero_subtitle}>
+                    Discover thoughtfully curated literary works from talented authors around the world
+                </p>
+            </div>
+            
             {isLoading ? (
-                <></> // Maybe add a spinner
+                <div style={{ 
+                    display: 'flex', 
+                    justifyContent: 'center', 
+                    alignItems: 'center', 
+                    minHeight: '200px',
+                    color: '#7f8c8d',
+                    fontSize: '1.1rem'
+                }}>
+                    Loading our collection...
+                </div>
             ) : (
                 renderBookCards()
             )}
-        </div >
+        </div>
     );
 }
 
