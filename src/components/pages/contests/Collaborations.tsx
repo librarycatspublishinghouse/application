@@ -14,6 +14,9 @@ const Collaborations: React.FC = () => {
         <div className={style.contests_list_title}>
           Collaborations
           <div className={style.contest_list}>
+                          <li className={style.contests_list_item}> 
+                <a  className={style.link} href='https://www.instagram.com/p/C84nSxRiTxp/?img_index=1' target='_blank' rel="noreferrer">  LSE’s Spring Micro-Internship Scheme</a>
+              </li>
               <li className={style.contests_list_item}> 
                 <a  className={style.link} href='https://www.instagram.com/p/C50-BTgu7Y1/' target='_blank' rel="noreferrer"> Swansea Creative Writing Society Open Submission</a>
               </li>
