@@ -12,6 +12,20 @@ export interface IAuthor {
 }
 
 export const authorData: IAuthor[] = [
+    {
+        id: "636109674837a84f9da92a2d",
+        firstName: "Adeyori",
+        otherNames: "Alabi",        
+        info: "Adeyori Alabi (pseudonym Zay Camomile) is a musician and writer living in Manchester. Her  work centres on the gothic and the fantastical, spanning the genres of horror, fantasy and science fiction. Her current obsession and upcoming creative projects centre on werewolves. Find her on her Instagram @adeyori_alabi",
+        image: getImagePath("/pictures/author/thumbnails/AdeyoriAlabi.webp"),
+    },
+     {
+        id: "636109674837a84f9da92a2d",
+        firstName: "C",
+        otherNames: "Soden",        
+        info: "C. Soden is a writer from North Wales, who is currently studying a Bachelor’s degree in Classics at the Universities of Swansea and Groningen. In their spare time, they are working on several longer projects, all within the fantasy genre. (The furry feline taking centre stage of this image is their much beloved cat, named Apollo.)",
+        image: getImagePath("/pictures/author/thumbnails/CSoden.webp"),
+    },
      {
         id: "636109674837a84f9da92a2e",
         firstName: "Colm",

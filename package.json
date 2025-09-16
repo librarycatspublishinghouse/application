@@ -53,11 +53,15 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://spread-the-word.herokuapp.com/",
   "homepage": "https://librarycatspublishinghouse.github.io/application",
   "devDependencies": {
     "@types/flickity": "^2.2.11",
     "@types/styled-components": "^5.1.34",
     "gh-pages": "^6.3.0"
+  },
+  "options": {
+    "allowedHosts": ["localhost", ".localhost", "https://spread-the-word.herokuapp.com/"],
+    "proxy": "https://spread-the-word.herokuapp.com/"
   }
+
 }
