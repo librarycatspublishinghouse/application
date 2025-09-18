@@ -40,6 +40,13 @@ export const authorData: IAuthor[] = [
         info: "Edgar Backhouse is a prose writer from Luton, United Kingdom. With a background in film production and scriptwriting, his work unsurprisingly takes its form through imagistic inspiration. Edgar brings together his own experience and his empathetic curiosity in his creative process. Edgar’s charm comes from a wonderful ability not to take himself too seriously, and his intuitive and open approach to his own writing.",
         image: getImagePath("/pictures/author/thumbnails/Edgar.webp"),
     },
+     {
+        id: "66656848c823c04078783be7",
+        firstName: "Jemima",
+        otherNames: "Davey",
+        info: "Jemima Davey is a writer hailing from the historic countryside of Buckinghamshire. With an affection for the long-winded, she found relief from university essays by writing even longer fiction. Now getting used to her new London life, her upcoming projects venture into the dystopian. Find her on Instagram @jem.davey",
+        image: getImagePath("/pictures/author/thumbnails/JemimaDavey.webp"),
+    },
     {
         id: "66656848c823c04078783be8",
         firstName: "Joseph",
